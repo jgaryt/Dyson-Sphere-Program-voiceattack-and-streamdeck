@@ -1,0 +1,74 @@
+# Changing Icarus's voice
+
+Every command starts with a VoiceAttack **Say Something with Text-To-Speech** action. The repo
+builds two profiles that differ only in which voice those actions use:
+
+| Profile | Voice |
+|---|---|
+| `DSP Build Hotkeys-Profile.vap` | An Azure voice, currently `[Azure] Blue (en-US)` |
+| `DSP Build Hotkeys-LocalVoice-Profile.vap` | No voice set, so it uses the Windows default voice |
+
+## Changing the Azure voice (recommended way)
+
+Change the voice in the generator, not in VoiceAttack. Edits made inside VoiceAttack are lost the
+next time the profile is regenerated and re-imported.
+
+1. **Find the exact voice name VoiceAttack uses.**
+   1. In VoiceAttack, edit any command and double-click its **Say** action. You can also add a
+      temporary one under **Other → Sounds → Say Something with Text-To-Speech**.
+   2. Open the **Voice** dropdown. Azure voices are listed with an `[Azure]` prefix, for example
+      `[Azure] Blue (en-US)`.
+   3. Note the name exactly as shown, including the brackets, spaces and the region in parentheses.
+      Then cancel without saving.
+
+   Azure voices only show up once Azure text-to-speech is set up in VoiceAttack. If the dropdown
+   has no `[Azure]` entries, set that up first (see VoiceAttack's own help).
+
+2. **Edit the generator.** In `scripts/build_profile.py`, find the `VARIANTS` list near the bottom:
+
+   ```python
+   VARIANTS = [
+       ("profiles/DSP Build Hotkeys-Profile.vap", "[Azure] Blue (en-US)", ""),
+       ("profiles/DSP Build Hotkeys-LocalVoice-Profile.vap", "", " (local voice)"),
+   ]
+   ```
+
+   Replace `[Azure] Blue (en-US)` with the new name from step 1.
+
+3. **Regenerate the profiles.** Run `python scripts/build_profile.py`.
+
+4. **Re-import.** In VoiceAttack, delete the old **Dyson Sphere Program - Build Hotkeys** profile,
+   then import `profiles/DSP Build Hotkeys-Profile.vap`.
+
+5. **Commit** the changed script and profiles.
+
+### If the name doesn't match
+
+If the name in the generator doesn't exactly match a voice VoiceAttack knows, the replies may play
+in the default voice or not at all. Check for typos and the `[Azure]` prefix.
+
+To be sure of the exact format, set the voice on one Say action by hand, export the profile, and
+compare it with the generated file.
+
+## Quick change for one session (not saved)
+
+To try a voice without touching the repo, edit a command in VoiceAttack, double-click its **Say**
+action and pick a voice. This changes only that one command, and it's lost on the next re-import.
+
+## Changing the local (Windows) voice
+
+The local-voice profile uses whatever Windows' default text-to-speech voice is, so no repo change
+is needed:
+
+1. Press **Win + R** and run `C:\Windows\SysWOW64\Speech\SpeechUX\sapi.cpl`. Use the 32-bit panel,
+   because that's the one VoiceAttack reads.
+2. On the **Text to Speech** tab, pick a voice, such as **Microsoft David**.
+3. Restart VoiceAttack.
+
+## Things to keep in mind
+
+- **Azure is cloud-based.** Each reply needs a quick trip to Azure, so expect a small delay. If it
+  matters, use the local-voice profile.
+- **Replies must never match a command.** VoiceAttack can hear Icarus through the speakers, and a
+  reply that matches a command will set it off again in a loop. Changing the voice doesn't affect
+  this. The generator refuses to build a profile if any reply matches a command.

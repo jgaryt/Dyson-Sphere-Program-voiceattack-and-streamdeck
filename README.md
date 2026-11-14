@@ -8,6 +8,7 @@ A Voice Attack 2 Profile for Dyson Sphere Program
 | `profiles/DSP Build Hotkeys-Profile.vap` | Importable VoiceAttack profile, Azure Blue voice (generated) |
 | `profiles/DSP Build Hotkeys-LocalVoice-Profile.vap` | Same commands, Windows default voice: no cloud delay (generated) |
 | `scripts/build_profile.py` | Generator for the profile: commands, keys, replies, voice |
+| `docs/changing-the-voice.md` | How to switch the Azure voice (or the Windows voice) |
 | `docs/hotkey-map.csv` | Full build-bar map: keys, spoken commands, replies, status |
 
 ## How commands work
