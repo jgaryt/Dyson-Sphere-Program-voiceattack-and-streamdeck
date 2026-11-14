@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <HasMB>false</HasMB>
-  <Id>2d39d81e-f71a-40a2-ad43-af6f57800e2a</Id>
+  <Id>4a279986-9adf-4691-8411-6b6e7c69967b</Id>
   <Name>Dyson Sphere Program - Build Hotkeys</Name>
   <Commands>
     <Command>
-      <Id>925b2ef2-ef5e-4846-b904-0d50acc2f55d</Id>
-      <BaseId>9ca792c9-52d4-45ff-a263-e0a982b22d2e</BaseId>
+      <Id>2c056450-31fe-40b4-bd09-9efa0fcf3b66</Id>
+      <BaseId>534b2d21-5556-46a0-8702-91a6ea9b046f</BaseId>
       <CommandString>[build;place;] tesla tower</CommandString>
       <Description>Tesla Tower: 1 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>575b4601-5042-4003-846c-a1f2b4347e16</Id>
+          <Id>b96efb32-295b-44b4-984e-ab603adf5520</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Tesla tower;Tesla tower ready;Placing tesla tower</Context>
+          <Context>Deploying tesla tower;Constructing tesla tower</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -25,7 +25,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>7b8fb65f-1713-4c70-8fe5-7971e1ee3a0a</Id>
+          <Id>30d3168a-28ea-4db5-91be-61e0e1e97b9c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -35,7 +35,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>1aa52d31-7f4b-4b3c-aba2-1bd1bbdeadb2</Id>
+          <Id>8664c293-593f-48f5-af50-881d45bcaf0a</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -45,7 +45,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>c7c2d0fc-b783-4584-8f6b-fcd665e6b9e4</Id>
+          <Id>33fa14a4-91be-4485-b208-7a5b8a92562c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -55,7 +55,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>2193742e-e80d-4aaf-9b55-45d8aea60963</Id>
+          <Id>edbf6996-8dde-4463-8b81-6a735a145075</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -65,7 +65,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>b049d70f-2203-4cfb-a421-bd511de0f1b2</Id>
+          <Id>e3cd722a-5929-445b-8d84-5f06f199ffd9</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -83,19 +83,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>8b77938a-e697-4e67-b5cc-54ffd167553f</Id>
-      <BaseId>47d38919-34cf-4d0d-9a43-fc38580c2237</BaseId>
+      <Id>676362a1-9392-4ef5-be6c-0b98685c9755</Id>
+      <BaseId>16150784-8180-4c74-8618-27d0ce92140f</BaseId>
       <CommandString>[build;place;] wireless [power;] tower</CommandString>
       <Description>Wireless Power Tower: 1 then F2</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>97325761-7dca-4a45-b68a-6ad24b78571a</Id>
+          <Id>2b39fa99-0a1e-4e77-9dc8-2bf5d2545f4d</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Wireless tower;Wireless tower ready</Context>
+          <Context>Deploying wireless tower;Constructing wireless tower</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -103,7 +103,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>9e2d6e7d-6990-454c-bcb7-eae0c527fd63</Id>
+          <Id>d9323adf-d132-4fa4-afca-662edb92869a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -113,7 +113,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>96984051-0331-4dc0-bcf0-652b70d52781</Id>
+          <Id>a8cb21c6-3d69-4a53-bc5a-349d6da73d03</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -123,7 +123,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>30b95d5b-b09e-41c3-9956-4cf7f04d6227</Id>
+          <Id>34cdc245-3daf-466a-9a44-6b4e1a1691bc</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -133,7 +133,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>4da0d2fc-9656-4b33-b064-172e1d949cec</Id>
+          <Id>d9ad7bf5-1d56-437d-b7fc-6a6665da548c</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -143,7 +143,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>27d2254b-383d-470a-a85b-4c2284c04700</Id>
+          <Id>4a719e83-31ac-4e6b-943b-7fd5794d6673</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -161,19 +161,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>099debcd-6ce3-4be8-aaf1-b5cd3229cb5f</Id>
-      <BaseId>718851d2-e36a-41dc-98d6-fffda7fd39e6</BaseId>
+      <Id>9161e166-29d4-4860-b711-48fc3625daef</Id>
+      <BaseId>ea93da2a-511e-4508-b68e-4cd0eed66c03</BaseId>
       <CommandString>[build;place;] wind turbine</CommandString>
       <Description>Wind Turbine: 1 then F4</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>4f8b46c1-7a79-4e69-acc0-9ec8ede0e074</Id>
+          <Id>0c04ef69-6af2-4511-8f4a-3d8408260e0e</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Wind turbine;Turbine ready;Placing turbine</Context>
+          <Context>Deploying wind turbine;Constructing wind turbine</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -181,7 +181,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>95e46d8d-f74f-458c-be92-1ac415e7e04f</Id>
+          <Id>a64d6360-6bc6-4343-8dd3-82250b8402f2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -191,7 +191,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>2932e363-7bbf-4d01-bde7-d684beead3a1</Id>
+          <Id>2bf7a4d0-d161-4fe9-99a2-5d4d1fae5fa4</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -201,7 +201,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>a8d0cf7c-e94f-43e3-8e68-ca6bf0be41d2</Id>
+          <Id>602b063d-4de6-4c18-aeae-4c136daa4c01</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -211,7 +211,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>a4132e32-8926-4e34-ae4d-93e287a17ea0</Id>
+          <Id>6a1b7645-9629-4ea0-be8a-5b548d116a5c</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -221,7 +221,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>86262aaf-611b-437b-9a3c-e91c3813472a</Id>
+          <Id>c61b359d-0ab8-4fc5-891e-7c43b08ab98f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -239,19 +239,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>6a5c0e2e-2d17-4206-b0f5-ae0e990f1bdc</Id>
-      <BaseId>545753fa-4a14-489e-94fc-53808d743009</BaseId>
+      <Id>252df7e1-7db9-4641-81af-e414f242dd7a</Id>
+      <BaseId>9cf1572d-58a9-476b-b92e-a3ad50fff621</BaseId>
       <CommandString>[build;place;] thermal [power;] plant</CommandString>
       <Description>Thermal Power Plant: 1 then F5</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>87b9ab0f-d766-4e5b-887f-92ac5617a864</Id>
+          <Id>d9735e5a-2ccf-450e-b2c1-bd80dde59de7</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Thermal plant;Thermal plant ready</Context>
+          <Context>Deploying thermal plant;Constructing thermal plant</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -259,7 +259,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>26aae3a7-a464-4713-b128-3af57fe35582</Id>
+          <Id>31cb8bca-2c0b-40fc-a78d-1fd272468d66</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -269,7 +269,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>33108ef6-95a1-442e-b594-169744f1dad0</Id>
+          <Id>c5d80d86-b2c9-43f3-bf4c-5ad167b29656</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -279,7 +279,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>284d44fd-ea50-48bf-96d1-674e37aab6e2</Id>
+          <Id>6d8fd0e1-b821-4d60-a345-d1ccf89584f6</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -289,7 +289,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>1edee823-815c-43d7-9ac0-0d520ae1b5f9</Id>
+          <Id>9f8c073c-b44c-400b-a8c4-9703148a46a0</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -299,7 +299,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>ae5a7f54-3aeb-45ed-b5d5-fe673ee033a0</Id>
+          <Id>13e1e700-b0e6-4f1b-b8fa-15b74d20359c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -317,19 +317,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>688df79f-065d-454b-9b82-2dabbf923b6e</Id>
-      <BaseId>6a39f857-9490-4085-80df-cc5abfb1c997</BaseId>
+      <Id>8f7188b0-a8de-48b4-9c80-c982a1baf3eb</Id>
+      <BaseId>57a7cdaf-10c5-4478-b223-05ae17c17067</BaseId>
       <CommandString>[build;place;] solar panel</CommandString>
       <Description>Solar Panel: 1 then F6</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>eb13b27c-c5ff-43f8-8c2f-0169bd72be0b</Id>
+          <Id>3ab23dce-78f2-4e51-93ae-ac7a9a56c3cc</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Solar panel;Solar ready;Placing solar</Context>
+          <Context>Deploying solar panel;Constructing solar panel</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -337,7 +337,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>b956810e-50cf-4a27-a594-aa63b1035c2a</Id>
+          <Id>03354445-3eda-4ac2-ac8a-055e0adf65ed</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -347,7 +347,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>b24677be-1862-4d41-a9a4-ce01fd94201e</Id>
+          <Id>b30c08e2-e01b-4741-8140-20d1f0709a04</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -357,7 +357,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>d5f31a4c-297f-40bf-b178-de66de84389d</Id>
+          <Id>6c695e99-cd5a-4d8a-874c-19d90d462b84</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -367,7 +367,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>41e3d7cd-84cb-41ca-b081-5ad472e40470</Id>
+          <Id>055ef896-673f-47f2-8ec2-29e487c206a8</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -377,7 +377,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>0911c159-2c9c-4a51-ad60-f9aa04584e9d</Id>
+          <Id>cc47d412-ef50-4e94-8903-148fab5e18f7</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -395,19 +395,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>5d74b6e0-ff26-4d61-a1b6-376825835bc9</Id>
-      <BaseId>26a8f0dd-e779-4092-a3d7-4ba529da4021</BaseId>
+      <Id>d5aefdc7-543f-4ff1-90fa-930fbe88150e</Id>
+      <BaseId>e76a0c8a-8845-4e24-9b75-b62c5b4a14b6</BaseId>
       <CommandString>[build;place;] geothermal [power station;station;]</CommandString>
       <Description>Geothermal Power Station: 1 then F7</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>f747a0b0-66aa-470d-9a07-f7168649c2c5</Id>
+          <Id>bd5fa6f4-c259-4431-961f-e65855c2caef</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Geothermal;Geothermal ready</Context>
+          <Context>Deploying geothermal station;Constructing geothermal station</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -415,7 +415,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>c424d14d-93b5-4038-b137-181d8d00ca9a</Id>
+          <Id>3b08b049-5c50-445d-9142-312a30efe39d</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -425,7 +425,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>5997ff4b-b13a-4679-8155-4897864df341</Id>
+          <Id>00cde8c5-465f-459c-b189-2f66082c0145</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -435,7 +435,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>f04eb6b3-7cd7-41e2-9fd8-28c22540cd66</Id>
+          <Id>cb189205-6e4f-4e67-a7c5-d978a3ae9cbb</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -445,7 +445,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>fc750c90-2a37-478c-a966-e7920051d2d6</Id>
+          <Id>28c8d594-1e58-4b0e-9516-a813e07c6dbc</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -455,7 +455,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>0c6f9db1-5509-4e06-9b83-6a2ebed932fa</Id>
+          <Id>1025bd6e-ac6e-4d55-9da5-1edec974eecb</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -473,19 +473,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>3fee7ec0-d824-4ca6-b22d-c631eaa34cef</Id>
-      <BaseId>8b9f7066-227f-4a7e-a6fc-ec67e65f8bfa</BaseId>
+      <Id>e3c179dc-a7cf-43ca-b997-3007a3830080</Id>
+      <BaseId>a004aa83-89bc-4694-af84-2d10740dc307</BaseId>
       <CommandString>[build;place;] [mining machine;miner]</CommandString>
       <Description>Mining Machine: 2 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>51ec3472-4882-4e8d-9066-9ef549165568</Id>
+          <Id>5d2668d5-539f-4296-bdc9-b4133a1d1517</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Miner;Mining machine ready;Placing miner</Context>
+          <Context>Deploying mining machine;Constructing mining machine</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -493,7 +493,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>5cbc048c-61e4-4782-a459-13587c73c4b8</Id>
+          <Id>ab774246-cfec-416b-acbe-a5a33e6180b3</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -503,7 +503,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>e212db7a-8b51-45cc-9185-c9702db738e7</Id>
+          <Id>aa35125b-4130-4ba8-9431-2d886aa637c4</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -513,7 +513,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>a7f152c9-8205-4d76-818c-988cfb5e50eb</Id>
+          <Id>5b711905-b190-4477-a17b-f00663973f98</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -523,7 +523,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>315e29e8-128c-46c2-9f2b-757370978d92</Id>
+          <Id>cfb232a9-bd98-4ea6-8661-14bf5c54ef9e</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -533,7 +533,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>b6a4e50c-d6b2-4294-ab18-acda34d3fc2c</Id>
+          <Id>dea67c1e-9c44-46e4-a8e1-2407d9bd67b9</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -551,19 +551,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>d22048dc-d92d-4b4e-8b32-e86fc8ea1127</Id>
-      <BaseId>c7599b68-78aa-4b06-b28f-c5a46d4ca509</BaseId>
+      <Id>b73be5e7-c9a5-403a-bb4c-ec46a9f9d2bd</Id>
+      <BaseId>d2b887d4-89a6-4af5-b04e-25db438e4c24</BaseId>
       <CommandString>[build;place;] water pump</CommandString>
       <Description>Water Pump: 2 then F3</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>628f9a85-bb5e-4e21-8b00-c679014625d4</Id>
+          <Id>5a075993-6340-4ce5-913a-5ddfc4f72d42</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Water pump;Pump ready</Context>
+          <Context>Deploying water pump;Constructing water pump</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -571,7 +571,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>09836807-11c7-40b7-9dd3-12fac3cccbf0</Id>
+          <Id>126c0aea-5686-4e68-bcac-473dfabaaac8</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -581,7 +581,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>51a1f700-1579-4f44-a830-0d5f98b49c6f</Id>
+          <Id>5ebcd101-9cce-49f9-9e79-5bed93f193b4</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -591,7 +591,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>93fbe809-e8f9-42bc-a89a-3d592a9be7b8</Id>
+          <Id>3a533b23-3a6f-4796-9012-d63c02e5d01a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -601,7 +601,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>578db840-1ce4-4f79-b12e-ee15858da040</Id>
+          <Id>2d0fb02d-3a4f-4f72-966a-d66fe296a655</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -611,7 +611,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>80a370ed-90cf-47a5-b383-dbde2538e92d</Id>
+          <Id>e41e3043-310f-439d-b14f-3f9eb1884b8f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -629,19 +629,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>0a418ed5-35e0-4cad-b487-cfdd66afcee9</Id>
-      <BaseId>b22ea6a0-d734-45da-8a8d-ff3826c6600a</BaseId>
+      <Id>11302d4c-2d5d-411f-8d87-5541bd64cf57</Id>
+      <BaseId>3b85a208-8129-4f4d-b6da-4d1a6386b689</BaseId>
       <CommandString>[build;place;] oil extractor</CommandString>
       <Description>Oil Extractor: 2 then F4</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>7e910802-8da3-4e96-8663-31119074879d</Id>
+          <Id>38fa6872-0307-4b73-9a5b-e03cf9f7785b</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Oil extractor;Extractor ready</Context>
+          <Context>Deploying oil extractor;Constructing oil extractor</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -649,7 +649,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>a1bfcfb8-16ce-440c-8d90-9017ca32ba74</Id>
+          <Id>74f82a0b-e88c-47fb-9374-62782a095d16</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -659,7 +659,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>fac1818f-3e22-47d7-9873-07cf2e21f849</Id>
+          <Id>da812e22-cd66-43b6-94f0-7f64f1a97262</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -669,7 +669,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>e5aef307-4c7b-442f-ac1a-5183527ef667</Id>
+          <Id>46aaec4f-483e-4358-8b8f-fa3a4982f6c3</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -679,7 +679,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>fc19e8f9-65f5-4e18-8c8f-bdd8ce2b806f</Id>
+          <Id>94c34249-34af-4018-9097-a589f933a81e</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -689,7 +689,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>33c04ca9-99ef-4c50-a56a-ef5170ed2a1a</Id>
+          <Id>918b67e8-76c0-4e77-a455-53338728aae5</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -707,19 +707,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>457c0dea-c0c6-4125-95e1-4af90adb2cbe</Id>
-      <BaseId>92ee484d-90fc-42a5-a8cb-537134d6c76c</BaseId>
+      <Id>0d0d6753-ff6d-4cff-90b3-28a5c2074a8c</Id>
+      <BaseId>1c7ce92c-2e69-4336-8a01-84a8ca6e7a95</BaseId>
       <CommandString>[build;place;] [conveyor belt;conveyor;belt] [one;mark one]</CommandString>
       <Description>Conveyor Belt Mk I: 3 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>3edbe565-be45-47f3-b160-7ed0b5b38308</Id>
+          <Id>6862adb9-44e4-47f2-a6ac-ce7e9393c1a9</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Belt one;Belt mark one</Context>
+          <Context>Deploying belt mark one;Constructing belt mark one</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -727,7 +727,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>55f6cb5e-8d9d-4688-af64-ca52496060a3</Id>
+          <Id>feaeda49-6011-4399-b6f1-ce06f0cbb64c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -737,7 +737,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>6ee77aa6-2953-42f1-8ab0-c84fcea45aca</Id>
+          <Id>83332071-a4fe-4a92-ab50-627ccbceb31b</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -747,7 +747,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>84b1dda5-66de-430f-a92c-0136d11ea3bd</Id>
+          <Id>55da5c66-1dab-4d6b-b7a9-b553e10a9163</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -757,7 +757,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>ff3825b1-edee-4502-b677-a44bb982f6bd</Id>
+          <Id>1ce75532-ec8f-4a91-8f1d-2203c05c9ebf</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -767,7 +767,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>760a64c4-43e9-4bc5-859d-0fe7f414e4a4</Id>
+          <Id>890ee315-ada2-4ffe-9775-342cddfcff86</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -785,19 +785,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>116d1e23-dcc7-4636-93e2-da80222dbc1d</Id>
-      <BaseId>7b1828d3-cb6a-4ff1-835f-77de1b720b7b</BaseId>
+      <Id>18da6b1c-ab08-4774-bd12-534dcbd31fdc</Id>
+      <BaseId>59dc31e7-b9cc-4fee-9e92-00cd20012496</BaseId>
       <CommandString>[build;place;] [conveyor belt;conveyor;belt] [two;mark two]</CommandString>
       <Description>Conveyor Belt Mk II: 3 then F2</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>a79dc29b-a767-4b19-b01a-0c2d6dc4de17</Id>
+          <Id>8b30b7cb-5f31-4a4b-a182-f2f8828c6c9d</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Belt two;Belt mark two</Context>
+          <Context>Deploying belt mark two;Constructing belt mark two</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -805,7 +805,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>d3cb6d6a-9aa9-4569-9306-43811158ff1b</Id>
+          <Id>7d9d2dec-e637-4210-be07-411fd909dbde</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -815,7 +815,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>ef4fd0d7-3f54-47a3-9d4f-49b17cc5a3c7</Id>
+          <Id>362190b6-32c3-4488-b6ec-cc4380b178a0</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -825,7 +825,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>1ece07c4-d9ee-4189-814c-bb444cf7967e</Id>
+          <Id>bf5ce22e-e17d-488a-9b90-205cbfe2b957</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -835,7 +835,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>aa762e46-7784-4e2a-a729-ba0cd36616b6</Id>
+          <Id>3d0286fa-8f21-4570-8997-e5dc8201bb0a</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -845,7 +845,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>619e909b-89e3-4f94-a156-c6ceb28f059d</Id>
+          <Id>4caf96db-8f61-455d-8e7d-23a4b91da96e</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -863,19 +863,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>7bf10735-1ebc-4399-8b5a-31d8e55ac3a0</Id>
-      <BaseId>260aa6dd-49e9-4b2a-97c9-4dea7b405651</BaseId>
+      <Id>df9d544b-0720-4759-a95a-a1524a2f6f6a</Id>
+      <BaseId>093b3d84-e60b-46ab-9e39-4648df70b5e9</BaseId>
       <CommandString>[build;place;] [conveyor belt;conveyor;belt] [three;mark three]</CommandString>
       <Description>Conveyor Belt Mk III: 3 then F3</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>7bc468b6-4d47-47cd-8ee3-26abf70324fb</Id>
+          <Id>31dd7423-11c8-4592-b1a7-a20187f0f3c2</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Belt three;Belt mark three</Context>
+          <Context>Deploying belt mark three;Constructing belt mark three</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -883,7 +883,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>fce6d7c6-9e6f-4779-9757-f62cf5314b88</Id>
+          <Id>696f21ed-22a7-4a78-be98-6a147bbe82c8</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -893,7 +893,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>cedf8f70-7677-4f19-9ec0-ff485638e1f1</Id>
+          <Id>450baf3c-9570-4f11-b2c0-8c1855f54b4b</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -903,7 +903,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>b435fb4f-997a-4529-9c13-3de71da77ad0</Id>
+          <Id>eaab4eb9-4ba4-4d86-af04-2bc28ab41321</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -913,7 +913,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>b822fa5e-6f7e-4b1a-9e48-e88fa8844f91</Id>
+          <Id>c396b9c5-d851-4354-b568-ff386f368145</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -923,7 +923,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>98e09292-9108-47db-95b7-b1c878446b6a</Id>
+          <Id>e2eee480-51b1-4338-b46b-9050c6b3f838</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -941,19 +941,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>33e07f78-1548-422f-a1b7-f6becb26a937</Id>
-      <BaseId>e28eeb79-5437-4aaa-b56c-b8576b3b65a4</BaseId>
+      <Id>36fd1546-ecdf-43bd-81f1-e455485e68b5</Id>
+      <BaseId>86b55216-2d61-465a-9d4c-d5ffa77c1ea9</BaseId>
       <CommandString>[build;place;] sorter [one;mark one]</CommandString>
       <Description>Sorter Mk I: 3 then F4</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>c2243b9d-063e-4915-8388-4948fe0b8b90</Id>
+          <Id>d61b31b9-08f4-4203-ae7a-00cb0bad0899</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Sorter one;Sorter mark one</Context>
+          <Context>Deploying sorter mark one;Constructing sorter mark one</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -961,7 +961,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>93043652-caa3-4077-8963-7f7274eb23b5</Id>
+          <Id>1e9ded0a-df5b-4925-abfa-589c9348d885</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -971,7 +971,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>04e6604b-02c0-4acb-ad3d-042be8f78f19</Id>
+          <Id>59b5dba7-fb7c-4205-8b76-dfebd2664cad</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -981,7 +981,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>323695a0-0c14-4be1-b15a-df5a489a4b97</Id>
+          <Id>79aa70b1-171b-4299-90b7-46bed26091c2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -991,7 +991,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>b8ba97cd-be9b-4d74-8cb3-33aadc97f2eb</Id>
+          <Id>e0472810-7e3f-4ba6-ba69-79788c8bf1d8</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1001,7 +1001,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>707a82c7-28f2-43dc-a11d-cba40cb58326</Id>
+          <Id>115ecd72-3df2-4f44-aea6-df255fa40ce2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1019,19 +1019,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>8b086ec5-7969-43c5-a4c6-0b6a84f32e42</Id>
-      <BaseId>e5281e2a-8b27-4dcb-b61c-bdc2269b474b</BaseId>
+      <Id>8aa3b090-c4e4-4ea0-b4b6-2bf8b6948ee1</Id>
+      <BaseId>746d0a75-6d74-4a90-a8ee-c756017a975b</BaseId>
       <CommandString>[build;place;] sorter [two;mark two]</CommandString>
       <Description>Sorter Mk II: 3 then F5</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>70955bf8-00a5-452e-87aa-c9e6834b6f6d</Id>
+          <Id>78f55214-0ba4-4613-88e6-b42ae04c1ec3</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Sorter two;Sorter mark two</Context>
+          <Context>Deploying sorter mark two;Constructing sorter mark two</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -1039,7 +1039,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>ae907567-dc43-4b44-b6fb-a677c28de8ee</Id>
+          <Id>09af834c-8c5f-4547-82b7-a0b291a5eac4</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1049,7 +1049,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>f5eb5e89-d2e4-449e-b84f-99e44018fc4f</Id>
+          <Id>84e21307-5cc2-447c-9dda-73230c3735db</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1059,7 +1059,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>360ad5bd-2ff5-4269-ba1d-0b3ab53d0c08</Id>
+          <Id>8651269d-cedc-4d70-8cf8-9dbc7867ab7b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1069,7 +1069,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>0ca70881-8155-47d7-8f84-52395e95b8d1</Id>
+          <Id>717fa13d-8e3e-405b-8024-92903ec18056</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1079,7 +1079,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>5f65d0a0-394b-49a3-9210-d94b9dece233</Id>
+          <Id>4ae8029a-e72a-4a85-b8f9-26e425fb9196</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1097,19 +1097,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>b58ab370-5f1e-48ce-bf11-6206809ffd27</Id>
-      <BaseId>a9b59f67-f56c-46b4-9bc6-94ce183a1c1a</BaseId>
+      <Id>b0b8ab66-b7fa-49b7-9d63-855f556e33a8</Id>
+      <BaseId>7daffcc7-5ad2-434a-8ced-974b7fc59a68</BaseId>
       <CommandString>[build;place;] sorter [three;mark three]</CommandString>
       <Description>Sorter Mk III: 3 then F6</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>71fdc47d-64e8-40d4-8a1d-0bb4ac193ad3</Id>
+          <Id>bf25e549-908f-4273-9ed6-9be7379d9f04</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Sorter three;Sorter mark three</Context>
+          <Context>Deploying sorter mark three;Constructing sorter mark three</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -1117,7 +1117,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>c378ecd7-5b42-4bb8-a495-42f8fc2d0bb9</Id>
+          <Id>3f629820-d3e4-4ae1-a793-c33da62e2bff</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1127,7 +1127,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>03d93288-c295-4c6b-b785-4e2ff3c688aa</Id>
+          <Id>d84879ff-7134-4f34-80a5-32c6f65a901e</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1137,7 +1137,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>fd9084c8-2bf4-47f1-a539-8097723a41e6</Id>
+          <Id>00139157-7bce-4aec-bc12-3d51f1f83010</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1147,7 +1147,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>ad036c67-ddf4-4794-8615-33fab650f250</Id>
+          <Id>af4f893e-205b-46d6-a301-c2984c9de751</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1157,7 +1157,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>e14b7a5c-7fe3-4ce2-8bd8-7ab435f52c4e</Id>
+          <Id>bff2f18b-cd18-4fdf-b9da-21f9787dbba6</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1175,19 +1175,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>11e2b1e3-c6eb-4404-814e-05271db57152</Id>
-      <BaseId>0a1952e4-e965-4557-85a6-0d948d77bb64</BaseId>
+      <Id>6dc9f3e7-7df0-4327-9964-4f74a28b9556</Id>
+      <BaseId>8447dffa-174a-4258-956e-6540de828af6</BaseId>
       <CommandString>[build;place;] splitter</CommandString>
       <Description>Splitter: 3 then F8</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>bc3889f6-9acb-4293-b3f7-d66ef8c7759f</Id>
+          <Id>746cef5c-84be-44ba-8274-2945ab8a6733</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Splitter;Splitter ready</Context>
+          <Context>Deploying splitter;Constructing splitter</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -1195,7 +1195,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>0dbce782-1a36-4f4c-b407-a0124e1ac6de</Id>
+          <Id>374ea7f6-6aaa-4da2-b537-c084c8d9b3f8</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1205,7 +1205,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>092975e2-3f98-4d61-8808-d9513812290e</Id>
+          <Id>f6690bc3-929c-4e64-a00f-17b641a786b5</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1215,7 +1215,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>4730084c-e6c7-4c0b-aaec-8bae896b23dc</Id>
+          <Id>48dcd9f4-faf1-4c6c-b9e1-27d116d02f5f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1225,7 +1225,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>54230a3f-db0d-4a01-a7e9-78a5c95d52cf</Id>
+          <Id>1f723681-c180-431b-bc10-b507609eb0be</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1235,7 +1235,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>141787b6-159b-4246-8b26-e35fef3b1224</Id>
+          <Id>73400c56-cd23-46b5-91a0-211211cd3533</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1253,19 +1253,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>8b2a60fd-5b79-46d2-9716-eebe6a556ac0</Id>
-      <BaseId>53037bf5-d671-47a9-9fcc-2a2bdb18522d</BaseId>
+      <Id>30fb517e-aa14-4b9b-af59-03b2eae7ef23</Id>
+      <BaseId>647a1ec8-9b0d-4ca9-b72d-313fb13b6f25</BaseId>
       <CommandString>[build;place;] traffic monitor</CommandString>
       <Description>Traffic Monitor: 3 then F9</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>661dae53-fe2d-495a-b433-38d4b793ec4e</Id>
+          <Id>17fb3480-f330-41c1-a21f-b33667a596ea</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Traffic monitor;Monitor ready</Context>
+          <Context>Deploying traffic monitor;Constructing traffic monitor</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -1273,7 +1273,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>d1efdf7e-8150-4bda-949f-7683d2227490</Id>
+          <Id>80d1b96e-fba1-41c6-b30c-ee42ed1208ce</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1283,7 +1283,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>bc618744-2d09-4daa-80cd-a719df0bd9db</Id>
+          <Id>9a5c8c6d-c543-4e93-953f-def4f4e366ec</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1293,7 +1293,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>de0bdcff-b7b7-466c-9a04-3d7637e33a97</Id>
+          <Id>b8ec19d6-febf-44c2-9caf-9e27eda2b26b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1303,7 +1303,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>d7187591-1711-4815-825a-6f887a0f8d22</Id>
+          <Id>ddeec05d-27e4-4dfe-b61a-688c216b3912</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1313,7 +1313,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>15e4ab40-fcb6-4d78-9df2-fc59ce8e1ba4</Id>
+          <Id>11c70523-b889-4b79-85de-96875b8246c2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1331,19 +1331,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>f6a3addc-6bfb-4e8a-a3da-9ec40cf1b2ab</Id>
-      <BaseId>611d241b-e90c-4e3f-a9ce-6786c0907a1f</BaseId>
+      <Id>fd7cd3f6-77af-4c14-a4f2-e24e99bff645</Id>
+      <BaseId>c91d0715-f5e6-4957-9524-353d6db5e408</BaseId>
       <CommandString>[build;place;] spray coater</CommandString>
       <Description>Spray Coater: 3 then F10</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>85815a07-78ff-47e6-936f-44edc8c279bb</Id>
+          <Id>8e698c00-cedd-4327-af40-e58fdad7fb16</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Spray coater;Coater ready</Context>
+          <Context>Deploying spray coater;Constructing spray coater</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -1351,7 +1351,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>dbd4e352-e4cb-4b14-bb4b-90cf57cae3f9</Id>
+          <Id>bb808338-4a36-41d0-aa35-6547935368b5</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1361,7 +1361,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>0dab87fc-2246-4f9f-9949-3e3361b55ae2</Id>
+          <Id>30f0b29a-f9a6-4f58-860e-6d933e5dcb65</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1371,7 +1371,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>f8d676c8-2c3b-4385-a2b2-dffffe5894bf</Id>
+          <Id>6be596ba-1cb3-444c-9a07-eb002c679ad2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1381,7 +1381,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>ecdab25a-7e4b-47b3-8c7d-a7fc037a5446</Id>
+          <Id>5c989aaf-167d-49bd-9a2e-56203b3e903f</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1391,7 +1391,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>8e2366a5-1d34-4216-aec5-2cabab4eaf9e</Id>
+          <Id>b9281a43-59fa-4f39-bcd9-06b5cbf34e3c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1409,19 +1409,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>98f557c3-fad1-45f6-bc21-0da412e49d14</Id>
-      <BaseId>25cec55d-300f-4715-896f-6cbba06fa1b6</BaseId>
+      <Id>e4f79df1-2274-4702-a5a8-4f2a20b2c361</Id>
+      <BaseId>94cb3ba3-98e5-4672-b82b-620f16ea367f</BaseId>
       <CommandString>[build;place;] [depot;storage;container] [one;mark one]</CommandString>
       <Description>Depot Mk I: 4 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>af271144-b282-4ce7-84a5-e7467af2e942</Id>
+          <Id>ed0489ab-3700-4dcb-86f5-b834c2cd1f4f</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Depot one;Depot mark one</Context>
+          <Context>Deploying depot mark one;Constructing depot mark one</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -1429,7 +1429,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>67e2ed4c-ef6b-4b11-a22b-0ddf55814999</Id>
+          <Id>a0d397d6-bd6b-4c61-a902-736263e262a6</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1439,7 +1439,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>72cb5057-d7b8-4116-97df-e24d0bc99398</Id>
+          <Id>793011b6-5345-4048-92a9-2d6ffd9db4d9</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1449,7 +1449,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>ead59254-1d5a-4795-a869-6fa7ff0bdebc</Id>
+          <Id>e5ce49e4-f988-4038-a2cf-0e1c27f1b4d4</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1459,7 +1459,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>ede88cbb-155d-41a8-9e2b-2106ca18beb5</Id>
+          <Id>711de625-d3e6-43cc-90a9-06611f856ece</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1469,7 +1469,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>8d91f2b2-fd68-4ab9-a129-d9a2b1dec3cb</Id>
+          <Id>d3d7e1fb-bfff-4fcc-bdd4-275e676c8395</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1487,19 +1487,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>4da51cfd-6412-430e-aaac-095ede5f82ba</Id>
-      <BaseId>fa80f3ca-7f22-4782-b8f6-68a5e897c44f</BaseId>
+      <Id>3561a317-e694-46b1-afb2-8fae06346631</Id>
+      <BaseId>67cda4da-1f11-4e0d-b9cc-17f91027b623</BaseId>
       <CommandString>[build;place;] [depot;storage;container] [two;mark two]</CommandString>
       <Description>Depot Mk II: 4 then F2</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>f888ef7d-01ad-4242-89ca-f7d775065bb8</Id>
+          <Id>d5f08806-6af4-401f-b110-e8dbad347d42</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Depot two;Depot mark two</Context>
+          <Context>Deploying depot mark two;Constructing depot mark two</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -1507,7 +1507,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>df4b8088-360d-4864-9c7c-807f1d827598</Id>
+          <Id>65ae3dfa-5d6f-493f-8b27-380532664fe0</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1517,7 +1517,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>bb913bb1-89f6-4cfc-ab43-9f6f07cde8fe</Id>
+          <Id>7f80ac1e-1ec0-4ce3-9757-7b426eece729</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1527,7 +1527,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>f1ca22e6-bfa4-44bf-a4fa-c16c6305c2f8</Id>
+          <Id>dd80114e-5652-403a-9f66-2e0d183103ac</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1537,7 +1537,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>36cc6b23-7350-4c58-bfa5-258eeee0d8d9</Id>
+          <Id>cb244550-c513-4cdb-9e3b-59dabb24f1b2</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1547,7 +1547,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>39ade0e5-4338-4c45-a55d-cff1cc35c7f0</Id>
+          <Id>105f1544-f2cf-4e4b-9684-1800ef861702</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1565,19 +1565,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>ab200f5c-e146-4934-bdd3-ce47f5935493</Id>
-      <BaseId>7167ca89-f9d5-4e88-931b-7431304142c0</BaseId>
+      <Id>f284fca5-991c-441a-957e-edf9453535e0</Id>
+      <BaseId>dbcc98ad-5cb6-4cda-99c1-b43e1a3a5b43</BaseId>
       <CommandString>[build;place;] [storage;] tank</CommandString>
       <Description>Storage Tank: 4 then F3</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>e9a91d91-887c-4a8b-899a-71bc4e002e48</Id>
+          <Id>b05b6752-6d53-4bf7-8c9c-c0b29c790ec2</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Storage tank;Tank ready</Context>
+          <Context>Deploying storage tank;Constructing storage tank</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -1585,7 +1585,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>ade55e4e-447e-4305-a79f-2a2af31d1844</Id>
+          <Id>04927ba1-697c-4b18-858a-9aa73995e1b3</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1595,7 +1595,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>1ffa5abf-358d-47a2-b415-b43eef71cceb</Id>
+          <Id>b57d19de-9eb7-4b72-9c25-7fe797dca116</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1605,7 +1605,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>a6325611-5e81-44b4-8d75-15d03b5a25ab</Id>
+          <Id>789213ab-0dfc-4074-b295-6bdf7f0fde7f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1615,7 +1615,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>7b09fa8f-9094-462b-9c40-7b0ea227d820</Id>
+          <Id>1ce6b6d2-2fa7-4aae-bf5a-de2c2500e165</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1625,7 +1625,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>3f30e198-19a5-4882-b792-5f6e3c3ecffb</Id>
+          <Id>90fe4fa0-1a4a-4839-85bf-4d918c0d5ab4</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1643,19 +1643,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>13759518-e668-4d31-aa36-0512a7fcfb66</Id>
-      <BaseId>1b808e14-172f-4fe9-9ad1-36809f49f55a</BaseId>
+      <Id>3830f08f-a096-4bb0-a9d5-91484d7b38ff</Id>
+      <BaseId>411e22cf-efee-424f-bba2-cbf8370efaad</BaseId>
       <CommandString>[build;place;] [arc;] smelter</CommandString>
       <Description>Arc Smelter: 5 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>298261dc-3b0a-4803-88c2-f81e7162e5e1</Id>
+          <Id>1546557b-f9c1-4ee2-92be-47da20d81d5b</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Smelter;Smelter ready;Placing smelter</Context>
+          <Context>Deploying arc smelter;Constructing arc smelter</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -1663,7 +1663,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>ab02e75c-0fb0-4e0f-9680-fa04b9abca4f</Id>
+          <Id>d1a04fa6-dbbe-4669-8c61-990428a9986e</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1673,7 +1673,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>ae3dbab6-2be9-4ad4-be9e-8097e696de27</Id>
+          <Id>439c2a7e-6849-43e8-b7b5-040a4533b783</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1683,7 +1683,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>1ca87669-920a-4a67-9d74-546d34725c2e</Id>
+          <Id>1d2df22e-34b9-4fa1-8e38-333e733c563c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1693,7 +1693,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>de6c7414-09bc-4ce9-b571-46b70af60da2</Id>
+          <Id>c10716e7-d3b5-49c4-95b3-bab4436d46da</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1703,7 +1703,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>f0bb6d68-1159-4b0b-99d3-e15a61c6dd4b</Id>
+          <Id>a2cb17de-4922-4060-98ec-1f66c77bfb5c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1721,19 +1721,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>f5bfca77-8dd6-416c-a42e-f472f6d7e523</Id>
-      <BaseId>736b5ce5-60e6-4678-acfb-f705f929d90f</BaseId>
+      <Id>486b84bf-7855-4131-9477-f3f682c392cd</Id>
+      <BaseId>476a6aba-4e80-4882-8bdf-f7c2c1eb01df</BaseId>
       <CommandString>[build;place;] assembler [one;mark one]</CommandString>
       <Description>Assembling Machine Mk I: 5 then F3</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>8e239168-1edf-46e7-abd6-ef2c648db650</Id>
+          <Id>1b622199-e539-47ae-bd16-c17f893b261a</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Assembler one;Assembler mark one</Context>
+          <Context>Deploying assembler mark one;Constructing assembler mark one</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -1741,7 +1741,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>e87b28ff-53e9-435a-a570-52b37b964ebc</Id>
+          <Id>98372b66-3621-46fc-9c92-5d13d769a2b9</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1751,7 +1751,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>31368cf2-df6f-4aad-b18b-e7e7d45acc91</Id>
+          <Id>48801733-0250-48d7-879e-d7e2b53f9720</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1761,7 +1761,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>c545f1b8-d8f8-4f51-a3c3-40c37e3e96c3</Id>
+          <Id>ecc6a071-4696-4124-82cc-c6d443e1baa2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1771,7 +1771,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>c84f35a7-ed21-481b-88e7-a10ee2fb4224</Id>
+          <Id>ddf07f01-b41a-4737-ae1c-4d8570449b11</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1781,7 +1781,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>57b77b27-aaf9-41f2-8049-c86df03648d0</Id>
+          <Id>d454b48b-80c5-47ba-b795-74292f3a482b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1799,19 +1799,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>e4557b8c-13f4-4994-9464-ea9888f8ba0b</Id>
-      <BaseId>5e1e10a1-1bb8-4013-a2cd-15c9b6738fd2</BaseId>
+      <Id>46dd2cf4-2845-4000-8cf8-4fa6cd3959ce</Id>
+      <BaseId>840f88c8-7fa3-42ce-930b-da8c44efe2b9</BaseId>
       <CommandString>[build;place;] assembler [two;mark two]</CommandString>
       <Description>Assembling Machine Mk II: 5 then F4</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>cdc73cbc-94b6-442f-bb05-9087efc16355</Id>
+          <Id>c13f8d00-6c27-4219-a1f4-53fc6fa39fd5</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Assembler two;Assembler mark two</Context>
+          <Context>Deploying assembler mark two;Constructing assembler mark two</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -1819,7 +1819,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>8e81985f-ac57-4de4-822f-098f514c24dc</Id>
+          <Id>ee2d76b5-525c-47f9-824a-d64ea364ab20</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1829,7 +1829,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>4b05705f-b3cb-4984-abcd-26ed81c90605</Id>
+          <Id>3bde294c-8751-4899-ba8c-1393c8d07547</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1839,7 +1839,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>cfaa8bf3-998c-425c-a253-58777509919d</Id>
+          <Id>bc14ccd7-8149-483e-888a-b48da2d52860</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1849,7 +1849,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>779d036c-13da-4248-be74-13f9ccfc2d25</Id>
+          <Id>f94d8ba1-8c5a-43d4-bb28-99dc3be627e8</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1859,7 +1859,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>3a44e61e-0308-4df9-8617-63fcefc7dfd8</Id>
+          <Id>9aceb664-62c0-4d1a-9cd9-c0cb242ce39d</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1877,19 +1877,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>1213a5ba-1c1d-44c0-a557-5f6488d0c266</Id>
-      <BaseId>dda6be49-2f32-4715-a4a8-534768cb4a75</BaseId>
+      <Id>545ddec1-b194-4ec0-a2ed-ee1418a6f731</Id>
+      <BaseId>22073c08-60c1-4383-9021-161753b6b414</BaseId>
       <CommandString>[build;place;] [oil;] refinery</CommandString>
       <Description>Oil Refinery: 5 then F6</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>d33f4868-3ea1-427c-9a79-b07bdabda51d</Id>
+          <Id>1f249d61-6bf3-455f-a198-218f16febc8f</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Refinery;Refinery ready</Context>
+          <Context>Deploying oil refinery;Constructing oil refinery</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -1897,7 +1897,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>2dce42a5-3cb4-4ad0-882d-36814c0328d2</Id>
+          <Id>c6301267-2e90-44ba-92ee-9254d2f27ac5</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1907,7 +1907,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>70738e41-c139-4ed0-90d0-f880078490d0</Id>
+          <Id>d4508970-32c9-4e3a-a307-4d58bfe075a5</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1917,7 +1917,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>81ba1e69-b330-44f2-ad27-c488f65e6a24</Id>
+          <Id>988fcf18-943f-4d71-bdb9-a8fa23d57d35</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1927,7 +1927,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>a8dc0a59-d310-4eb8-9d7e-d4bfada15af9</Id>
+          <Id>464579c7-31a3-46c9-9455-3dcdac3563d4</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1937,7 +1937,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>aec70605-268c-4263-9de8-a3aacd0df314</Id>
+          <Id>fda9f103-c319-46de-843e-624bbaa10d14</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1955,19 +1955,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>ed80e865-4dbd-49db-abde-a52b8d6e7aa2</Id>
-      <BaseId>25316409-72c1-4ae9-9a07-861ba2cbdc2e</BaseId>
+      <Id>3b93b590-e9ac-4bc5-8ebc-40bc6287514b</Id>
+      <BaseId>50aa3547-0ebf-4e34-a2cb-662f80e590b1</BaseId>
       <CommandString>[build;place;] [chemical;chem] plant</CommandString>
       <Description>Chemical Plant: 5 then F7</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>09d283a7-eec4-4a22-84c4-6fa008ce636a</Id>
+          <Id>93f6509e-1341-4baa-8059-b8a61cd15a87</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Chemical plant;Chem plant ready</Context>
+          <Context>Deploying chemical plant;Constructing chemical plant</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -1975,7 +1975,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>e8e7bc0f-4b44-44cf-b58e-f6d7a9f333d4</Id>
+          <Id>24c9a0a1-b44f-4603-912a-2eeb8d0c160b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1985,7 +1985,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>55a5264c-50f3-4dcd-87eb-0693634d30e1</Id>
+          <Id>1faca18b-7dfd-4b57-b3f4-0d490e0d2dc9</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1995,7 +1995,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>09c94b8f-9270-4aa5-9cfd-0233c5ee90e0</Id>
+          <Id>4bf0b703-64ef-4a86-9440-1abc642f7f6d</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2005,7 +2005,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>ed5a6bd1-43a6-4394-9ad5-01b7c187de08</Id>
+          <Id>35294879-93f5-4cde-a6ff-88a48cdf22d3</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2015,7 +2015,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>e0c4f345-237f-43e8-b31a-8c396774975d</Id>
+          <Id>e6e01c49-ac44-4c16-b82e-97c272fca624</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2033,19 +2033,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>13e800f7-97dd-4156-8c5e-ca57c89f8904</Id>
-      <BaseId>df818b3e-5a02-41e0-a95b-38e241e88975</BaseId>
+      <Id>3ecd9d14-60ab-414f-9337-4c5e6d4eac59</Id>
+      <BaseId>bb4a846b-f454-4d21-8825-03da45eacf08</BaseId>
       <CommandString>[build;place;] gauss turret</CommandString>
       <Description>Gauss Turret: 7 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>aad5fc1a-cd6d-4b4e-bede-d30edb137805</Id>
+          <Id>dd0e44b0-4dea-41cd-bd08-f8e963822efd</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Gauss turret;Turret ready;Defense online</Context>
+          <Context>Deploying gauss turret;Constructing gauss turret</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2053,7 +2053,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>36a4843f-1180-475c-ba16-7794107cc30d</Id>
+          <Id>d7596dfa-b090-40e2-af2c-685331b7623f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2063,7 +2063,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>d31e5b39-023a-4115-87f2-1b69deef6435</Id>
+          <Id>c26da78f-9e2c-4c60-a26a-9a421d93b6e2</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2073,7 +2073,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>4af0ed48-c8c6-403b-b3dc-316279e226d9</Id>
+          <Id>895e0ca9-83d5-4cf4-9a55-9a7584a134fa</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2083,7 +2083,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>426cdc02-d4d8-4f53-8544-51cb19794129</Id>
+          <Id>5d1d2398-dbdd-44e9-bb69-320d2a57b997</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2093,7 +2093,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>e0e4e9a4-72d9-4129-84f9-b9f57cdd4334</Id>
+          <Id>00708e88-b8d0-499a-ada3-d2841c804285</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2111,19 +2111,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>bb074f99-297c-4c88-954f-3198383db2f5</Id>
-      <BaseId>0f99f7d6-767d-422f-a91d-243db30d3241</BaseId>
+      <Id>a1761cdb-9bb2-4a9d-ac09-a287151e05a1</Id>
+      <BaseId>eb349def-6911-4c79-88d0-d028635d55a4</BaseId>
       <CommandString>[build;place;] [matrix;research] lab</CommandString>
       <Description>Matrix Lab: 8 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>9013c3b2-c29c-486a-aba9-1df06a6f1153</Id>
+          <Id>cfd3acfa-717c-4953-af45-5cc782695b61</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Matrix lab;Lab ready</Context>
+          <Context>Deploying matrix lab;Constructing matrix lab</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2131,7 +2131,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>5b3cbc99-59a5-434f-b39e-38b215b6675c</Id>
+          <Id>8969a806-1e21-4621-8b6f-362b9f9ae344</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2141,7 +2141,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>f17dfae0-1092-4b34-90c8-aedbd1274ce1</Id>
+          <Id>2aa579fe-828c-477a-b574-48cce94c1aeb</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2151,7 +2151,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>3507ab72-dc9a-488e-b975-3df1e91d7671</Id>
+          <Id>ce4f9229-aded-4e3f-8ca5-67b1233c097b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2161,7 +2161,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>3ba87ae3-41ee-44c8-b94d-582ea896aa2b</Id>
+          <Id>4e3d0b34-c679-471a-9a7f-b7034ef61a88</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2171,7 +2171,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>5bfa9b95-5062-4c9e-bd44-469a8db73007</Id>
+          <Id>0e88f472-3c3f-424a-b9cc-c2f9bb7f42b1</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2189,19 +2189,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>d020db25-42ce-4941-9844-b1bc0d6171ac</Id>
-      <BaseId>68213356-b083-4cbe-a0c3-cb8cf7d03adf</BaseId>
+      <Id>c673362f-a7fc-457b-bedb-c8ba6e5f3b02</Id>
+      <BaseId>e4744e32-b2fa-4078-89e4-c9b5f8e93870</BaseId>
       <CommandString>[build;place;] foundation</CommandString>
       <Description>Foundation: 9 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>b489d0bf-a946-42f6-a2cc-6f9b35d2d9e6</Id>
+          <Id>1c4e5a79-7abb-47f7-9632-a3ba077d1e0c</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Foundation;Foundation ready</Context>
+          <Context>Deploying foundation;Constructing foundation</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2209,7 +2209,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>9b25561f-e896-404a-8d72-e5d24d2cd750</Id>
+          <Id>47870875-c096-4378-b30e-0fd4a3e1022a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2219,7 +2219,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>87283014-4971-4536-b22f-e9b49c0aba63</Id>
+          <Id>060c2325-5fe4-4750-846d-4f1ae00fa3c1</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2229,7 +2229,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>bf9698a9-b8fd-4fca-a6fd-483653eb1ab9</Id>
+          <Id>74dfa3df-327b-4c85-82e3-a4f0612d5988</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2239,7 +2239,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>e74855f5-fb5c-4d91-84c0-cbe6e1b9ddca</Id>
+          <Id>fe4486ec-fa9b-4b2b-9674-e0d06c72def6</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2249,7 +2249,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>38319081-cd92-4d48-bc4d-2724906d4605</Id>
+          <Id>475618df-b2de-4de0-bd7e-c0fa1d829a1f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2267,19 +2267,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>8ef98532-6044-4081-8702-561c6ab910e6</Id>
-      <BaseId>4550ee0b-f196-4607-858f-dac5cf4f5ba8</BaseId>
+      <Id>2fa2f306-fe2b-4d0d-9ec0-9b19cdf5099f</Id>
+      <BaseId>e6700065-c837-4fe6-b443-cb2a58cc4ea2</BaseId>
       <CommandString>[cancel;stop building;exit build mode]</CommandString>
       <Description>Cancel build mode: Escape</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>21e7d7d3-6e2b-48ef-940e-f97c2c0c4c7a</Id>
+          <Id>aa49b610-ff22-4bd5-a420-a79c7181a482</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Build cancelled;Standing down;Cancelled</Context>
+          <Context>Build cancelled;Standing down</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2287,7 +2287,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>1437b666-6c06-4fb5-91f3-62e90a4bbfa5</Id>
+          <Id>3e842c9d-e98b-4fcd-a5d2-1565fbca752e</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2305,14 +2305,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>6db1f8a6-bd74-49b9-83eb-03ddc9a5c130</Id>
-      <BaseId>286070c9-0da5-46f5-b025-05a6e78dec87</BaseId>
+      <Id>ddddc26c-a145-4f10-8011-194f3ebe306c</Id>
+      <BaseId>a4b963b9-9669-482c-9896-cbebe50cd751</BaseId>
       <CommandString>[fly;take off;lift off]</CommandString>
       <Description>Fly: double-tap Space</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>36a6dd08-2d90-4867-bc01-5c039366602d</Id>
+          <Id>773c65c5-5678-4d77-b960-a372a33764c0</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2325,7 +2325,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>0cfe06a6-e69e-43fe-84ca-20ae7d195fcf</Id>
+          <Id>f9a9ab62-751e-4f40-9e03-4434d1930815</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2335,7 +2335,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>a7393368-52d3-44f1-be3a-bf4577c37f8f</Id>
+          <Id>ff345f21-7b83-4a50-93e7-b7f07c45b44b</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2345,7 +2345,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>066bb8ca-2b24-4814-b2a3-a9020f041e96</Id>
+          <Id>29aa6abf-3d75-4459-8c64-748add261c76</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2363,19 +2363,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>4131c239-d5bc-4d68-95ad-04bef2d6ac0a</Id>
-      <BaseId>5147ed82-d3ed-41e8-a5f0-9ad97a12921f</BaseId>
+      <Id>44273b89-3425-410e-8cca-83ccff1b35e8</Id>
+      <BaseId>8dd91698-fcc8-4422-be56-780a6198f08b</BaseId>
       <CommandString>land</CommandString>
       <Description>Land: Left Alt</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>ad522c44-a574-4aea-98f8-15a12f9b7b9f</Id>
+          <Id>866aca5e-a582-444b-968a-16fb22151fdd</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Landing;Touchdown;Descending</Context>
+          <Context>Landing;Descending</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2383,7 +2383,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>61029d40-7107-4d29-b42a-7a4c7e8c58dc</Id>
+          <Id>d60f4ac2-4d6b-410d-9432-bbdbbf6cb5ea</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2401,19 +2401,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>5c029e6f-16d9-4fd1-927f-e3436ccbe55a</Id>
-      <BaseId>ed808f42-bb60-47f3-bcb9-d3528410a3c1</BaseId>
+      <Id>52930c8c-4018-4f61-8c62-2bcf45dc9bf0</Id>
+      <BaseId>ee1a3065-3a8e-48c7-9d2c-5be439fc6c76</BaseId>
       <CommandString>[open;show;close;hide;] mecha [panel;]</CommandString>
       <Description>Mecha Panel: C</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>e825ea55-ee85-4fdf-9caf-01a3ab246e3c</Id>
+          <Id>52850a46-840d-4437-a6f8-3300af099565</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Mecha panel;Mecha status</Context>
+          <Context>Displaying mecha status;Mecha status</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2421,7 +2421,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>527d67cb-de04-4d2b-ac95-9e645dab4032</Id>
+          <Id>f19fc47c-6a39-4fde-a0eb-03d80e055a68</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2439,19 +2439,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>7d6477da-0851-41fa-ba54-5c36ed9c5b30</Id>
-      <BaseId>f6d57591-4169-47b1-a5b2-2f3b41ef6278</BaseId>
+      <Id>5b517655-b6a9-41d5-97a8-9459bf6a8461</Id>
+      <BaseId>7cae68ea-3df9-49ae-a3d3-1384a0095998</BaseId>
       <CommandString>[open;show;close;hide;] [statistics;stats] [panel;]</CommandString>
       <Description>Statistics Panel: P</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>1ba48dab-0866-45d9-a571-9e731753038a</Id>
+          <Id>14253bae-fa6f-43b8-afd9-447300befb8d</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Statistics;Stats panel</Context>
+          <Context>Displaying statistics</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2459,7 +2459,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>6327863c-27ed-4b5b-8706-10127e6c7a37</Id>
+          <Id>05aca3bf-9844-4b75-945f-a8c12f523637</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2477,19 +2477,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>3b9343c8-453d-4ed9-b16a-ce67fcb5b5a2</Id>
-      <BaseId>ee94d881-0e85-4661-8191-58853b182ae3</BaseId>
+      <Id>83e99297-1421-4bd5-9f1d-d10acb2cb924</Id>
+      <BaseId>c0c6455c-34fe-403a-878f-adc025022877</BaseId>
       <CommandString>[open;show;close;hide;] inventory [panel;]</CommandString>
       <Description>Inventory Panel: E</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>324c9821-6c95-4436-86a5-51c1c54803f0</Id>
+          <Id>37434f4d-609f-4834-9707-d19ce643b6f5</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Inventory;Inventory open</Context>
+          <Context>Displaying inventory</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2497,7 +2497,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>6d1077e5-0150-4f14-a429-988d9729feca</Id>
+          <Id>ff3fda4d-d049-4ba4-bdca-5c57f1870422</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2515,19 +2515,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>08393c18-b62c-4936-8b81-49c6b69e49d5</Id>
-      <BaseId>765094b8-d14e-4851-9410-5105ff97faff</BaseId>
+      <Id>f340e163-b5c4-410f-91e7-a7d3ed20fc06</Id>
+      <BaseId>a3dd1649-3337-4557-abec-73e0449d8c13</BaseId>
       <CommandString>[open;show;close;hide;] replicator</CommandString>
       <Description>Replicator: F</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>c5aaaa8a-152d-43d3-8ed3-1f198de715c0</Id>
+          <Id>08114165-0ecf-4298-bf0b-d09999511ef9</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Replicator;Replicator online</Context>
+          <Context>Replicator online;Displaying replicator</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2535,7 +2535,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>4896f18b-7cd6-4193-a51f-ced79823c611</Id>
+          <Id>3cacefd0-8bae-4d2a-8c62-467d8b6bf901</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2553,19 +2553,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>e47d615c-a965-49e1-ba35-9d7c695ecbe8</Id>
-      <BaseId>be746275-80d2-48ed-8dc8-0735d23fdc0a</BaseId>
+      <Id>086033b6-ee25-4c9b-991a-51826f89ba6c</Id>
+      <BaseId>a4b64153-cefa-4f46-aa75-6b75cef5af8d</BaseId>
       <CommandString>[open;show;close;hide;toggle;] [detail;details] display</CommandString>
       <Description>Details Display: H</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>ca72133c-a804-42a8-afdf-f65fe815486f</Id>
+          <Id>682c1496-21e7-4f48-aaa6-f43961ffd92c</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Details display;Overlay toggled</Context>
+          <Context>Overlay toggled;Displaying details</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2573,7 +2573,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>ed8a9740-9b8e-490f-898a-4669d29f5b24</Id>
+          <Id>8d78d383-935c-4630-898b-0d7e2db024a8</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2591,19 +2591,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>cbe7421a-cfb9-4222-992c-4d7f1dd32400</Id>
-      <BaseId>e4e4f185-2fb0-4819-a775-21c5d2f5c806</BaseId>
+      <Id>41c3c895-61e1-4e5b-8b76-f405fffce8b2</Id>
+      <BaseId>66ba3c6d-4916-4290-a242-ccae3eded2e9</BaseId>
       <CommandString>[open;show;close;hide;] [technology tree;tech tree]</CommandString>
       <Description>Technology Tree: T</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>571c09d3-2054-43bf-ab08-c36fbcc850ee</Id>
+          <Id>4ecd3347-f91e-43fc-9c7f-69f794205fa2</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Tech tree;Technology tree</Context>
+          <Context>Displaying technology</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2611,7 +2611,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>78dddd89-abf9-4068-8464-fb8479aba976</Id>
+          <Id>a529e889-8d93-4952-ab97-46c6a82c9236</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2629,19 +2629,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>789dd521-8259-4f6b-a185-526652d8b08b</Id>
-      <BaseId>bc304dc6-4983-4be9-a8ec-e25575202063</BaseId>
+      <Id>b1466ff3-5baf-4903-9741-7f432be86eb7</Id>
+      <BaseId>e893a000-17dc-424f-8aa4-206c5243a1fd</BaseId>
       <CommandString>[open;show;close;hide;] [interplanetary logistics;logistics]</CommandString>
       <Description>Interplanetary Logistics: I</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>6c7968e6-51bb-4302-af6f-3f2f252d732a</Id>
+          <Id>108b8813-e516-4f8a-91ae-621e7b203eeb</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Logistics;Logistics panel</Context>
+          <Context>Displaying logistics</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2649,7 +2649,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>edcc7c3a-61e8-471b-a4fd-121f451bf4d2</Id>
+          <Id>cef7c4e1-c47f-414d-8813-1b4895e2e949</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2667,19 +2667,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>a126ccd4-616a-4dd0-9840-f902ccdc7889</Id>
-      <BaseId>36caddef-5ff2-4c15-86da-3379a16c0cb2</BaseId>
+      <Id>b3fcdff1-bb9e-4815-9c15-48a8da54b2f0</Id>
+      <BaseId>b1bde7bb-cfc9-4e1e-8a57-ec6c8bd68e63</BaseId>
       <CommandString>[open;show;close;hide;] [starmap;star map;system map]</CommandString>
       <Description>Starmap: V</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>1d3f8ce1-537f-4c83-ba1e-99844d6b210b</Id>
+          <Id>3f0f6863-5f8f-4ccc-8be6-877361492415</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Starmap;Star map</Context>
+          <Context>Displaying starmap;Charting stars</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2687,7 +2687,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>efae922f-c68e-4597-8b83-139b086411da</Id>
+          <Id>67047664-fbf0-46fe-82d3-6cd3f9873538</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2705,19 +2705,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>445eedb0-521b-497a-ae91-157d8ee9e1e2</Id>
-      <BaseId>f1243c53-2617-4e5d-9e99-49aa2d3d9b68</BaseId>
+      <Id>bfe70a7a-45a3-4e32-acaf-f523e09466a1</Id>
+      <BaseId>db55be59-941d-4924-ae59-9a109d3894a8</BaseId>
       <CommandString>[open;show;close;hide;] planet [view;]</CommandString>
       <Description>Planet View: M</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>5d9a6797-fe23-4a9e-b1a2-b634d807f3b2</Id>
+          <Id>024b8eda-641c-4789-9851-8801de2e86c9</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Planet view;Planet</Context>
+          <Context>Displaying planet</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2725,7 +2725,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>ca2fa0ec-dd1c-426a-8a1d-82b6b8927dd8</Id>
+          <Id>607faf39-ea50-481d-83cf-e96306b1cd52</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2743,19 +2743,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>b61ae2c8-ec67-4ed1-8a14-16bfd7c4fa9b</Id>
-      <BaseId>246cb462-49cc-4892-a818-09cac82160b5</BaseId>
+      <Id>cf90272f-ec68-41c3-a1cb-511b318f5f92</Id>
+      <BaseId>d5ee2e09-1385-4739-936c-55ed74e7b578</BaseId>
       <CommandString>[face;rotate;point] north</CommandString>
       <Description>Face North: N</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>eb4b76d9-6a7f-4d50-9956-5f0929cb0f62</Id>
+          <Id>ff1908d3-ec00-4585-a5d0-b90aa68690d9</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Facing north;North</Context>
+          <Context>Facing north;Heading north</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2763,7 +2763,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>1926f076-cccf-4db9-8728-863d513fd1b3</Id>
+          <Id>069f90d0-3d9b-4e6b-bbf0-c3182915cab3</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2781,19 +2781,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>923bc247-72cc-44ce-912a-4b71b48d119e</Id>
-      <BaseId>d68acd00-b601-430a-b165-e0e6a41da3c2</BaseId>
+      <Id>81c26551-0830-4089-95d4-c123b7f8a195</Id>
+      <BaseId>914b7a43-02ba-46b7-9119-09f915eaff3d</BaseId>
       <CommandString>[copy;duplicate]</CommandString>
       <Description>Copy selected build: Shift + left click</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>74ab7571-5970-4862-8f06-41de178cf17d</Id>
+          <Id>e511c325-67e9-406e-bda8-915de397556e</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Copied;Duplicating</Context>
+          <Context>Copying settings;Duplicating</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2801,7 +2801,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>44007ae3-2819-493a-b0d2-014f068a9060</Id>
+          <Id>29743f03-d0a1-43a6-a1dc-a37beff17f2f</Id>
           <ActionType>KeyDown</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2811,7 +2811,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>9f3d5a07-506e-466c-9f0d-f9f96a7b9b25</Id>
+          <Id>94b71f2f-25e9-4ed5-84f8-e6928bf69f14</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2821,7 +2821,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>02cee9b0-1ce5-4120-bf55-4ef60c29a740</Id>
+          <Id>8c982d31-8be4-45b5-8960-1ad40be589b4</Id>
           <ActionType>MouseAction</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2831,7 +2831,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>20eb77ca-5b38-4f2f-ad62-02e54c5daad0</Id>
+          <Id>f5900bfe-43e9-492b-ad33-04dff5b0d0da</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2841,7 +2841,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>ab0a9aaf-9cfa-4805-886b-29407267134c</Id>
+          <Id>e26f8415-62e6-4e63-9e8d-61d04c6aa5fe</Id>
           <ActionType>KeyUp</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2859,19 +2859,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>e47ea0f3-2d3c-4ee4-a006-0a04521b6adb</Id>
-      <BaseId>fe20d4a2-c903-4bc3-bdbe-d6d0ece67e34</BaseId>
+      <Id>2449925c-44c7-47e2-beb5-c0ab87ca1c1e</Id>
+      <BaseId>ede1b605-6d46-4c98-95d3-0666bc3e17ce</BaseId>
       <CommandString>[screenshot;take screenshot;capture screen]</CommandString>
       <Description>Screenshot: Shift + F11</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>d7ca2186-e964-4b12-b3f3-8e018585b434</Id>
+          <Id>e3b9e246-d3c9-406f-88a4-3ace8083356f</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Screenshot;Image captured</Context>
+          <Context>Image captured;Capturing image</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2879,7 +2879,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>2de75d30-ff86-444a-9f6b-875ca537f010</Id>
+          <Id>fb4ad002-cbbc-49f6-ac43-6c55a9fcafca</Id>
           <ActionType>KeyDown</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2889,7 +2889,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>e62e2588-a968-4f11-a683-d197c8f99a9e</Id>
+          <Id>dc55edf0-ea58-4781-b93f-caad54d2eff8</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2899,7 +2899,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>28ea9412-dd48-4360-96d4-29e2cf8bb1eb</Id>
+          <Id>70b17f77-e1bc-45ba-8835-b2c6ad808ee3</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2909,7 +2909,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>6bf6370d-afb9-4ded-a55c-7aceb132bdcf</Id>
+          <Id>60ebf458-45af-4696-a9ac-d1d7f8519a9b</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2919,7 +2919,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>8f665cf7-5e9e-46da-9c52-d4c6333f00c9</Id>
+          <Id>1179d4e1-3b75-4b6e-a6c6-fb8dce1d7f39</Id>
           <ActionType>KeyUp</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2937,19 +2937,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>03d5a59d-65fc-4dd4-853a-3de36e1bb5db</Id>
-      <BaseId>6fdde511-42fd-4d7c-be98-ab176aa61b2b</BaseId>
+      <Id>d09bd8df-c8c8-4a6d-abcc-32055f72ab0c</Id>
+      <BaseId>f35cb14f-7f46-4f71-977c-12eea9668dc3</BaseId>
       <CommandString>upgrade [mode;]</CommandString>
       <Description>Upgrade mode: U</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>4db786d5-7813-4999-853c-d199af85f77f</Id>
+          <Id>ffaadcdb-fb97-41b1-ae05-52a810ca4ada</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Upgrade mode;Upgrade ready</Context>
+          <Context>Upgrade engaged;Upgrading</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2957,7 +2957,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>b132e801-fc9d-49bb-9d3a-9f29574677f1</Id>
+          <Id>d73f53fb-15f1-40db-a7b5-65b2f6f7e3b1</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2975,19 +2975,19 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>3143de13-ab70-4a06-b690-71154a411809</Id>
-      <BaseId>b0708f32-d5ec-4a17-afe7-7f7ebb8ec295</BaseId>
+      <Id>36e0309d-7dbe-4ad7-a0bb-4f8562bd24dc</Id>
+      <BaseId>482a7a73-fb7e-45f6-99d0-74ef4ee034ce</BaseId>
       <CommandString>[dismantle;demolish] [mode;]</CommandString>
       <Description>Dismantle mode: X</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>67cf2d62-cc8e-414c-afd0-772496ba8fa3</Id>
+          <Id>ff4da311-d3a0-43da-9067-710eb61242b1</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>Dismantle mode;Demolition ready</Context>
+          <Context>Demolition engaged;Dismantling</Context>
           <Context2>[Azure] Blue (en-US)</Context2>
           <X>100</X>
           <Y>0</Y>
@@ -2995,7 +2995,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>a77d831f-62c2-4f65-aa6c-db3649776f33</Id>
+          <Id>6aa06c35-b1ee-436d-841f-ab785a7a0394</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>

@@ -25,6 +25,11 @@ Replies use VoiceAttack text-to-speech with the `[Azure] Blue (en-US)` voice. Ea
 2–3 phrases separated by `;`; VoiceAttack picks one at random. The speech action runs first so
 the reply isn't delayed by the key presses.
 
+**Replies must never match a command.** VoiceAttack can hear Icarus through the speakers; a reply
+like "Wireless tower" re-triggers the "wireless tower" command and loops. Build replies are worded
+"Deploying …" / "Constructing …", and `build_profile.py` refuses to write a profile if any reply
+line matches a spoken command.
+
 ## Making changes
 
 1. Edit the `rows` list (commands and keys) or the `REPLY` dict (replies) in `scripts/build_profile.py`.

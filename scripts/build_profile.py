@@ -31,7 +31,7 @@ rows = [
 ("Matrix Lab","8","F1","[matrix;research] lab"),
 ("Foundation","9","F1","foundation"),
 ]
-REPLY = {'Tesla Tower': 'Tesla tower;Tesla tower ready;Placing tesla tower', 'Wireless Power Tower': 'Wireless tower;Wireless tower ready', 'Wind Turbine': 'Wind turbine;Turbine ready;Placing turbine', 'Thermal Power Plant': 'Thermal plant;Thermal plant ready', 'Solar Panel': 'Solar panel;Solar ready;Placing solar', 'Geothermal Power Station': 'Geothermal;Geothermal ready', 'Mining Machine': 'Miner;Mining machine ready;Placing miner', 'Water Pump': 'Water pump;Pump ready', 'Oil Extractor': 'Oil extractor;Extractor ready', 'Conveyor Belt Mk I': 'Belt one;Belt mark one', 'Conveyor Belt Mk II': 'Belt two;Belt mark two', 'Conveyor Belt Mk III': 'Belt three;Belt mark three', 'Sorter Mk I': 'Sorter one;Sorter mark one', 'Sorter Mk II': 'Sorter two;Sorter mark two', 'Sorter Mk III': 'Sorter three;Sorter mark three', 'Splitter': 'Splitter;Splitter ready', 'Traffic Monitor': 'Traffic monitor;Monitor ready', 'Spray Coater': 'Spray coater;Coater ready', 'Depot Mk I': 'Depot one;Depot mark one', 'Depot Mk II': 'Depot two;Depot mark two', 'Storage Tank': 'Storage tank;Tank ready', 'Arc Smelter': 'Smelter;Smelter ready;Placing smelter', 'Assembling Machine Mk I': 'Assembler one;Assembler mark one', 'Assembling Machine Mk II': 'Assembler two;Assembler mark two', 'Oil Refinery': 'Refinery;Refinery ready', 'Chemical Plant': 'Chemical plant;Chem plant ready', 'Gauss Turret': 'Gauss turret;Turret ready;Defense online', 'Matrix Lab': 'Matrix lab;Lab ready', 'Foundation': 'Foundation;Foundation ready'}
+REPLY = {'Tesla Tower': 'Deploying tesla tower;Constructing tesla tower', 'Wireless Power Tower': 'Deploying wireless tower;Constructing wireless tower', 'Wind Turbine': 'Deploying wind turbine;Constructing wind turbine', 'Thermal Power Plant': 'Deploying thermal plant;Constructing thermal plant', 'Solar Panel': 'Deploying solar panel;Constructing solar panel', 'Geothermal Power Station': 'Deploying geothermal station;Constructing geothermal station', 'Mining Machine': 'Deploying mining machine;Constructing mining machine', 'Water Pump': 'Deploying water pump;Constructing water pump', 'Oil Extractor': 'Deploying oil extractor;Constructing oil extractor', 'Conveyor Belt Mk I': 'Deploying belt mark one;Constructing belt mark one', 'Conveyor Belt Mk II': 'Deploying belt mark two;Constructing belt mark two', 'Conveyor Belt Mk III': 'Deploying belt mark three;Constructing belt mark three', 'Sorter Mk I': 'Deploying sorter mark one;Constructing sorter mark one', 'Sorter Mk II': 'Deploying sorter mark two;Constructing sorter mark two', 'Sorter Mk III': 'Deploying sorter mark three;Constructing sorter mark three', 'Splitter': 'Deploying splitter;Constructing splitter', 'Traffic Monitor': 'Deploying traffic monitor;Constructing traffic monitor', 'Spray Coater': 'Deploying spray coater;Constructing spray coater', 'Depot Mk I': 'Deploying depot mark one;Constructing depot mark one', 'Depot Mk II': 'Deploying depot mark two;Constructing depot mark two', 'Storage Tank': 'Deploying storage tank;Constructing storage tank', 'Arc Smelter': 'Deploying arc smelter;Constructing arc smelter', 'Assembling Machine Mk I': 'Deploying assembler mark one;Constructing assembler mark one', 'Assembling Machine Mk II': 'Deploying assembler mark two;Constructing assembler mark two', 'Oil Refinery': 'Deploying oil refinery;Constructing oil refinery', 'Chemical Plant': 'Deploying chemical plant;Constructing chemical plant', 'Gauss Turret': 'Deploying gauss turret;Constructing gauss turret', 'Matrix Lab': 'Deploying matrix lab;Constructing matrix lab', 'Foundation': 'Deploying foundation;Constructing foundation'}
 codes = {str(i):48+i for i in range(1,10)}
 codes.update({f"F{i}":111+i for i in range(1,11)})
 codes.update({"U":85,"X":88,"ESC":27,"SPACE":32,"LALT":164,"LSHIFT":160,"H":72,"T":84,"R":82,"F11":122,"I":73,"V":86,"M":77,"N":78,"C":67,"P":80,"E":69,"F":70})
@@ -113,27 +113,43 @@ for name,cat,fk,phrase in rows:
     other = "8" if cat=="9" else "9"
     acts = say(REPLY[name],0)+press(other,1)+pause(0.1,2)+press(cat,3)+pause(0.1,4)+press(fk,5)
     out.append(cmd(f"[build;place;] {phrase}", acts, f"{name}: {cat} then {fk}"))
-out.append(cmd("[cancel;stop building;exit build mode]", say("Build cancelled;Standing down;Cancelled",0)+press("ESC",1), "Cancel build mode: Escape"))
+out.append(cmd("[cancel;stop building;exit build mode]", say("Build cancelled;Standing down",0)+press("ESC",1), "Cancel build mode: Escape"))
 out.append(cmd("[fly;take off;lift off]", say("Thrusters engaged;Airborne;Lifting off",0)+press("SPACE",1)+pause(0.1,2)+press("SPACE",3), "Fly: double-tap Space"))
-out.append(cmd("land", say("Landing;Touchdown;Descending",0)+press("LALT",1), "Land: Left Alt"))
+out.append(cmd("land", say("Landing;Descending",0)+press("LALT",1), "Land: Left Alt"))
 PANELS = [
-    ("Mecha Panel", "C", "[open;show;close;hide;] mecha [panel;]", "Mecha panel;Mecha status"),
-    ("Statistics Panel", "P", "[open;show;close;hide;] [statistics;stats] [panel;]", "Statistics;Stats panel"),
-    ("Inventory Panel", "E", "[open;show;close;hide;] inventory [panel;]", "Inventory;Inventory open"),
-    ("Replicator", "F", "[open;show;close;hide;] replicator", "Replicator;Replicator online"),
-    ("Details Display", "H", "[open;show;close;hide;toggle;] [detail;details] display", "Details display;Overlay toggled"),
-    ("Technology Tree", "T", "[open;show;close;hide;] [technology tree;tech tree]", "Tech tree;Technology tree"),
-    ("Interplanetary Logistics", "I", "[open;show;close;hide;] [interplanetary logistics;logistics]", "Logistics;Logistics panel"),
-    ("Starmap", "V", "[open;show;close;hide;] [starmap;star map;system map]", "Starmap;Star map"),
-    ("Planet View", "M", "[open;show;close;hide;] planet [view;]", "Planet view;Planet"),
-    ("Face North", "N", "[face;rotate;point] north", "Facing north;North"),
+    ("Mecha Panel", "C", "[open;show;close;hide;] mecha [panel;]", "Displaying mecha status;Mecha status"),
+    ("Statistics Panel", "P", "[open;show;close;hide;] [statistics;stats] [panel;]", "Displaying statistics"),
+    ("Inventory Panel", "E", "[open;show;close;hide;] inventory [panel;]", "Displaying inventory"),
+    ("Replicator", "F", "[open;show;close;hide;] replicator", "Replicator online;Displaying replicator"),
+    ("Details Display", "H", "[open;show;close;hide;toggle;] [detail;details] display", "Overlay toggled;Displaying details"),
+    ("Technology Tree", "T", "[open;show;close;hide;] [technology tree;tech tree]", "Displaying technology"),
+    ("Interplanetary Logistics", "I", "[open;show;close;hide;] [interplanetary logistics;logistics]", "Displaying logistics"),
+    ("Starmap", "V", "[open;show;close;hide;] [starmap;star map;system map]", "Displaying starmap;Charting stars"),
+    ("Planet View", "M", "[open;show;close;hide;] planet [view;]", "Displaying planet"),
+    ("Face North", "N", "[face;rotate;point] north", "Facing north;Heading north"),
 ]
 for pname, pkey, pphrase, preply in PANELS:
     out.append(cmd(pphrase, say(preply,0)+press(pkey,1), f"{pname}: {pkey}"))
-out.append(cmd("[copy;duplicate]", say("Copied;Duplicating",0)+keydown("LSHIFT",1)+pause(0.05,2)+mouse("LC",3)+pause(0.05,4)+keyup("LSHIFT",5), "Copy selected build: Shift + left click"))
-out.append(cmd("[screenshot;take screenshot;capture screen]", say("Screenshot;Image captured",0)+keydown("LSHIFT",1)+pause(0.05,2)+press("F11",3)+pause(0.05,4)+keyup("LSHIFT",5), "Screenshot: Shift + F11"))
-out.append(cmd("upgrade [mode;]", say("Upgrade mode;Upgrade ready",0)+press("U",1), "Upgrade mode: U"))
-out.append(cmd("[dismantle;demolish] [mode;]", say("Dismantle mode;Demolition ready",0)+press("X",1), "Dismantle mode: X"))
+out.append(cmd("[copy;duplicate]", say("Copying settings;Duplicating",0)+keydown("LSHIFT",1)+pause(0.05,2)+mouse("LC",3)+pause(0.05,4)+keyup("LSHIFT",5), "Copy selected build: Shift + left click"))
+out.append(cmd("[screenshot;take screenshot;capture screen]", say("Image captured;Capturing image",0)+keydown("LSHIFT",1)+pause(0.05,2)+press("F11",3)+pause(0.05,4)+keyup("LSHIFT",5), "Screenshot: Shift + F11"))
+out.append(cmd("upgrade [mode;]", say("Upgrade engaged;Upgrading",0)+press("U",1), "Upgrade mode: U"))
+out.append(cmd("[dismantle;demolish] [mode;]", say("Demolition engaged;Dismantling",0)+press("X",1), "Dismantle mode: X"))
+import re as _rx
+_re_cmds=_rx.compile(r"<CommandString>(.*?)</CommandString>")
+_re_says=_rx.compile(r"<ActionType>Say</ActionType>.*?<Context>(.*?)</Context>", _rx.S)
+
+def _expand(phrase):
+    import itertools, re as _re
+    parts=_re.split(r"(\[[^\]]*\])", phrase)
+    opts=[[o for o in p[1:-1].split(";")] if p.startswith("[") else [p] for p in parts]
+    return {" ".join("".join(c).split()).lower() for c in itertools.product(*opts)}
+_spoken=set()
+for _c in _re_cmds.findall("".join(out)):
+    _spoken |= _expand(_c)
+for _r in _re_says.findall("".join(out)):
+    for _line in _r.split(";"):
+        if _line.strip().lower() in _spoken:
+            raise SystemExit(f"Reply '{_line}' matches a voice command and would cause a feedback loop")
 xml = f"""<?xml version="1.0" encoding="utf-8"?>
 <Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <HasMB>false</HasMB>
