@@ -54,3 +54,7 @@ Statistics Panel,P,Panel,[open;show;close;hide;] [statistics;stats] [panel;],Sta
 Inventory Panel,E,Panel,[open;show;close;hide;] inventory [panel;],Inventory / Inventory open,Inventory,Confirmed,Toggles
 Replicator,F,Panel,[open;show;close;hide;] replicator,Replicator / Replicator online,Replicator,Confirmed,Toggles
 Copy selected build,Shift + Left Click,Action,[copy;duplicate],Copied / Duplicating,Copy,Confirmed,Clicks at the mouse pointer
+Details Display,H,Panel,[open;show;close;hide;toggle;] [detail;details] display,Details display / Overlay toggled,Details,Likely,"Toggles; not tested yet"
+Technology Tree,T,Panel,[open;show;close;hide;] [technology tree;tech tree],Tech tree / Technology tree,Tech,Likely,"Toggles; not tested yet"
+Research,R,Panel,[open;show;close;hide;] research,Research / Research panel,Research,Likely,"Toggles; not tested yet"
+Screenshot,Shift + F11,Action,[screenshot;take screenshot;capture screen],Screenshot / Image captured,Screenshot,Likely,Not tested yet
