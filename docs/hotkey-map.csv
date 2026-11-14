@@ -56,5 +56,8 @@ Replicator,F,Panel,[open;show;close;hide;] replicator,Replicator / Replicator on
 Copy selected build,Shift + Left Click,Action,[copy;duplicate],Copied / Duplicating,Copy,Confirmed,Clicks at the mouse pointer
 Details Display,H,Panel,[open;show;close;hide;toggle;] [detail;details] display,Details display / Overlay toggled,Details,Likely,"Toggles; not tested yet"
 Technology Tree,T,Panel,[open;show;close;hide;] [technology tree;tech tree],Tech tree / Technology tree,Tech,Likely,"Toggles; not tested yet"
-Research,R,Panel,[open;show;close;hide;] research,Research / Research panel,Research,Likely,"Toggles; not tested yet"
 Screenshot,Shift + F11,Action,[screenshot;take screenshot;capture screen],Screenshot / Image captured,Screenshot,Likely,Not tested yet
+Interplanetary Logistics,I,Panel,[open;show;close;hide;] [interplanetary logistics;logistics],Logistics / Logistics panel,Logistics,Likely,"Toggles; not tested yet"
+Starmap,V,Panel,[open;show;close;hide;] [starmap;star map;system map],Starmap / Star map,Starmap,Likely,"Toggles; not tested yet"
+Planet View,M,Panel,[open;show;close;hide;] planet [view;],Planet view / Planet,Planet,Likely,"Toggles; not tested yet"
+Face North,N,Action,[face;rotate;point] north,Facing north / North,North,Likely,Not tested yet
