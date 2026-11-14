@@ -5,7 +5,8 @@ A Voice Attack 2 Profile for Dyson Sphere Program
 
 | Path | What it is |
 |---|---|
-| `profiles/DSP Build Hotkeys-Profile.vap` | Importable VoiceAttack profile (generated, do not hand-edit) |
+| `profiles/DSP Build Hotkeys-Profile.vap` | Importable VoiceAttack profile, Azure Blue voice (generated) |
+| `profiles/DSP Build Hotkeys-LocalVoice-Profile.vap` | Same commands, Windows default voice: no cloud delay (generated) |
 | `scripts/build_profile.py` | Generator for the profile: commands, keys, replies, voice |
 | `docs/hotkey-map.csv` | Full build-bar map: keys, spoken commands, replies, status |
 
@@ -33,7 +34,7 @@ line matches a spoken command.
 ## Making changes
 
 1. Edit the `rows` list (commands and keys) or the `REPLY` dict (replies) in `scripts/build_profile.py`.
-2. Run `python scripts/build_profile.py` to regenerate the profile.
+2. Run `python scripts/build_profile.py`. It writes both profiles (Azure and local voice) from the same command list.
 3. In VoiceAttack, delete the old profile, then import the new `.vap`.
 4. Update `docs/hotkey-map.csv` to match.
 

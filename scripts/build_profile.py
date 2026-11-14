@@ -73,7 +73,7 @@ def say(text, ordinal):
           <Delay>0</Delay>
           <KeyCodes />
           <Context>{escape(text)}</Context>
-          <Context2>[Azure] Blue (en-US)</Context2>
+          <Context2>{{VOICE}}</Context2>
           <X>100</X>
           <Y>0</Y>
           <Disabled>false</Disabled>
@@ -158,10 +158,19 @@ xml = f"""<?xml version="1.0" encoding="utf-8"?>
 <Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <HasMB>false</HasMB>
   <Id>{G()}</Id>
-  <Name>Dyson Sphere Program - Build Hotkeys</Name>
+  <Name>Dyson Sphere Program - Build Hotkeys{{NAME_SUFFIX}}</Name>
   <Commands>
 {''.join(out)}  </Commands>
 </Profile>
 """
-open("profiles/DSP Build Hotkeys-Profile.vap","w",encoding="utf-8").write(xml)
+# One profile per voice. Same commands; only the TTS voice and profile name differ.
+VARIANTS = [
+    ("profiles/DSP Build Hotkeys-Profile.vap", "[Azure] Blue (en-US)", ""),
+    ("profiles/DSP Build Hotkeys-LocalVoice-Profile.vap", "", " (local voice)"),
+]
+for path, voice, suffix in VARIANTS:
+    body = xml.replace("{NAME_SUFFIX}", suffix)
+    body = body.replace("<Context2>{VOICE}</Context2>", f"<Context2>{voice}</Context2>" if voice else "")
+    open(path, "w", encoding="utf-8").write(body)
+    print("wrote", path)
 print(len(out))
