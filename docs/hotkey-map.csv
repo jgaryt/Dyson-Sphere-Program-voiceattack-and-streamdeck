@@ -49,7 +49,7 @@ Dismantle,X,Action,[dismantle;demolish] [mode;],Dismantle mode / Demolition read
 Cancel build mode,Esc,Action,[cancel;stop building;exit build mode],Build cancelled / Standing down / Cancelled,Cancel,Confirmed,Opens game menu if not in build mode
 Fly,"Space, Space",Action,[fly;take off;lift off],Thrusters engaged / Airborne / Lifting off,Fly,Confirmed,"Double-tap, 0.1 s apart"
 Land,Left Alt,Action,land,Landing / Touchdown / Descending,Land,Confirmed,Single key
-Mecha Panel,C,Panel,[open;show;close;hide;] mecha [panel;],Mecha panel / Mecha status,Mecha,Likely,"Toggles; not tested yet"
-Statistics Panel,P,Panel,[open;show;close;hide;] [statistics;stats] [panel;],Statistics / Stats panel,Stats,Likely,"Toggles; not tested yet"
-Inventory Panel,E,Panel,[open;show;close;hide;] inventory [panel;],Inventory / Inventory open,Inventory,Likely,"Toggles; not tested yet"
-Replicator,F,Panel,[open;show;close;hide;] replicator,Replicator / Replicator online,Replicator,Likely,"Toggles; not tested yet"
+Mecha Panel,C,Panel,[open;show;close;hide;] mecha [panel;],Mecha panel / Mecha status,Mecha,Confirmed,Toggles
+Statistics Panel,P,Panel,[open;show;close;hide;] [statistics;stats] [panel;],Statistics / Stats panel,Stats,Confirmed,Toggles
+Inventory Panel,E,Panel,[open;show;close;hide;] inventory [panel;],Inventory / Inventory open,Inventory,Confirmed,Toggles
+Replicator,F,Panel,[open;show;close;hide;] replicator,Replicator / Replicator online,Replicator,Confirmed,Toggles
