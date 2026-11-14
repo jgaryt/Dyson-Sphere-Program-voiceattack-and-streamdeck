@@ -39,7 +39,7 @@ Planetary Logistics Station?,6 → F3,6 Transportation,,,PLS,Guess,Hover to conf
 Gauss Turret,7 → F1,7 Defence,[build;place;] gauss turret,Deploying gauss turret / Constructing gauss turret,Gauss,Confirmed,
 Missile Turret,7 → F2,7 Defence,[build;place;] missile turret,Deploying missile turret / Constructing missile turret,Missile,Likely,Not tested yet
 Implosion Cannon,7 → F3,7 Defence,[build;place;] implosion cannon,Deploying implosion cannon / Constructing implosion cannon,Implosion,Likely,Not tested yet
-Unknown defence building,7 → F8,7 Defence,,,,Guess,Battlefield Analysis Base?
+Jammer Tower,7 → F8,7 Defence,[build;place;] jammer tower,Deploying jammer tower / Constructing jammer tower,Jammer,Likely,Not tested yet
 Signal Tower,7 → F9,7 Defence,[build;place;] signal tower,Deploying signal tower / Constructing signal tower,Signal,Likely,Not tested yet
 Matrix Lab,8 → F1,8 COSMO,[build;place;] [matrix;research] lab,Deploying matrix lab / Constructing matrix lab,Lab,Confirmed,Research buildings live in COSMO
 EM Rail Ejector?,8 → F2,8 COSMO,,,Ejector,Guess,Hover to confirm
