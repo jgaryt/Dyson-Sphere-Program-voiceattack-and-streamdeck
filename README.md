@@ -34,7 +34,6 @@ the reply isn't delayed by the key presses.
 
 ## Open items
 
-- Confirm Oil Refinery (5 → F6) and Chemical Plant (5 → F7).
 - Identify the Guess slots (see `docs/hotkey-map.csv`) and add them as commands.
 - Add commands as locked slots unlock.
 

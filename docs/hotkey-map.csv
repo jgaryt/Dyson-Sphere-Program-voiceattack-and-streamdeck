@@ -30,8 +30,8 @@ Arc Smelter,5 → F1,5 Production,[build;place;] [arc;] smelter,Smelter / Smelte
 Assembling Machine Mk I,5 → F3,5 Production,[build;place;] assembler [one;mark one],Assembler one / Assembler mark one,Asm 1,Confirmed,
 Assembling Machine Mk II,5 → F4,5 Production,[build;place;] assembler [two;mark two],Assembler two / Assembler mark two,Asm 2,Confirmed,
 (locked slot),5 → F5,5 Production,,,,Locked,Probably Assembler Mk III
-Oil Refinery,5 → F6,5 Production,[build;place;] [oil;] refinery,Refinery / Refinery ready,Refinery,Guess,"In VA profile, not tested yet"
-Chemical Plant,5 → F7,5 Production,[build;place;] [chemical;chem] plant,Chemical plant / Chem plant ready,Chem,Guess,"In VA profile, not tested yet"
+Oil Refinery,5 → F6,5 Production,[build;place;] [oil;] refinery,Refinery / Refinery ready,Refinery,Confirmed,
+Chemical Plant,5 → F7,5 Production,[build;place;] [chemical;chem] plant,Chemical plant / Chem plant ready,Chem,Confirmed,
 Unknown production building,5 → F8,5 Production,,,,Guess,Not the Matrix Lab (labs are in COSMO). Maybe Fractionator or Particle Collider
 Logistics Distributor?,6 → F1,6 Transportation,,,Distrib,Guess,Hover to confirm
 (locked slot),6 → F2,6 Transportation,,,,Locked,
