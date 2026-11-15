@@ -47,6 +47,8 @@ ICONS = {
     "Sort 3": ("logistics", "sorter", "3"),
     "Split": ("logistics", "split", None), "Monitor": ("logistics", "gauge", None),
     "Spray": ("logistics", "spray", None),
+    "Distrib": ("logistics", "distrib", None), "Piler": ("logistics", "piler", None),
+    "PLS": ("logistics", "station", None), "ILS": ("logistics", "station", "★"),
     "Depot 1": ("storage", "box", "1"), "Depot 2": ("storage", "box", "2"),
     "Tank": ("storage", "tank", None),
     "Smelter": ("production", "furnace", None),
@@ -171,6 +173,20 @@ def glyph(d, name, acc):
             circle(d, x + 45, y + dy, 7, fill=acc, outline=acc)
         circle(d, x + 70, y - 5, 6, fill=acc, outline=acc)
         circle(d, x + 70, y + 30, 6, fill=acc, outline=acc)
+    elif name == "distrib":
+        d.rounded_rectangle([x - 45, y - 5, x + 45, y + 65], 10, outline=INK, width=W)
+        line(d, [(x, y - 5), (x, y - 40)], w=8)
+        d.ellipse([x - 55, y - 62, x + 55, y - 38], outline=acc, width=8)
+        line(d, [(x - 20, y + 30), (x + 20, y + 30)], w=8, fill=acc)
+    elif name == "piler":
+        for i in range(3):
+            d.rounded_rectangle([x - 45 + i * 6, y + 30 - i * 38, x + 45 + i * 6, y + 62 - i * 38], 8,
+                                fill=acc if i == 2 else None, outline=INK, width=9)
+        line(d, [(x - 80, y + 75), (x + 80, y + 75)], w=8)
+    elif name == "station":
+        d.polygon([(x - 30, y + 70), (x - 15, y - 30), (x + 15, y - 30), (x + 30, y + 70)], outline=INK, width=W)
+        d.ellipse([x - 70, y - 50, x + 70, y - 10], outline=acc, width=10)
+        line(d, [(x, y - 30), (x, y - 72)], w=8)
     elif name == "box":
         d.polygon([(x, y - 70), (x + 70, y - 35), (x, y), (x - 70, y - 35)], outline=INK, width=W)
         line(d, [(x - 70, y - 35), (x - 70, y + 40), (x, y + 75), (x + 70, y + 40), (x + 70, y - 35)])
@@ -312,7 +328,7 @@ def render(label):
     d.rectangle([0, 0, SIZE, 14], fill=acc)
     glyph(d, name, acc)
     if tier:
-        f = ImageFont.truetype(FONT, 56)
+        f = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 52)
         d.ellipse([SIZE - 86, 26, SIZE - 22, 90], fill=acc)
         d.text((SIZE - 54, 58), tier, font=f, fill=bg, anchor="mm")
     text = label.replace(" >", "").replace("< ", "")

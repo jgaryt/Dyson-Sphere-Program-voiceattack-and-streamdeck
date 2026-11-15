@@ -59,8 +59,8 @@ PAGES = {
         ("Substation", build(1, "F3")), ("Fusion", build(1, "F8")), ("Accum", build(1, "F9")),
         (None, []), (None, []),
         # Row 4: page switch
-        ("< Build", key(("page", 1))), (None, []), (None, []), (None, []),
-        (None, []), (None, []), (None, []), (None, []),
+        ("< Build", key(("page", 1))), ("Distrib", build(6, "F1")), ("Piler", build(6, "F2")),
+        ("PLS", build(6, "F3")), ("ILS", build(6, "F4")), (None, []), (None, []), (None, []),
     ]),
 }
 
@@ -86,6 +86,8 @@ VA_PHRASES = {
     "Replicator": "replicator", "Details": "details display", "Tech": "tech tree",
     "Logistics": "logistics", "Starmap": "starmap", "Planet": "planet",
     "Substation": "substation", "Fusion": "fusion plant", "Accum": "accumulator",
+    "Distrib": "distributor", "Piler": "piler", "PLS": "planetary station",
+    "ILS": "interstellar station",
 }
 
 
