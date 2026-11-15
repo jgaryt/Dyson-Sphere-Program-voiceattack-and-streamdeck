@@ -22,7 +22,7 @@ next time the profile is regenerated and re-imported.
       Then cancel without saving.
 
    Azure voices only show up once Azure text-to-speech is set up in VoiceAttack. If the dropdown
-   has no `[Azure]` entries, set that up first (see VoiceAttack's own help).
+   has no `[Azure]` entries, see [One-time Azure setup](#one-time-azure-setup) below.
 
 2. **Edit the generator.** In `scripts/build_profile.py`, find the `VARIANTS` list near the bottom:
 
@@ -49,6 +49,24 @@ in the default voice or not at all. Check for typos and the `[Azure]` prefix.
 
 To be sure of the exact format, set the voice on one Say action by hand, export the profile, and
 compare it with the generated file.
+
+## One-time Azure setup
+
+From the VoiceAttack forum post "Setting up Azure Services":
+https://forum.voiceattack.com/smf/index.php?topic=5207.0
+
+1. In the Azure portal, create a Speech resource. Open its **Keys and endpoint** page and copy a
+   **key** and the **region**.
+2. In VoiceAttack, go to **Options → TTS** tab, then click **Azure Text-to-Speech Settings**.
+3. Click **Click here to open Azure speech key settings**, enter the Speech Key and Region, and
+   click OK.
+4. Back on the Azure TTS Settings screen, tick **Enable Azure TTS**, set any other options, and
+   click OK.
+5. Azure voices now appear in the Voice dropdown of the **Say Something with Text-To-Speech**
+   action.
+
+Azure text-to-speech is a paid service with a free monthly allowance. Short replies use very
+little of it. Keep the key private, and don't commit it to this repo.
 
 ## Quick change for one session (not saved)
 
