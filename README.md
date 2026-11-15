@@ -7,7 +7,7 @@ actions and panels. It's the button counterpart to the
 the same key map.
 
 **Status:** both versions working on a Stream Deck XL (Stream Deck 7.6.1, Windows). The keys
-version has no Copy button (see below).
+version has no Copy button (see below); the VoiceAttack version does.
 See
 [`docs/layout.md`](docs/layout.md) for every button.
 
@@ -39,12 +39,10 @@ Two pages on a Stream Deck XL (8 × 4 keys):
 
 The bottom-right key of page 1 and the bottom-left key of page 2 switch pages.
 
-**Copy (Shift + left click) is only in the VoiceAttack version,** and is untested there. In the
-keys version its key on page 2 is left empty; use the VoiceAttack "copy" command instead. Stream Deck's built-in actions can't click the mouse, and
-these were tried without success:
-- BarRaider SuperMacro: `{{SHIFT}{LBUTTON}}`, with a higher output delay, and with pauses
-  (`{{SHIFT}{PAUSE:50}{LBUTTON}{PAUSE:50}}`)
-- A VoiceAttack plugin button running the copy command
+**Copy (Shift + left click) works in the VoiceAttack version only.** In the keys version its key
+on page 2 is left empty, because Stream Deck's built-in actions can't click the mouse. BarRaider
+SuperMacro was tried without success: `{{SHIFT}{LBUTTON}}`, with a higher output delay, and with
+pauses (`{{SHIFT}{PAUSE:50}{LBUTTON}{PAUSE:50}}`).
 
 ## How the buttons work
 
