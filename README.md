@@ -2,10 +2,29 @@
 A Voice Attack 2 Profile for Dyson Sphere Program
 
 Say "wind turbine" and the profile opens the Power bar and picks the wind turbine for you, while
-Icarus answers "Deploying wind turbine". It has 50 voice commands: buildings, panels, flying,
+Icarus answers "Deploying wind turbine". It has 59 voice commands: buildings, panels, flying,
 copy, screenshots and more. The full list is in [`docs/hotkey-map.csv`](docs/hotkey-map.csv).
 
 Tested with VoiceAttack v2.2.0.3 on Windows.
+
+## Before you start
+
+You'll need:
+
+- **Windows, and Dyson Sphere Program with its default key bindings.** Every command presses
+  DSP's default keys. If you've rebound a key in the game, the matching command won't work until
+  you rebind it back or change the command.
+- **VoiceAttack 2, full version.** The free trial allows one profile with up to 20 commands, and
+  this profile has 59. VoiceAttack is a one-time purchase from voiceattack.com or Steam.
+- **A microphone and Windows speech recognition.** Running Windows' speech training makes
+  recognition noticeably better.
+- **For the Azure profile only:** an Azure Speech key, set up once in VoiceAttack. See
+  [One-time Azure setup](docs/changing-the-voice.md#one-time-azure-setup). The local-voice profile
+  doesn't need it.
+- **To change the profiles yourself:** Python 3 (see [Making changes](#making-changes)).
+
+Optional: the [Stream Deck profile](https://github.com/jgaryt/DysonSphereProgram-Stream-Deck-Profile)
+puts the same commands on buttons.
 
 ## Quick start
 
