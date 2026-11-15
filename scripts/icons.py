@@ -36,7 +36,8 @@ GROUPS = {
 # label -> (group, glyph, tier badge or None)
 ICONS = {
     "Tesla": ("power", "tesla", None), "Wireless": ("power", "wireless", None),
-    "Wind": ("power", "wind", None), "Thermal": ("power", "flame", None),
+    "Wind": ("power", "wind", None), "Substation": ("power", "substation", None),
+    "Fusion": ("power", "fusion", None), "Accum": ("power", "battery", None), "Thermal": ("power", "flame", None),
     "Solar": ("power", "solar", None), "Geo": ("power", "geo", None),
     "Miner": ("collect", "pick", None), "Pump": ("collect", "drop", None),
     "Oil": ("collect", "oil", None),
@@ -102,6 +103,21 @@ def glyph(d, name, acc):
         circle(d, x, y - 20, 10, fill=INK)
         for r in (35, 60):
             d.arc([x - r, y - 20 - r, x + r, y - 20 + r], 210, 330, fill=acc, width=W)
+    elif name == "substation":
+        line(d, [(x - 35, y + 70), (x, y - 5), (x + 35, y + 70)])
+        circle(d, x, y - 35, 32, outline=acc, w=10)
+        circle(d, x, y - 35, 10, fill=INK)
+    elif name == "fusion":
+        circle(d, x, y, 68)
+        circle(d, x, y, 30, fill=acc, outline=acc)
+        for a in range(0, 360, 45):
+            r = math.radians(a)
+            line(d, [(x + 40 * math.cos(r), y + 40 * math.sin(r)), (x + 55 * math.cos(r), y + 55 * math.sin(r))], w=8, fill=acc)
+    elif name == "battery":
+        d.rounded_rectangle([x - 40, y - 60, x + 40, y + 70], 10, outline=INK, width=W)
+        d.rectangle([x - 16, y - 76, x + 16, y - 60], fill=INK)
+        for i in range(3):
+            d.rectangle([x - 24, y + 40 - i * 32, x + 24, y + 56 - i * 32], fill=acc)
     elif name == "wind":
         line(d, [(x, y + 75), (x, y - 10)])
         for a in (-90, 30, 150):

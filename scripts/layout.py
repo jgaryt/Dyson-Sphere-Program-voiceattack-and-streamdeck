@@ -56,7 +56,8 @@ PAGES = {
         ("Logistics", key("I")), ("Starmap", key("V")),
         # Row 3: views and remaining defence
         ("Planet", key("M")), ("Jammer", build(7, "F8")), ("Signal", build(7, "F9")),
-        (None, []), (None, []), (None, []), (None, []), (None, []),
+        ("Substation", build(1, "F3")), ("Fusion", build(1, "F8")), ("Accum", build(1, "F9")),
+        (None, []), (None, []),
         # Row 4: page switch
         ("< Build", key(("page", 1))), (None, []), (None, []), (None, []),
         (None, []), (None, []), (None, []), (None, []),
@@ -84,6 +85,7 @@ VA_PHRASES = {
     "Mecha": "mecha", "Stats": "statistics", "Inventory": "inventory",
     "Replicator": "replicator", "Details": "details display", "Tech": "tech tree",
     "Logistics": "logistics", "Starmap": "starmap", "Planet": "planet",
+    "Substation": "substation", "Fusion": "fusion plant", "Accum": "accumulator",
 }
 
 
