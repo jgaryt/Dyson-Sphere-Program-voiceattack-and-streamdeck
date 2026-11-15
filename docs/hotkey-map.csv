@@ -33,9 +33,10 @@ Assembling Machine Mk II,5 → F4,5 Production,[build;place;] assembler [two;mar
 Oil Refinery,5 → F6,5 Production,[build;place;] [oil;] refinery,Deploying oil refinery / Constructing oil refinery,Refinery,Confirmed,
 Chemical Plant,5 → F7,5 Production,[build;place;] [chemical;chem] plant,Deploying chemical plant / Constructing chemical plant,Chem,Confirmed,
 Unknown production building,5 → F8,5 Production,,,,Guess,Not the Matrix Lab (labs are in COSMO). Maybe Fractionator or Particle Collider
-Logistics Distributor?,6 → F1,6 Transportation,,,Distrib,Guess,Hover to confirm
-(locked slot),6 → F2,6 Transportation,,,,Locked,
-Planetary Logistics Station?,6 → F3,6 Transportation,,,PLS,Guess,Hover to confirm
+Logistics Distributor,6 → F1,6 Transportation,[build;place;] [logistics;] distributor,Deploying distributor / Constructing distributor,Distrib,Confirmed,
+Automatic Piler,6 → F2,6 Transportation,[build;place;] [automatic;] piler,Deploying piler / Constructing piler,Piler,Confirmed,Stacks items on belts
+Planetary Logistics Station,6 → F3,6 Transportation,[build;place;] planetary [logistics;] station,Deploying planetary station / Constructing planetary station,PLS,Confirmed,
+Interstellar Logistics Station,6 → F4,6 Transportation,[build;place;] interstellar [logistics;] station,Deploying interstellar station / Constructing interstellar station,ILS,Confirmed,
 Gauss Turret,7 → F1,7 Defence,[build;place;] gauss turret,Deploying gauss turret / Constructing gauss turret,Gauss,Confirmed,
 Missile Turret,7 → F2,7 Defence,[build;place;] missile turret,Deploying missile turret / Constructing missile turret,Missile,Likely,Not tested yet
 Implosion Cannon,7 → F3,7 Defence,[build;place;] implosion cannon,Deploying implosion cannon / Constructing implosion cannon,Implosion,Likely,Not tested yet
