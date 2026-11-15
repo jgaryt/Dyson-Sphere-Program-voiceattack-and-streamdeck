@@ -64,6 +64,29 @@ PAGES = {
 }
 
 
+# VoiceAttack phrase for each button, used by the VoiceAttack version of the profile.
+# Each must match a command in the VoiceAttack profile (see scripts/check_va_phrases.py).
+# Page-switch buttons stay native Stream Deck actions.
+VA_PHRASES = {
+    "Tesla": "tesla tower", "Wireless": "wireless tower", "Wind": "wind turbine",
+    "Thermal": "thermal plant", "Solar": "solar panel", "Geo": "geothermal",
+    "Miner": "miner", "Pump": "water pump", "Oil": "oil extractor",
+    "Belt 1": "belt one", "Belt 2": "belt two", "Belt 3": "belt three",
+    "Sort 1": "sorter one", "Sort 2": "sorter two", "Sort 3": "sorter three",
+    "Split": "splitter", "Monitor": "traffic monitor", "Spray": "spray coater",
+    "Depot 1": "depot one", "Depot 2": "depot two", "Tank": "storage tank",
+    "Smelter": "smelter", "Asm 1": "assembler one", "Asm 2": "assembler two",
+    "Refinery": "refinery", "Chem": "chemical plant", "Lab": "matrix lab",
+    "Found": "foundation", "Gauss": "gauss turret", "Missile": "missile turret",
+    "Implosion": "implosion cannon", "Jammer": "jammer tower", "Signal": "signal tower",
+    "Cancel": "cancel", "Upgrade": "upgrade", "Dismantle": "dismantle", "Copy": "copy",
+    "Fly": "fly", "Land": "land", "North": "face north", "Screenshot": "screenshot",
+    "Mecha": "mecha", "Stats": "statistics", "Inventory": "inventory",
+    "Replicator": "replicator", "Details": "details display", "Tech": "tech tree",
+    "Logistics": "logistics", "Starmap": "starmap", "Planet": "planet",
+}
+
+
 def describe(steps):
     out = []
     for s in steps:
