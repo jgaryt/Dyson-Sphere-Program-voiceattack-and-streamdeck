@@ -45,7 +45,7 @@ Free keys are left for buildings that unlock later. See [`docs/layout.md`](docs/
 every button.
 
 **Copy (Shift + left click) works in the VoiceAttack version only.** In the keys version its key
-on page 2 is left empty, because Stream Deck's built-in actions can't click the mouse. BarRaider
+in the bottom row is left blank, because Stream Deck's built-in actions can't click the mouse. BarRaider
 SuperMacro was tried without success: `{{SHIFT}{LBUTTON}}`, with a higher output delay, and with
 pauses (`{{SHIFT}{PAUSE:50}{LBUTTON}{PAUSE:50}}`).
 
