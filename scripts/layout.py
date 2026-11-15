@@ -60,7 +60,8 @@ PAGES = {
         (None, []), (None, []),
         # Row 4: page switch
         ("< Build", key(("page", 1))), ("Distrib", build(6, "F1")), ("Piler", build(6, "F2")),
-        ("PLS", build(6, "F3")), ("ILS", build(6, "F4")), (None, []), (None, []), (None, []),
+        ("PLS", build(6, "F3")), ("ILS", build(6, "F4")), ("Ejector", build(8, "F2")),
+        ("Receiver", build(8, "F3")), (None, []),
     ]),
 }
 
@@ -87,7 +88,7 @@ VA_PHRASES = {
     "Logistics": "logistics", "Starmap": "starmap", "Planet": "planet",
     "Substation": "substation", "Fusion": "fusion plant", "Accum": "accumulator",
     "Distrib": "distributor", "Piler": "piler", "PLS": "planetary station",
-    "ILS": "interstellar station",
+    "ILS": "interstellar station", "Ejector": "rail ejector", "Receiver": "ray receiver",
 }
 
 

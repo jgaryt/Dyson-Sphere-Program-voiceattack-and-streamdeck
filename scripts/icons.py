@@ -54,7 +54,8 @@ ICONS = {
     "Smelter": ("production", "furnace", None),
     "Asm 1": ("production", "gear", "1"), "Asm 2": ("production", "gear", "2"),
     "Refinery": ("production", "refinery", None), "Chem": ("production", "flask", None),
-    "Lab": ("research", "atom", None), "Found": ("foundation", "grid", None),
+    "Lab": ("research", "atom", None), "Ejector": ("research", "ejector", None),
+    "Receiver": ("research", "dish", None), "Found": ("foundation", "grid", None),
     "Gauss": ("defence", "turret", None), "Missile": ("defence", "missile", None),
     "Implosion": ("defence", "cannon", None), "Jammer": ("defence", "jammer", None),
     "Signal": ("defence", "antenna", None),
@@ -217,6 +218,17 @@ def glyph(d, name, acc):
             el = el.rotate(a, center=(x, y))
             d._image.paste(INK, mask=el)
         circle(d, x, y, 14, fill=acc, outline=acc)
+    elif name == "ejector":
+        d.rectangle([x - 60, y + 45, x + 60, y + 65], fill=INK)
+        line(d, [(x - 20, y + 45), (x + 50, y - 55)], w=22)
+        line(d, [(x - 20, y + 45), (x + 50, y - 55)], w=6, fill=acc)
+        circle(d, x + 62, y - 72, 10, fill=acc, outline=acc)
+    elif name == "dish":
+        d.chord([x - 70, y - 75, x + 70, y + 35], 20, 200, fill=None, outline=INK, width=W)
+        line(d, [(x - 10, y - 5), (x + 30, y - 45)], w=8, fill=acc)
+        circle(d, x + 35, y - 50, 10, fill=acc, outline=acc)
+        line(d, [(x, y + 10), (x, y + 60)])
+        line(d, [(x - 40, y + 65), (x + 40, y + 65)])
     elif name == "grid":
         d.polygon([(x - 80, y + 50), (x + 80, y + 50), (x + 45, y - 40), (x - 45, y - 40)], outline=INK, width=W)
         line(d, [(x - 62, y + 5), (x + 62, y + 5)], w=7, fill=acc)
