@@ -11,6 +11,25 @@ version has no Copy button (see below); the VoiceAttack version does.
 See
 [`docs/layout.md`](docs/layout.md) for every button.
 
+## Before you start
+
+You'll need:
+
+- **A Stream Deck XL** (8 × 4 keys) and the **Stream Deck app 7.6 or later on Windows.** The
+  profiles are laid out for the XL and won't fit smaller decks.
+- **Dyson Sphere Program with its default key bindings.** The buttons press DSP's default keys.
+
+For the **VoiceAttack version**, also:
+
+- **VoiceAttack 2, full version**, with the
+  [DSP VoiceAttack profile](https://github.com/jgaryt/DysonSphereProgram-VoiceAttack-Profile)
+  imported and active. The free VoiceAttack trial allows only 20 commands; the DSP profile has 59.
+- **The HCS Stream Deck Connector plugin** from HCS VoicePacks
+  (https://www.hcsvoicepacks.com/products/streamdeck-connector). It appears in Stream Deck as
+  **VA Streamdeck**. It's a paid plugin.
+
+To change the profiles yourself: Python 3 and Pillow (`pip install pillow`).
+
 ## Two versions
 
 Both have the same two-page layout. Pick one:
@@ -18,7 +37,7 @@ Both have the same two-page layout. Pick one:
 | File | How buttons work | Needs |
 |---|---|---|
 | `profiles/DSP Stream Deck XL.streamDeckProfile` | Stream Deck sends the keys itself | Nothing else. Copy isn't included (see below) |
-| `profiles/DSP Stream Deck XL (VoiceAttack).streamDeckProfile` | Each button runs the matching VoiceAttack command, so Icarus replies too | VoiceAttack running with the [DSP VoiceAttack profile](https://github.com/jgaryt/DysonSphereProgram-VoiceAttack-Profile), and the **VA Streamdeck** plugin |
+| `profiles/DSP Stream Deck XL (VoiceAttack).streamDeckProfile` | Each button runs the matching VoiceAttack command, so Icarus replies too | VoiceAttack running with the DSP VoiceAttack profile, and the HCS Stream Deck Connector plugin (see above) |
 
 ## Install
 
