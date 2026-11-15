@@ -50,14 +50,31 @@ in the default voice or not at all. Check for typos and the `[Azure]` prefix.
 To be sure of the exact format, set the voice on one Say action by hand, export the profile, and
 compare it with the generated file.
 
+## The Text-to-Speech options tab
+
+Most voice settings live in VoiceAttack's **Options** (the wrench icon), on the **Text-to-Speech**
+tab. Screens below are from VoiceAttack v2.2.0.3.
+
+| Setting | What it does |
+|---|---|
+| **Override Default Text-to-Speech Device** | Send Icarus to a specific output, e.g. your headset. The default is the Windows playback device. |
+| **TTS Volume Offset** | Volume for all speech. |
+| **Single TTS Instance** | Only one reply plays at a time. Useful if replies pile up when you give commands quickly. |
+| **Click here for the TTS Sound Effects Manager** | Add effects to the voice, such as pitch shift or reverb/delay, for a more robotic Icarus. |
+| **Click here for Azure TTS Settings** | Azure key, region and the Enable Azure TTS switch (see below). |
+
+Sending Icarus to a headset also stops the microphone from hearing him. Together with the
+generator's reply check, that's a second guard against feedback loops.
+
 ## One-time Azure setup
 
-From the VoiceAttack forum post "Setting up Azure Services":
-https://forum.voiceattack.com/smf/index.php?topic=5207.0
+Azure voices need an Azure Speech key in VoiceAttack. Based on the VoiceAttack forum post
+"Setting up Azure Services": https://forum.voiceattack.com/smf/index.php?topic=5207.0
 
 1. In the Azure portal, create a Speech resource. Open its **Keys and endpoint** page and copy a
    **key** and the **region**.
-2. In VoiceAttack, go to **Options → TTS** tab, then click **Azure Text-to-Speech Settings**.
+2. In VoiceAttack, open **Options** (wrench icon) → **Text-to-Speech** tab, then click
+   **Click here for Azure TTS Settings**.
 3. Click **Click here to open Azure speech key settings**, enter the Speech Key and Region, and
    click OK.
 4. Back on the Azure TTS Settings screen, tick **Enable Azure TTS**, set any other options, and
