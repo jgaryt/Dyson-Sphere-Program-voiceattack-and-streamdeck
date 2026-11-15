@@ -68,7 +68,7 @@ ICONS = {
     "Details": ("panel", "eye", None), "Tech": ("panel", "tree", None),
     "Logistics": ("panel", "route", None), "Starmap": ("panel", "star", None),
     "Planet": ("panel", "planet", None),
-    "Actions >": ("nav", "next", None), "< Build": ("nav", "prev", None),
+    "Next": ("nav", "next", None), "Prev": ("nav", "prev", None),
 }
 
 C = SIZE // 2           # glyph centre x

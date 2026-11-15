@@ -31,13 +31,18 @@ Both have the same two-page layout. Pick one:
 
 ## Layout
 
-Two pages on a Stream Deck XL (8 × 4 keys):
+Three pages on a Stream Deck XL (8 × 4 keys). The **bottom row is the same on every page**: Cancel,
+Upgrade, Dismantle, Copy, Fly, Land, then ◀ Prev and Next ▶. Prev is blank on page 1 and Next on
+page 3.
 
-- **Page 1, Build:** every confirmed building, from Tesla Tower to Implosion Cannon.
-- **Page 2, Actions:** cancel, upgrade, dismantle, copy, fly, land, face north, screenshot, the
-  panels and views, plus Jammer and Signal Tower.
+| Page | Row 1 | Row 2 | Row 3 |
+|---|---|---|---|
+| 1 | Power | Accumulator, collecting, storage | Logistics (belts, sorters, splitter, monitor) |
+| 2 | Production and COSMO | Transport, spray coater, foundation | Defence |
+| 3 | Panels | Planet, North, Screenshot | Free |
 
-The bottom-right key of page 1 and the bottom-left key of page 2 switch pages.
+Free keys are left for buildings that unlock later. See [`docs/layout.md`](docs/layout.md) for
+every button.
 
 **Copy (Shift + left click) works in the VoiceAttack version only.** In the keys version its key
 on page 2 is left empty, because Stream Deck's built-in actions can't click the mouse. BarRaider
