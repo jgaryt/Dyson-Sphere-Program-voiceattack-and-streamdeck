@@ -85,10 +85,28 @@ Azure voices need an Azure Speech key in VoiceAttack. Based on the VoiceAttack f
 Azure text-to-speech is a paid service with a free monthly allowance. Short replies use very
 little of it. Keep the key private, and don't commit it to this repo.
 
-## Quick change for one session (not saved)
+## Changing the voice inside VoiceAttack
 
-To try a voice without touching the repo, edit a command in VoiceAttack, double-click its **Say**
-action and pick a voice. This changes only that one command, and it's lost on the next re-import.
+This works for Azure and Windows voices alike:
+
+1. With the profile loaded, click the **edit** (pencil) icon next to the profile name.
+2. Select a command and click **Edit** (top right of the Edit a Profile screen).
+3. In the action list, highlight the line that begins with **Say**.
+4. Click **Edit**.
+5. In **Say Something with Text-To-Speech**:
+   - **Voice** chooses the voice, e.g. `[Azure] Grant MAI-Voice-2.1-Flash (en-US)`.
+   - **Effect Set** applies a sound effect set (pitch, reverb/delay and so on). The **…** button
+     next to it edits effect sets and creates new ones.
+   - **Preview** plays it.
+6. Click OK on each screen.
+
+**This changes one command at a time.** Every command has its own Say action, so you'd have to
+repeat this for all of them. The dialog also has a **Mass update** checkbox, which may apply the
+change to more Say actions at once; check VoiceAttack's help before relying on it.
+
+Changes made here are also lost the next time the generated profile is imported. To change the
+voice everywhere for good, change it in the generator (above). Use this method to try voices out
+and note the exact name.
 
 ## Changing the local (Windows) voice
 
