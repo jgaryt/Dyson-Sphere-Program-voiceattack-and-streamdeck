@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <HasMB>false</HasMB>
-  <Id>358a03a1-37b6-4ed0-8164-210a5f3ca7f0</Id>
+  <Id>42c57a62-7dc5-424c-85cd-0e7eee952d9a</Id>
   <Name>Dyson Sphere Program - Build Hotkeys</Name>
   <Commands>
     <Command>
-      <Id>239f5e05-82d0-4813-ad91-6642a95f4237</Id>
-      <BaseId>86a363fd-c842-47b4-bdcc-2f023b785816</BaseId>
+      <Id>de795baf-fe55-4cd6-9d93-abb4560ded5f</Id>
+      <BaseId>e2738b7f-8760-4f40-9486-8df4a861b83a</BaseId>
       <CommandString>[build;place;] tesla tower</CommandString>
       <Description>Tesla Tower: 1 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>6f199a3c-30d4-4edc-a0ac-0d998b948839</Id>
+          <Id>76baf443-7878-496a-9f06-075c425a7222</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -25,7 +25,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>4ad38550-9bfa-48a9-8041-771eb09e9329</Id>
+          <Id>3b3b6e2c-fa8e-40ca-b2d0-6829e84dc3a6</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -35,7 +35,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>e1872529-7f96-4b0e-bfd9-66958a1654da</Id>
+          <Id>707d24ab-4174-4d28-998e-96cfdaaf701d</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -45,7 +45,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>a17e87f9-e4d1-40ef-bdfa-f1bc2fecbe5b</Id>
+          <Id>134cfb46-7dde-405a-ba1a-c0ae050d7123</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -55,7 +55,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>f82876d2-ef52-4233-87b0-61b564b5d046</Id>
+          <Id>3cd31ddd-04f3-4ceb-88fa-7447e6616b64</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -65,7 +65,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>ff10cb39-8a2e-490f-ba71-893cfede884b</Id>
+          <Id>4ef98d2f-3bee-453d-92ec-99a48cfb7027</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -83,14 +83,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>47d18b5f-8614-402f-bb06-1b624d6ec88c</Id>
-      <BaseId>4878ea01-f64b-4657-b219-e551eb3f7adb</BaseId>
+      <Id>b64cc28c-1d43-42db-8496-799d93fa99a1</Id>
+      <BaseId>b53efc3d-93a9-4983-9813-4bc4e629b030</BaseId>
       <CommandString>[build;place;] wireless [power;] tower</CommandString>
       <Description>Wireless Power Tower: 1 then F2</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>fbea0a37-e645-4b5d-98c8-34da44991b79</Id>
+          <Id>e6bb0276-c83f-47ef-bec3-0d002eac5901</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -103,7 +103,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>7ade3c22-8db1-40e7-b465-ad98a84add1a</Id>
+          <Id>6ab1022a-d447-437e-a457-bfc22f50171b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -113,7 +113,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>c1342b4c-bb5d-4203-8693-69e1e510abdb</Id>
+          <Id>41b96d79-6f24-40eb-89a4-d16e9b85a000</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -123,7 +123,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>7b72079f-fe4d-415b-ac07-0c2e56428967</Id>
+          <Id>edcce359-0ebd-46da-8804-e396c43716e1</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -133,7 +133,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>980c8a5c-77a7-416a-be61-67ec80f2eca8</Id>
+          <Id>2c9d08e1-8f6e-47c1-a766-2dcd5c58db1e</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -143,7 +143,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>74663e93-6db9-4673-8976-b883ffbbb2bb</Id>
+          <Id>fb0cd890-2325-4ae8-a7b0-338e560a426b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -161,14 +161,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>64a31349-6549-4696-8623-3aa463838b9f</Id>
-      <BaseId>f0182564-3a90-4ccd-8033-139de467534c</BaseId>
+      <Id>fffd7b93-b80a-454e-b831-fce1b2b46a15</Id>
+      <BaseId>3a111123-4890-4758-9936-46ab834a9d8b</BaseId>
       <CommandString>[build;place;] wind turbine</CommandString>
       <Description>Wind Turbine: 1 then F4</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>c47d658f-1e35-43ea-a51a-32b66fc20d4f</Id>
+          <Id>f40a9e10-86f8-4ed4-96b7-c1479e3cbe42</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -181,7 +181,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>0f6852ef-ea42-41c1-b9c1-dcc16b3c012f</Id>
+          <Id>1b31e84a-fce1-41ac-8112-54eb8b52f50d</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -191,7 +191,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>0d2e1841-9d6d-4710-b19c-305f989439ae</Id>
+          <Id>29cd4035-a935-4f70-98e9-5b528e8ff57f</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -201,7 +201,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>4511db44-8fdb-4e4d-8982-7f02ebf5dc8d</Id>
+          <Id>b49803a1-c60d-4c93-bae7-1931e74fedfe</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -211,7 +211,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>3c95bd91-8cf6-4a12-8369-fe20d4f3b417</Id>
+          <Id>e0b49a0c-2cd8-4e3b-970c-d68c52bef06e</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -221,7 +221,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>e989b05a-6685-4292-a3f1-818f5765dbeb</Id>
+          <Id>4ae57ce4-a1af-499a-bfb6-973f1852acac</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -239,14 +239,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>778ab64c-c90b-43e7-bd08-2630a7207951</Id>
-      <BaseId>18c872a5-4f03-4d37-9d6b-cd4365342398</BaseId>
+      <Id>55629fd1-e61b-4736-93f6-def1a4351297</Id>
+      <BaseId>6d472167-59f3-438c-bbd7-cd737b72ef58</BaseId>
       <CommandString>[build;place;] thermal [power;] plant</CommandString>
       <Description>Thermal Power Plant: 1 then F5</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>b71a4c7c-fbe7-45b1-a4b9-9d6b9f99873d</Id>
+          <Id>ab9ee546-dc2f-4ab5-9a32-e5e690170042</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -259,7 +259,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>f404b20e-8b67-40c1-bded-b2e03b86a08e</Id>
+          <Id>de958654-aab0-4041-8cdc-4e71ca57310b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -269,7 +269,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>12cd91e1-50dc-4a4e-b736-07662d197029</Id>
+          <Id>6f79b45a-43c3-4dfe-a3bd-d56823f89439</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -279,7 +279,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>315382a4-6a7c-47bf-9772-74c5adda6aea</Id>
+          <Id>c17daf87-00d3-43aa-976f-277bd8cea804</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -289,7 +289,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>49e1f425-5571-4d08-8272-c79126b06a51</Id>
+          <Id>a33afa02-e326-47d7-a64c-402234c1ba7a</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -299,7 +299,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>ae2d2f65-da36-4ac7-8198-0e92473e05a8</Id>
+          <Id>732ce899-69c4-4c96-8723-906486f428dc</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -317,14 +317,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>06f14669-c2d2-481c-bc3a-38fcc958952e</Id>
-      <BaseId>371a2c80-2756-4d50-a6a2-9b8924238fa0</BaseId>
+      <Id>9b14b2d3-e1ef-4531-a457-d9f1d022b644</Id>
+      <BaseId>e6dafed8-1a3a-441c-8943-1dfc25078691</BaseId>
       <CommandString>[build;place;] solar panel</CommandString>
       <Description>Solar Panel: 1 then F6</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>75971490-049f-45db-aded-f7b8597e4bd2</Id>
+          <Id>074d8271-8b09-47af-b4b3-ada20096405f</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -337,7 +337,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>a4a453a8-8320-4b13-b8cc-38e554fbd813</Id>
+          <Id>0222649d-a605-44bc-a823-abd42629beda</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -347,7 +347,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>2b889bce-d102-4f6a-bbb1-35533d5a153a</Id>
+          <Id>7390e8e3-5d08-46cc-9554-4d39bd7a8191</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -357,7 +357,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>8dd3c0ea-c09b-43be-8b5f-659169adadf0</Id>
+          <Id>084d5044-2630-4cb1-9056-2015cbd9daa1</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -367,7 +367,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>084a2721-53a0-49da-ae8d-7ed212e72988</Id>
+          <Id>eb8e1985-f435-4e42-b718-336e2d5872da</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -377,7 +377,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>a564d2fb-da26-4820-80e6-cce1d5f0f7e1</Id>
+          <Id>bd050421-1a20-4541-88a0-321971aeefa5</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -395,14 +395,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>54069882-3bb3-4323-9f22-3c5b2a65cb3e</Id>
-      <BaseId>68dc01b4-612d-46cc-bbaf-72f498289433</BaseId>
+      <Id>7598a1e6-f2d9-4a70-b2ad-b39023e4c3a5</Id>
+      <BaseId>b7256b22-7b6a-492e-b1bd-614676117817</BaseId>
       <CommandString>[build;place;] [satellite;] substation</CommandString>
       <Description>Satellite Substation: 1 then F3</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>2254bee8-d022-494c-adab-c70109df0175</Id>
+          <Id>fff59ecf-0f15-4cf4-a0f4-381e22090314</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -415,7 +415,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>6f3a6389-5dae-4376-b88e-f01194ad7a79</Id>
+          <Id>7302372e-9511-4717-b261-fe540b3f259c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -425,7 +425,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>63f391bc-a787-4ed0-9653-fd655602b871</Id>
+          <Id>23f6078a-7939-4142-ae7f-ca32df7f2916</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -435,7 +435,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>ef589a93-81ca-4fca-8f45-6fa3f91b71ba</Id>
+          <Id>6c41524e-2439-4d03-8341-fa511f1f9208</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -445,7 +445,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>037a13b1-767e-4d89-ac82-1c5b303e2285</Id>
+          <Id>476f9c8c-66bd-4974-860b-0a2fb40d13e0</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -455,7 +455,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>28023e4d-1793-4528-951d-bc7931dcfe41</Id>
+          <Id>f8ddec84-6b4b-4ad9-90ce-365b3f1f7f67</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -473,14 +473,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>c7448991-1d8c-4374-953c-e067e3d15b83</Id>
-      <BaseId>519790fd-bf5c-458c-bf7d-749e39af2e48</BaseId>
+      <Id>4ae82679-4c48-4b1f-8acd-4579d6174c39</Id>
+      <BaseId>8fecdc5b-a2d3-4be7-8b53-0a263b85e273</BaseId>
       <CommandString>[build;place;] geothermal [power station;station;]</CommandString>
       <Description>Geothermal Power Station: 1 then F7</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>96de0211-dfcd-45c3-8cfd-472b1533dc0e</Id>
+          <Id>17e21cd9-f006-4f5b-9fa6-c0e78f83d8b3</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -493,7 +493,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>a006df94-120a-4874-a241-e182875036fc</Id>
+          <Id>571d5518-800e-4898-a6de-a75a57025385</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -503,7 +503,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>bd92ad7b-b0ba-4d34-b9d4-a92b8dd5e344</Id>
+          <Id>f5e75ef6-ea07-4b21-be14-d7c9629d2da4</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -513,7 +513,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>a53bc9ea-adad-4a92-a5bc-a683ccae3a73</Id>
+          <Id>fb5aecb0-f687-486d-9a87-c19c27b427d0</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -523,7 +523,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>8deadf77-3363-445c-8db9-13914b652579</Id>
+          <Id>4359b277-8325-48a3-831c-f8480192bae0</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -533,7 +533,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>198db0e8-aa2c-48f0-ba9b-2ebf436fb91c</Id>
+          <Id>2ccfe978-0b2e-48e1-ae2f-d6aa153215d0</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -551,14 +551,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>d456b899-d961-4a36-911e-5784238f3f7f</Id>
-      <BaseId>06c781f0-cec6-40ea-a03c-8494ac844d45</BaseId>
+      <Id>0599e702-117d-4e7c-ad09-f1403dba249b</Id>
+      <BaseId>88388fd4-e826-4a34-bfb1-2766043dc137</BaseId>
       <CommandString>[build;place;] [mini fusion;fusion] [power plant;plant;reactor;]</CommandString>
       <Description>Mini Fusion Power Plant: 1 then F8</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>526bc30d-7ff4-4e2f-bc36-37750510c34a</Id>
+          <Id>c363f035-b821-43b7-b695-b399a6a0f7e2</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -571,7 +571,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>c8023201-05c2-473e-ab82-9247a03ef1fc</Id>
+          <Id>f0cab5a7-0f82-4466-a412-4ed777c44d01</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -581,7 +581,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>cd84cdd8-e582-4fb6-a623-ccce9626aa4a</Id>
+          <Id>90d66584-73e4-4d2d-a1ee-f497c365f598</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -591,7 +591,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>51e58751-dbef-4bb4-9641-8702127d57f4</Id>
+          <Id>3dd14813-c9f0-46af-8f78-5f7c5acb081b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -601,7 +601,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>a9785f96-075f-487f-b7e4-12274d0453ca</Id>
+          <Id>685ae232-6058-4244-a0d5-9e1f25ce7cd3</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -611,7 +611,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>cf40b784-7ad4-4299-b75d-e347c9bc27dc</Id>
+          <Id>6bfd1298-458c-4e54-ad25-802163481fcd</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -629,14 +629,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>8d45f3a0-1d34-4f0e-a7df-1e8ca4cd8794</Id>
-      <BaseId>e871ce16-5d4a-47fc-ba16-8bb8a4e45fd1</BaseId>
+      <Id>7ad27aa4-18d0-4a5a-aebb-33dbdd6c3ab8</Id>
+      <BaseId>9d4615fb-be62-45d4-8353-4e296ce6a910</BaseId>
       <CommandString>[build;place;] accumulator</CommandString>
       <Description>Accumulator: 1 then F9</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>5cfb09f9-45d6-4eb7-baf7-3a7b4dc714f8</Id>
+          <Id>690960ef-5cb6-4d33-af75-cd900d5e1b77</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -649,7 +649,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>6437c9b7-5258-4c26-99f1-a1ef2dc59842</Id>
+          <Id>9fe03513-0272-4fb9-932c-1cba9fb5972c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -659,7 +659,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>c05ce836-9585-4e49-907b-46fc4780cb2d</Id>
+          <Id>278902ae-683f-4dfb-962f-92aedf8507ec</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -669,7 +669,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>2d9a2ea0-3095-4353-8b2f-217bded7131d</Id>
+          <Id>a09dd477-21c1-4ffc-8e62-f0389ec18b88</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -679,7 +679,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>cea44c2d-1d17-41c7-a609-eefb3cefe37f</Id>
+          <Id>f7287184-a572-4a40-9c5c-78d6299e2224</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -689,7 +689,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>7bd3d3b4-98ec-4a8c-af09-424bb71526cd</Id>
+          <Id>064dd203-4a7d-4661-8497-d0035e89f54b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -707,14 +707,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>76d50d8e-f86b-4c47-9976-6a082cd7ab97</Id>
-      <BaseId>cbf71559-41a6-4eaf-8e3e-2935667a9f25</BaseId>
+      <Id>756cd999-a30b-46b3-b889-22c682ef1c27</Id>
+      <BaseId>3643dc65-af80-4f95-9f64-8a43074bf411</BaseId>
       <CommandString>[build;place;] [mining machine;miner]</CommandString>
       <Description>Mining Machine: 2 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>40385898-fc12-4a15-946a-ad6b7ccf6008</Id>
+          <Id>2ec17da4-4407-499a-a47d-8d7e9fa1f448</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -727,7 +727,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>a88ba7cd-2bb2-45c4-b16c-ea701e0421b1</Id>
+          <Id>44f404ee-07ba-490c-a152-4607f6d76ab1</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -737,7 +737,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>57ac17f4-7d33-4a92-a17f-3e85ab2a9a58</Id>
+          <Id>327ccab0-693b-427e-92a1-679ec0691d9b</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -747,7 +747,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>5a9e1f9b-668c-4a6e-9d7a-bd105003dde6</Id>
+          <Id>489dd6a5-bd71-473b-8e31-8888a549c394</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -757,7 +757,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>56b106c5-a932-4220-9bad-c35558a48b35</Id>
+          <Id>fc11aff6-d785-4365-b833-aba427b2597f</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -767,7 +767,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>e372f504-8476-40e9-9353-9f3cfa57429e</Id>
+          <Id>1d454357-195e-4aee-9d99-e304d8744975</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -785,14 +785,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>76fb4027-8817-4345-92a7-e5f7202eefe8</Id>
-      <BaseId>e0eac75d-d060-4e51-af7b-2648c41a91eb</BaseId>
+      <Id>f824775b-c36a-49f6-900b-c4f752bc346a</Id>
+      <BaseId>4feb8993-e1e9-4f66-91b1-c44a83a893b7</BaseId>
       <CommandString>[build;place;] water pump</CommandString>
       <Description>Water Pump: 2 then F3</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>ed0cb467-5ec7-43d1-820b-0513d439ac4c</Id>
+          <Id>086f9e9c-f42f-45af-a34d-ed063264be61</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -805,7 +805,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>2df9b186-8f25-4af4-a91b-3f3ababf8eb3</Id>
+          <Id>61cdd5aa-67d6-4e14-aee2-7451a4a4f4e8</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -815,7 +815,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>b5d67588-3991-40f1-98a1-d56084b5a835</Id>
+          <Id>2720f81c-8da0-405f-a112-e1f293bb4eb6</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -825,7 +825,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>f06d34d9-3021-44f1-afe8-1921720ec849</Id>
+          <Id>ccb34a03-584b-4b9a-a8ab-bfed49f8182b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -835,7 +835,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>6cf8ca43-1f91-4b17-9f3d-465c5f35d5de</Id>
+          <Id>0009e799-755d-4500-8b4f-29842675733e</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -845,7 +845,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>ffceb6e4-c073-44e2-99e6-a8bb55a80093</Id>
+          <Id>6799d177-d87d-4ad9-9471-7169d42fda97</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -863,14 +863,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>b493a179-c286-482a-800b-d50ca5b4349e</Id>
-      <BaseId>42f2a1e9-0887-4515-aca7-8c6eccafaaba</BaseId>
+      <Id>d8ed165e-fb33-435b-b539-26fa59f52383</Id>
+      <BaseId>59cc66e3-97a8-48b2-8069-c07d893c38a1</BaseId>
       <CommandString>[build;place;] oil extractor</CommandString>
       <Description>Oil Extractor: 2 then F4</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>af922f9a-a0a5-4532-9dc3-c4ebdfc9f0d2</Id>
+          <Id>77701d7e-892b-4160-848b-0f166f3da100</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -883,7 +883,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>1ef732c6-8292-48c6-9f43-0ebd17a04065</Id>
+          <Id>9d598ae0-327c-48ab-bcb0-1a52cdfd4ba7</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -893,7 +893,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>e144df26-4b6d-4d56-ab8d-c0d798f9d000</Id>
+          <Id>6cc7951c-9ae8-46ef-ba56-defa5b8b6dae</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -903,7 +903,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>c032b7f7-c804-4ed5-8fd8-f6d514563319</Id>
+          <Id>4b6de647-01d0-43b2-a64a-dc35596274d2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -913,7 +913,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>cc233d83-b479-426c-b4fa-6f25ca5daae3</Id>
+          <Id>dfc125dd-f259-436c-9a51-e4f9b9143789</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -923,7 +923,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>32d66bab-2e80-4a11-b7ac-1c03db973016</Id>
+          <Id>f097176b-ba85-4826-8515-34753b432dc9</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -941,14 +941,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>c9e8e67c-1bdb-415b-8c2a-a856e4e72406</Id>
-      <BaseId>2eaec044-a9b6-4b7c-8ad9-0426b82aabee</BaseId>
+      <Id>69d3982d-642e-4ec9-933b-037e8ed9c18d</Id>
+      <BaseId>a6fdd124-56bd-4c82-b782-3d32aa2c5e99</BaseId>
       <CommandString>[build;place;] [conveyor belt;conveyor;belt] [one;mark one]</CommandString>
       <Description>Conveyor Belt Mk I: 3 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>c7e0d349-5211-4fd9-a0be-670bed4c0938</Id>
+          <Id>4ba6b252-49bf-4246-8a5d-108966ab1932</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -961,7 +961,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>9e43b903-f1b0-45b2-a15c-e3fe24a35950</Id>
+          <Id>68566d05-0b3c-42a0-b5f4-d0fb4997a1cf</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -971,7 +971,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>c95601ed-89a1-4569-8123-e68f30fed402</Id>
+          <Id>07736e95-0afd-4ffe-ab1a-05b8125f050b</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -981,7 +981,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>cfafd559-a6c2-464b-aa2c-773a70a26835</Id>
+          <Id>87cc0644-6f21-46d9-b42d-719689546c18</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -991,7 +991,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>8d7b444b-8f69-4fe2-8e48-30004b9b3ac2</Id>
+          <Id>e334d8ee-32d3-4e62-b4ed-48a33bf8ce80</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1001,7 +1001,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>06604df0-f2d8-4343-ba63-cf3ca5fc43cd</Id>
+          <Id>aa96df4f-7fcc-49b6-83b5-93d50e9fdf8a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1019,14 +1019,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>6fc33175-f799-46ed-a00d-dbcef12c8bcb</Id>
-      <BaseId>69d801f5-2862-4fbb-8579-3d112424868f</BaseId>
+      <Id>1ac6c7fe-2224-4bb3-8abc-7c2d79bd7158</Id>
+      <BaseId>a263b1c7-5497-4e50-9252-9d2ce9ce91f9</BaseId>
       <CommandString>[build;place;] [conveyor belt;conveyor;belt] [two;mark two]</CommandString>
       <Description>Conveyor Belt Mk II: 3 then F2</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>6fbf3a2d-0745-4e9a-8bcc-1bcb2c4bac89</Id>
+          <Id>4a4aad13-df0b-43a1-a91a-a0ef0041233e</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1039,7 +1039,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>962fe677-f821-42c8-87c5-7499fda68252</Id>
+          <Id>34cd14db-91f7-4ab0-b745-fd90fe18bebe</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1049,7 +1049,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>3e321f24-15b7-47d2-9902-421c8b26de4d</Id>
+          <Id>eb1d93fe-e811-4e00-92cb-f652b22ba6d2</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1059,7 +1059,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>ff068667-bff2-4649-bdb7-59914b994436</Id>
+          <Id>c702047f-82e1-4e33-ae50-b25cf8938025</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1069,7 +1069,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>c3839bd0-bd23-4b17-81a1-369bdf57c59d</Id>
+          <Id>a47796fa-8251-496d-9178-9b2541a21614</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1079,7 +1079,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>f854967f-1d31-4ba4-bd38-826c153c0aa2</Id>
+          <Id>f7f68268-5413-40ab-99d3-f17a1d8cdbce</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1097,14 +1097,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>3ce397a2-1f23-4bab-9ef5-28d1f977b50a</Id>
-      <BaseId>527a34bd-bc30-40ad-a8b3-7cb593a04fdd</BaseId>
+      <Id>2d051bd6-0499-4297-93ca-9dd608e707ef</Id>
+      <BaseId>1e57fbca-f416-4a95-b956-2002997528b0</BaseId>
       <CommandString>[build;place;] [conveyor belt;conveyor;belt] [three;mark three]</CommandString>
       <Description>Conveyor Belt Mk III: 3 then F3</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>ae3075ae-02a0-41e1-bf77-b5a4f5ddf2bb</Id>
+          <Id>f545b1ee-255a-45ae-94c2-12bd5c172367</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1117,7 +1117,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>1f9c78f0-0c8f-4480-a534-82f0c98cb34c</Id>
+          <Id>1cfd084a-f04a-4741-8237-22aa664a26d9</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1127,7 +1127,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>64058cc4-cb83-42e1-b0a8-3aa9525d6de1</Id>
+          <Id>272ce3bb-86a9-4db5-aeb7-030655cf965c</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1137,7 +1137,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>6c72f51d-767f-477b-80d3-fcd201ff7a46</Id>
+          <Id>b735443a-8a76-41a4-ae83-8dc91003d2d2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1147,7 +1147,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>180b3914-f6c4-451c-b8e9-d8c95fff9d09</Id>
+          <Id>ec52620d-f528-4c38-9e12-24a1fde551b7</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1157,7 +1157,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>604e5999-4acb-400c-b764-14169d32b332</Id>
+          <Id>428b9366-56fa-43f6-b1e7-9295aa9f9559</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1175,14 +1175,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>edcb5972-30b6-498a-bdd0-fca54b70ba37</Id>
-      <BaseId>ad0f9e7d-48ea-472e-99ca-9e766077d997</BaseId>
+      <Id>72735a8b-7d0a-4493-8efa-2cfec6e31a63</Id>
+      <BaseId>5c65705f-f654-40b6-aebb-dcd3fc54c712</BaseId>
       <CommandString>[build;place;] sorter [one;mark one]</CommandString>
       <Description>Sorter Mk I: 3 then F4</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>e0712a1c-0311-44c0-921a-ae75e0d6c8a8</Id>
+          <Id>3405ec8c-ce6f-4996-be1f-aad3c0a8aac4</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1195,7 +1195,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>c911368d-f392-4c97-9db1-a166c0ef843d</Id>
+          <Id>a13f899b-6ede-41fe-a38e-345622b94f01</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1205,7 +1205,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>4c730f5c-2ce0-4900-9b06-d014e5e22a5c</Id>
+          <Id>138d8cfe-98ad-4aa0-985b-79828e3a5317</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1215,7 +1215,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>35a45bcc-f7c3-4675-b68f-8095b573c64e</Id>
+          <Id>f67c4203-79c6-439a-9bce-c90ac78741ee</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1225,7 +1225,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>9a8a1f4b-c9ba-400f-9f91-92faf1c9779d</Id>
+          <Id>2c616be8-58d9-4451-97e6-b76877936615</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1235,7 +1235,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>c1f3003c-e49d-46e0-ab2e-020af8ca99c2</Id>
+          <Id>51948964-c2c2-438f-841e-a23e6203fee7</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1253,14 +1253,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>fb9b0ea5-f086-49a4-8b73-b99108fdf6b6</Id>
-      <BaseId>1fa82fa4-ebdb-4d9f-aebe-8f32e5cdc4ae</BaseId>
+      <Id>26711cd2-a741-4c66-a211-4d969da0557f</Id>
+      <BaseId>b1e714a8-28ad-4758-9291-d0b037ae36b3</BaseId>
       <CommandString>[build;place;] sorter [two;mark two]</CommandString>
       <Description>Sorter Mk II: 3 then F5</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>03418970-db28-4d7a-9e66-b8996f13bc81</Id>
+          <Id>8763da34-a26e-423a-9f5e-b50d63f2a31e</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1273,7 +1273,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>d52d95f9-d3c0-489c-9dcc-c4fd9047b8ce</Id>
+          <Id>fc2b7fe9-9c77-40b1-8bdf-7053c739c3d7</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1283,7 +1283,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>e4860492-1090-4bb5-9f60-6689d87623e2</Id>
+          <Id>a9f5ae96-189b-42b8-959d-627e07348fda</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1293,7 +1293,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>064b64c9-17c9-483e-990e-78c8df6dd64a</Id>
+          <Id>e97331ee-ee04-4045-9770-6c2041c8687c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1303,7 +1303,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>bd6e27bb-faca-46f4-b245-ef80442c077e</Id>
+          <Id>114d217c-eedf-4f3f-977a-01a255a267be</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1313,7 +1313,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>1b40150e-7d66-4b7b-a9d0-9bd5cabf2ae8</Id>
+          <Id>8004124f-20a7-44dc-a9e2-5aaea2844b37</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1331,14 +1331,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>01812b2e-07c0-4c8e-b64d-d8e3ca0eaf0f</Id>
-      <BaseId>ea529964-b32f-42d0-8a5f-43b80e989e7e</BaseId>
+      <Id>344c431e-d9a3-47f9-b28e-ac5b6ca9a6bb</Id>
+      <BaseId>807b14a2-698a-42c7-94e7-362579d35b64</BaseId>
       <CommandString>[build;place;] sorter [three;mark three]</CommandString>
       <Description>Sorter Mk III: 3 then F6</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>83878ae5-36c4-4124-8ec5-cf5d66bc9acb</Id>
+          <Id>93aea821-6ed9-48c4-ae58-e3d7c3687df1</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1351,7 +1351,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>c4181bf9-f087-43d4-8457-1f55f6b95a93</Id>
+          <Id>9a1bbb42-e3b4-4c1b-a031-4dc25a11385b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1361,7 +1361,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>a3533276-d9c7-46d3-91aa-6135e2d3fe0f</Id>
+          <Id>0d94af36-8115-4838-bf4a-e9ad4db9d4e2</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1371,7 +1371,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>7dc86169-c12d-4da2-834d-38be872eb76a</Id>
+          <Id>25f0ab3a-95c7-497b-aaca-46f99b993342</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1381,7 +1381,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>2e2104dc-db18-4382-a811-e7c48fb96d68</Id>
+          <Id>2af3b59c-c34b-4fc9-bdbc-c694c6d3880e</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1391,7 +1391,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>98836527-c899-4452-8b05-740ecf41afa3</Id>
+          <Id>3427f1da-a507-4439-800f-39230cba1c01</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1409,14 +1409,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>d3a50562-09ea-46a1-b19e-a11aa2249890</Id>
-      <BaseId>c6c74e6c-9211-49fd-894a-4264590c267f</BaseId>
+      <Id>dfc35a41-6d0e-4f30-a56e-1f2275bfae2d</Id>
+      <BaseId>7349ae5a-5879-4e77-9ce5-62c1d2916f1a</BaseId>
       <CommandString>[build;place;] splitter</CommandString>
       <Description>Splitter: 3 then F8</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>4b85daa4-22cf-43d4-83e7-1a011f8d28c9</Id>
+          <Id>0dbb5196-cab3-49d7-aacc-1b36c13d0174</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1429,7 +1429,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>a2d9d29e-cf31-48b5-98f7-5c0440e68698</Id>
+          <Id>5bfcce29-2009-4cab-b145-213f43227e3c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1439,7 +1439,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>dad6fff3-5343-4de0-bccc-40ac3d41c100</Id>
+          <Id>f92bac14-c4ad-4e02-a8f7-d80f6522d4d3</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1449,7 +1449,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>e6d0f296-1c3a-4944-b1ec-1b1eb3b3b610</Id>
+          <Id>14df0f82-1e7f-476f-9fa3-6f506a9fdfb3</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1459,7 +1459,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>4b4a2b8b-95de-410c-af15-d7b38f0ded2e</Id>
+          <Id>5ae06740-cefb-4f8d-badd-74e4a3cf1bb8</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1469,7 +1469,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>f209b685-d2cb-4266-8c6d-25edb8b54386</Id>
+          <Id>d87080aa-2266-459e-93bf-890620be0e0b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1487,14 +1487,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>b8312dd4-f14d-40a2-b444-9a68137a79b6</Id>
-      <BaseId>4c71f088-ea42-4af1-8bf7-bf7f294633d5</BaseId>
+      <Id>c8142ee5-df0f-4734-bcf8-e6c842259e4e</Id>
+      <BaseId>88a56292-ff7a-4cb9-b9be-882a2a875d0b</BaseId>
       <CommandString>[build;place;] traffic monitor</CommandString>
       <Description>Traffic Monitor: 3 then F9</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>680dde5e-8d7a-4f85-979f-bf4fad8b445d</Id>
+          <Id>90e4abf6-4a67-42d2-818f-e6d225394a89</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1507,7 +1507,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>dc6f847b-883a-4141-914b-72763a2c45c6</Id>
+          <Id>613bfc6f-cf31-4959-93c2-3671ce11d999</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1517,7 +1517,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>42db1288-3ec2-4f9b-9736-e83a012dd743</Id>
+          <Id>35c43e1a-7c6d-45e2-ae3e-0a5522e5d0cb</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1527,7 +1527,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>05c82950-db37-497c-bef1-adadba05bace</Id>
+          <Id>97ea44d0-6254-4c1d-9b93-b2f5242bdfad</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1537,7 +1537,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>bba7a861-15e5-4e9f-8a4c-0f9081c186e8</Id>
+          <Id>c4558d57-a37e-4f3c-b432-b1028676ed82</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1547,7 +1547,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>c04c6631-4ed2-417a-9e51-c030d474eee2</Id>
+          <Id>6b10822f-065f-4f32-abf8-c338eb1ce6fa</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1565,14 +1565,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>b7f6776f-391d-48e0-be8f-e5a4b6f6d85e</Id>
-      <BaseId>8b05ec3c-7f1a-4b11-882c-22af0ff059e9</BaseId>
+      <Id>24ba29da-17ff-4946-8947-25347761ccdf</Id>
+      <BaseId>63056b35-644d-490e-ba2c-1f6e0230525a</BaseId>
       <CommandString>[build;place;] spray coater</CommandString>
       <Description>Spray Coater: 3 then F10</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>8c3d5ae4-233c-442b-8999-1ce362b91a7d</Id>
+          <Id>7c93d701-4eb2-4617-acf5-d8bc1a98e56f</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1585,7 +1585,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>ff308fc6-6617-42a1-bccc-dd3a09391195</Id>
+          <Id>e4595242-17ed-4d26-8578-1824b1788cbc</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1595,7 +1595,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>efb29329-a61a-4e22-a6de-205c227b1298</Id>
+          <Id>17d73919-aa9f-4e48-ac48-504822d726e0</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1605,7 +1605,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>bbfd8186-b35e-4f1c-93b2-ee0e6e88d8d1</Id>
+          <Id>3f637c8d-f4a7-4d1b-abe7-14fb9057c0b9</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1615,7 +1615,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>4d5658d1-5f7a-47e1-9adb-6b1092c16142</Id>
+          <Id>968f9144-0873-443b-8d37-e1e52ed27b06</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1625,7 +1625,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>ea5cbd90-55dd-4bfa-baaa-dfdce1044e47</Id>
+          <Id>51660143-d1b6-476e-b42c-b49d215322ae</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1643,14 +1643,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>f175d313-61eb-4217-8cfc-5a5a99570c4c</Id>
-      <BaseId>1383064f-8340-4b44-84b1-2aad61b584c2</BaseId>
+      <Id>57064dc7-f3a0-46c3-ba96-2f5107a18496</Id>
+      <BaseId>3b2a3b3d-721d-4661-b779-8c42f90bf0e5</BaseId>
       <CommandString>[build;place;] [depot;storage;container] [one;mark one]</CommandString>
       <Description>Depot Mk I: 4 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>8c614569-6e59-4de7-b0a1-82e581c6802c</Id>
+          <Id>53927a6f-6202-4e39-ae72-9d2260bb1619</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1663,7 +1663,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>1227fc16-0411-4a7a-b23e-62bd0941d9e2</Id>
+          <Id>5e0a6221-21c9-4e2c-a57d-85aa6217cdea</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1673,7 +1673,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>f7d02254-17d9-4573-bc2e-ca3f126c5810</Id>
+          <Id>4f07d894-b5a0-4542-9378-0f4c1fdef3c0</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1683,7 +1683,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>323f94bc-8e41-4f9f-a8cd-3dec0ee8b203</Id>
+          <Id>8a2002b9-66ca-4401-80ed-36cdf6dd298d</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1693,7 +1693,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>059a7636-4d63-4c74-92e8-b769085f11fa</Id>
+          <Id>f156c301-5837-4670-9d39-94671d03faf2</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1703,7 +1703,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>65cc934a-8e8d-457f-a567-8015fb75f3f2</Id>
+          <Id>c7239387-f48c-4b11-a099-ea3f4653f161</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1721,14 +1721,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>1d449540-f9e9-459f-96d3-f8059a4c5929</Id>
-      <BaseId>e7cea441-086e-4c83-95eb-541049b8dae7</BaseId>
+      <Id>403d3204-7af6-4987-8271-f41eb70713fd</Id>
+      <BaseId>3c10914f-af7b-4ba9-846b-12e12f3d71c3</BaseId>
       <CommandString>[build;place;] [depot;storage;container] [two;mark two]</CommandString>
       <Description>Depot Mk II: 4 then F2</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>0487be26-a3c5-4006-94c9-d7f6d984d18a</Id>
+          <Id>f7c84397-5fab-46e1-9773-f1f7f2bffaa5</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1741,7 +1741,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>154d3169-5034-4fc8-babe-e06507fa2280</Id>
+          <Id>22221375-28cf-4fab-9c26-625a89b95db7</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1751,7 +1751,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>dcc5dc1b-f575-4521-b472-975c98376f39</Id>
+          <Id>c4d9457d-38d6-4417-8ea7-336d1d9abd61</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1761,7 +1761,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>e92e1865-add5-44ff-94f4-a26f0b8ea833</Id>
+          <Id>24a5d3b4-ddb1-4b12-95f4-06fa6e1b94ff</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1771,7 +1771,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>f4a32858-8f34-4108-8ef7-f2b0106ce268</Id>
+          <Id>f4db257e-d5ee-45e1-b383-35ad3a89cdc9</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1781,7 +1781,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>062ae74c-8a88-4fed-bb27-9ab3b262ec4e</Id>
+          <Id>774cce00-c404-4bd7-8639-e35e534fc0a7</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1799,14 +1799,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>5cc38cf1-3c13-47af-9071-e043c4688671</Id>
-      <BaseId>16ded516-98fa-409e-9ce2-413b9b458933</BaseId>
+      <Id>fe59fe2a-709e-4210-b233-8072bbdaa2e2</Id>
+      <BaseId>aff7265e-fbd2-4726-905a-e7a3427b9c28</BaseId>
       <CommandString>[build;place;] [storage;] tank</CommandString>
       <Description>Storage Tank: 4 then F3</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>7a83a67b-8b22-4770-a0be-b025950909aa</Id>
+          <Id>ccff3e22-bbe2-4b18-8a6c-a8131f9f7519</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1819,7 +1819,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>55a77157-2e27-498b-a0f8-5f1f7f1064db</Id>
+          <Id>ff7c7a70-f7c1-4e53-94c2-2116e9949685</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1829,7 +1829,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>3792f08b-b10a-4b7a-ba47-f611e6de7d1e</Id>
+          <Id>0c945b00-1bc2-4deb-8a30-97f06e56ba3d</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1839,7 +1839,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>b2608dec-fb0c-4c4e-abe5-e895dfcaddf1</Id>
+          <Id>5646dbdd-627a-4534-a5de-fb14595f9eb2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1849,7 +1849,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>87b24037-618f-4d89-8b31-0c4b756b9787</Id>
+          <Id>7e31fcd5-563a-46b5-9df5-c6870d18a06c</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1859,7 +1859,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>58ddb58a-1570-401e-90f2-d8d1a91d1f31</Id>
+          <Id>cc835a58-fde6-4107-9bdf-a434f40b9ed3</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1877,14 +1877,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>858f5573-5a01-4010-8873-37e4e9b24e22</Id>
-      <BaseId>42b642ae-bd68-456b-a618-4c66fcf61eeb</BaseId>
+      <Id>a6762e29-6bd0-4590-a4fd-dc90bd6f513d</Id>
+      <BaseId>44a7061c-949d-4d96-b8af-9672038a5468</BaseId>
       <CommandString>[build;place;] [arc;] smelter</CommandString>
       <Description>Arc Smelter: 5 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>84050a3f-1d39-4eac-bf7b-947952f5fdf3</Id>
+          <Id>9c115c44-2422-462f-acaf-a209882a82c2</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1897,7 +1897,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>cc3af44e-8eef-45cd-a61f-59590e127764</Id>
+          <Id>9d36e325-2746-49b7-ad2b-c6d87911df2b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1907,7 +1907,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>6b09d0d5-e673-43ed-8782-070d2a3620ba</Id>
+          <Id>01c07ad4-dbd9-4191-97b1-46bd4ab99e6b</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1917,7 +1917,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>4b9729c1-ec78-4b86-bdfa-fb495d7d23ff</Id>
+          <Id>97e8d8cf-6d3e-492b-b17c-f44685b33c79</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1927,7 +1927,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>9b338c1c-449a-4259-a70c-de2f44848146</Id>
+          <Id>0af8d7de-6342-4b54-8b06-58998f15c2f2</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1937,7 +1937,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>76a98401-85c2-4117-9ecb-aee5813d7ddf</Id>
+          <Id>48ccda03-34e6-4978-b511-180b9b6a4ac9</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1955,14 +1955,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>3cee0844-2ef4-4d1b-884d-95f57fc1d07d</Id>
-      <BaseId>0bd1f6a6-e347-4b61-8cf3-97e0aa50f463</BaseId>
+      <Id>50ccd965-4e6e-464c-acdd-65adc2d29c92</Id>
+      <BaseId>61aeb93f-7f38-4198-9e87-cc54756b5ee7</BaseId>
       <CommandString>[build;place;] assembler [one;mark one]</CommandString>
       <Description>Assembling Machine Mk I: 5 then F3</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>181aeeb7-9398-42ea-a0bf-808c10586d7f</Id>
+          <Id>a68f163b-c66e-4824-8b3c-3b7525215446</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1975,7 +1975,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>67881489-96b5-44d6-81b9-594834882983</Id>
+          <Id>e350e632-ce23-4fd5-8e1e-f43f1e97ea74</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -1985,7 +1985,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>b34bb58e-f426-41b9-ad8b-c474050713fd</Id>
+          <Id>1aa1e84a-3002-45e6-b610-52f4cecb2b4d</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1995,7 +1995,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>72f58ea9-1286-4336-99ad-c6c5d69bc33c</Id>
+          <Id>b8bc9327-f3c8-4354-a04c-ef9ef4a4c607</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2005,7 +2005,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>95dceb80-0576-4f89-a22b-c9fdc824010a</Id>
+          <Id>c7b6de84-ca98-4df5-856b-18ad5d1dfe1f</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2015,7 +2015,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>e1c0061d-1532-46d4-a009-be3c5ba117e4</Id>
+          <Id>7d8edb3b-f3c1-46fd-8d13-b0fbe6b8a7cd</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2033,14 +2033,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>a61ca880-c544-4af5-86af-85cddbde24f0</Id>
-      <BaseId>0baccd70-a057-46dd-85d2-12031df57e20</BaseId>
+      <Id>ee0ccac5-17c8-4625-be02-4d914a94a31f</Id>
+      <BaseId>a4c9f9be-702c-4363-9d2a-d26d5e66e0d7</BaseId>
       <CommandString>[build;place;] assembler [two;mark two]</CommandString>
       <Description>Assembling Machine Mk II: 5 then F4</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>cef5a677-37df-4cc1-a6fb-9951331acb40</Id>
+          <Id>afbe8850-2dae-4d59-8f85-8986707fce47</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2053,7 +2053,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>07fb2c59-acf2-46f1-be56-579bfd4f737b</Id>
+          <Id>57c57088-1395-492c-a69f-d481aad4a87d</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2063,7 +2063,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>b623afe2-7426-49f9-86ac-15fb1851f6b2</Id>
+          <Id>8bda5d8a-5760-4325-afa2-43ae88232fd8</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2073,7 +2073,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>f86379bd-8fca-4be0-8148-9cd49a843088</Id>
+          <Id>60aa9973-c6f8-4cfe-96dc-83e69c138825</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2083,7 +2083,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>d23d7e97-f6c2-4633-90f4-2af749d4fdf3</Id>
+          <Id>972d83e9-eace-4d2c-9ab7-6a47e8d3a99d</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2093,7 +2093,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>1780b487-25d4-434a-ba49-e960840de587</Id>
+          <Id>09f71e59-c8d6-4102-a8bf-538ce75b8b40</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2111,14 +2111,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>adbf06eb-28a8-48ae-878f-9471cd14d45d</Id>
-      <BaseId>1cd02dbb-ff78-4fcc-807b-b4d5a035d81f</BaseId>
+      <Id>34c7d8d9-e367-4193-ac4d-df825d28a5b5</Id>
+      <BaseId>e02238d5-e9ac-4ed1-b649-1ace4d8e2eb5</BaseId>
       <CommandString>[build;place;] [oil;] refinery</CommandString>
       <Description>Oil Refinery: 5 then F6</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>080fb00f-fb67-4be9-b3d8-07f604e9052b</Id>
+          <Id>b014792f-d934-4404-8fa0-db1e7f8176b9</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2131,7 +2131,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>124da755-8c11-4535-a39d-445880fcd3fd</Id>
+          <Id>edeb4ffc-ff0d-4493-b2e3-66696f60d809</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2141,7 +2141,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>30f332c5-4bb3-47d6-81a6-0f18c2ec25f6</Id>
+          <Id>d311cba8-0a9c-4daf-9395-e1685e9b350a</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2151,7 +2151,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>be8b342c-002b-4df5-9a8e-3be5c5dbf897</Id>
+          <Id>42afdd3d-db96-4f23-8ee0-90bf699ccca1</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2161,7 +2161,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>ceb37c8c-c449-4f11-b59d-011dab0d0efe</Id>
+          <Id>f6921a7b-924c-4d02-b81b-aed74b74584f</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2171,7 +2171,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>343a4368-d3fa-4680-83ba-14839196c074</Id>
+          <Id>602b146b-3a22-4787-aafa-bbeae0ae5012</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2189,14 +2189,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>a278b124-ca3b-4c8c-9a95-5018df7a6895</Id>
-      <BaseId>16b98cab-2c1f-441c-9961-9351bed68976</BaseId>
+      <Id>420ccf37-bd2d-47ff-aad7-a93ece5ef15a</Id>
+      <BaseId>8cd7a532-ad93-4172-90e0-7f8638b1fb0f</BaseId>
       <CommandString>[build;place;] [chemical;chem] plant</CommandString>
       <Description>Chemical Plant: 5 then F7</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>17a39b50-f12d-4a99-9248-eb953e0f5679</Id>
+          <Id>0e60b533-f780-46a0-927a-80826556aefb</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2209,7 +2209,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>de7035d2-22de-4676-8a97-a01643c38f0d</Id>
+          <Id>95b9b995-1d4a-44f7-88d4-63b6186e95c7</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2219,7 +2219,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>5bb52980-7fa4-4da6-baec-fa3ad17457b7</Id>
+          <Id>0e70b600-3633-4400-81de-d98010ac0db3</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2229,7 +2229,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>3facbe86-30d9-4b46-844a-9c96498d05e2</Id>
+          <Id>d5eecb18-8c81-4c60-a245-3c4d4313ecb5</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2239,7 +2239,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>9822ef7c-af69-4a6b-9eb4-7653a4386569</Id>
+          <Id>af5fc2f4-3fa3-4fb5-a771-bbf74075fa59</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2249,7 +2249,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>44c1f4e4-2498-472b-8202-e5f611a68644</Id>
+          <Id>233ef147-ddb7-4869-a67b-c4fa715c1040</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2267,14 +2267,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>9fc0999d-3de7-460b-a23c-2eb1fc9b7cc5</Id>
-      <BaseId>3087634e-6870-4533-8438-6c83d1b174f8</BaseId>
+      <Id>58e4bbda-c92b-4d1a-89a3-8bfe7fbb1ad8</Id>
+      <BaseId>bb785811-b241-4e82-9974-60a5b6ba33b0</BaseId>
       <CommandString>[build;place;] [logistics;] distributor</CommandString>
       <Description>Logistics Distributor: 6 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>0bacd3d1-a0c8-44ea-9325-e60d11f65c26</Id>
+          <Id>604c0b41-41a5-45f2-9c72-c54a6fe17b3c</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2287,7 +2287,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>f945b1ae-1077-4bfa-8f96-4d55fc9d4ec1</Id>
+          <Id>fb5ca26c-23ef-4d1c-8ccd-c1dddcaecd6f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2297,7 +2297,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>a2f3f131-0343-4c94-925d-8b29ef37e4b4</Id>
+          <Id>c13bba14-252a-41ef-9aa1-cbd28d874119</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2307,7 +2307,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>caeecfa6-b99b-4024-b824-9bb54e0045ca</Id>
+          <Id>f9d39a07-dba4-4eed-8b92-1073ff71efb6</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2317,7 +2317,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>4db33d22-1c34-426e-b4ea-ccafb4c1525c</Id>
+          <Id>a845f4e0-1369-4ace-81e3-4f130a62c6b1</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2327,7 +2327,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>cf7454c3-69c9-4cd1-b2b1-5765d7f3a12f</Id>
+          <Id>3c571c1a-50fb-4efd-a919-c0267969d86f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2345,14 +2345,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>8c23468a-af7c-4980-9596-e4118e794767</Id>
-      <BaseId>50f9459b-46e7-49c6-8a3c-f25affed7053</BaseId>
+      <Id>75ae4931-fd07-469d-a312-9648ab2fd54a</Id>
+      <BaseId>47cfc52d-6d29-4817-b50a-a65d0bd93ee2</BaseId>
       <CommandString>[build;place;] [automatic;] piler</CommandString>
       <Description>Automatic Piler: 6 then F2</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>37712072-2521-4de7-95cd-968a7ff9e277</Id>
+          <Id>037a6543-98f0-485f-9b5e-9af9cdc78ca4</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2365,7 +2365,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>822d1439-3db9-4eb8-b198-0d229507a63c</Id>
+          <Id>ff516eba-0f5c-41b6-92a3-df6d5ed2b06f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2375,7 +2375,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>fc59f81c-0056-4880-ae14-9eaaa8bdc250</Id>
+          <Id>80f2c0c4-b286-4864-91fe-2f7e80d795e0</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2385,7 +2385,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>009ec671-f018-40a9-9f7a-88dfac581bbe</Id>
+          <Id>43b567e1-aa00-4fed-b5f9-bbb7dffbbd71</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2395,7 +2395,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>d9c6a4fb-05f0-43b1-a205-3c77eb64e6b1</Id>
+          <Id>7416ce74-0626-4000-8094-0a6bcb8aff00</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2405,7 +2405,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>050a23a2-40ed-4137-994f-cf4db548b45c</Id>
+          <Id>8d60833c-550e-4fb9-8cee-508f37207529</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2423,14 +2423,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>cce90811-7f04-48de-82ce-e802535c8684</Id>
-      <BaseId>d9d74168-42b5-4ecd-962c-88a2ab63b59f</BaseId>
+      <Id>6590e18c-22d1-4f06-9231-2be98e32cf4f</Id>
+      <BaseId>a9e530c7-c236-41eb-855e-650247abcfa5</BaseId>
       <CommandString>[build;place;] planetary [logistics;] station</CommandString>
       <Description>Planetary Logistics Station: 6 then F3</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>b538f199-1bc7-400b-a6d5-528e42a82008</Id>
+          <Id>1e3eecc7-aedd-4994-9038-0e668cd2a2df</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2443,7 +2443,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>dea8873d-5d2a-489e-8e41-5dcbe84f748f</Id>
+          <Id>d5ba7817-d312-4c15-8084-0987ef9a0089</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2453,7 +2453,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>c09a1e5c-aaa3-4289-9dca-1624a2fc7ec9</Id>
+          <Id>0ad684bf-684a-4f0a-82ee-f7c05ec812ac</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2463,7 +2463,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>91241b26-5438-4567-b27f-ca308c9dc3c8</Id>
+          <Id>9b9a2526-ddc4-47e3-a1c7-be2f82b6de2a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2473,7 +2473,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>9f2362cc-b01d-4afa-af80-ebd8c7d6219d</Id>
+          <Id>b800994a-98d5-400c-accd-86c4fc025363</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2483,7 +2483,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>4623806f-ef3b-4fe0-8351-0edfa93342c8</Id>
+          <Id>7b596aba-4160-4185-a413-fa5e1ad87f4c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2501,14 +2501,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>12e5f541-9245-483e-ae35-0eecb30a0dac</Id>
-      <BaseId>e67e5886-8608-4429-b6a6-e2e61f07e4b8</BaseId>
+      <Id>e217b240-abb5-483c-b568-bb7243a3f89a</Id>
+      <BaseId>96e2f71a-e900-4add-a22a-efe2cfd2cdee</BaseId>
       <CommandString>[build;place;] interstellar [logistics;] station</CommandString>
       <Description>Interstellar Logistics Station: 6 then F4</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>bbf2af83-3f63-4489-9375-d5bd3817d0c4</Id>
+          <Id>c01c9d7a-b4aa-4e1e-a051-715117954dbb</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2521,7 +2521,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>cc4112ec-d73f-4895-ad73-ef5008211a96</Id>
+          <Id>f70f2e4d-3ff4-4bf7-862b-12310dc1f529</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2531,7 +2531,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>d5a21208-5b41-4663-885c-f4368697f2df</Id>
+          <Id>ef79a8c2-59c4-4b50-b02f-bc4922e68f17</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2541,7 +2541,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>72e2b16b-91a4-4cc9-93b8-d8db713f940a</Id>
+          <Id>151a0593-d282-4cba-938e-58246987c08a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2551,7 +2551,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>41f18295-2220-426b-9247-edcf61e8211b</Id>
+          <Id>af3ba7b0-6121-4ab0-9b9b-97e3d5419010</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2561,7 +2561,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>e8e1163f-4fb8-43bd-98e2-f000a2201411</Id>
+          <Id>b9dbfd93-0dd5-4a9d-9f75-0e607e306e8d</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2579,14 +2579,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>1585cd53-e3bc-4f3f-84e4-7b469f549c9d</Id>
-      <BaseId>b8c9e06d-2a50-4789-ac2a-bc6a98ad97cb</BaseId>
+      <Id>8e853103-b1ee-42c8-82e5-40fb3d52023f</Id>
+      <BaseId>d3dea258-2e48-4d79-af59-dbdddb6bf8fa</BaseId>
       <CommandString>[build;place;] gauss turret</CommandString>
       <Description>Gauss Turret: 7 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>27d6aac5-82c2-43d7-bebd-250258297e48</Id>
+          <Id>5fd2a546-ea97-4bc9-9d36-efa18b9f51da</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2599,7 +2599,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>84d4fbad-f230-40bb-9d43-d1b0e3903038</Id>
+          <Id>60b0c770-5853-4de0-b4d0-5b706a9ac257</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2609,7 +2609,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>db1bce98-647c-43e8-9908-cddc032efe6d</Id>
+          <Id>ba20c98d-0f72-4814-bf1c-fd112489a3f7</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2619,7 +2619,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>24a6eec2-5f2f-4f14-b319-ae90e5e8f31a</Id>
+          <Id>95f5a69f-abb1-4f60-971a-bcda909071dd</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2629,7 +2629,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>7f3d3853-9f11-4bd2-938b-e6105f3ba726</Id>
+          <Id>9d9b4a2d-6b26-4bf2-a8d1-ef21dadbbff0</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2639,7 +2639,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>50465ed9-2e52-4ebe-975d-893b497deb7e</Id>
+          <Id>a6c02c46-ca2a-4dba-9978-037a62e83757</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2657,14 +2657,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>22404ebf-7a3d-422c-a9e7-39cd104dc2e5</Id>
-      <BaseId>c72b4192-06c7-40fd-a7fd-65e06cf50d37</BaseId>
+      <Id>d519df78-7b4e-408a-8791-2045fb152805</Id>
+      <BaseId>50ab48a8-ccf9-42fd-8b41-7599be8ce345</BaseId>
       <CommandString>[build;place;] missile turret</CommandString>
       <Description>Missile Turret: 7 then F2</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>11e92f1b-a5cc-48ce-a21f-f5f3340973d3</Id>
+          <Id>263ae0b3-ccda-4165-a2ce-b0b0a1606fd3</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2677,7 +2677,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>3bde11f5-fb4c-4d5d-949b-902f2a2a2734</Id>
+          <Id>b96133be-4e65-4513-844b-1fb0fc6d66a7</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2687,7 +2687,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>03fcb977-32c6-4982-9d65-ee630c310d09</Id>
+          <Id>91114a0b-16b9-4761-9d4d-e2f758211c80</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2697,7 +2697,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>b70caee0-41fe-4f0f-97f4-c5104dab4cb9</Id>
+          <Id>39c87064-6d52-47b1-868b-48982874eb51</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2707,7 +2707,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>8b5a143d-3a96-4fc7-b04b-6edf802f2a89</Id>
+          <Id>2c7dab4d-3588-4a75-b3c6-25976fc01bf9</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2717,7 +2717,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>b62be11f-8df1-425b-b15d-e89e1e461baf</Id>
+          <Id>00df847c-e279-4515-8778-8b05cffbb728</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2735,14 +2735,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>8944690a-0ae9-4554-bba6-36fcf92a1bd3</Id>
-      <BaseId>af7d1db6-bd46-47c0-891f-feccce86efb0</BaseId>
+      <Id>523aea5d-f310-4a21-8c4e-b55fb4ff7bb4</Id>
+      <BaseId>bcb75412-df98-4193-9270-ffa8858c819e</BaseId>
       <CommandString>[build;place;] implosion cannon</CommandString>
       <Description>Implosion Cannon: 7 then F3</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>e185ab17-751d-4bf7-84be-9a4f8796cc02</Id>
+          <Id>48a6eeb3-7791-4f4b-88f6-a2d2cdf1667b</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2755,7 +2755,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>1bc52aef-5224-411d-86f2-d5c1a57fef38</Id>
+          <Id>a162bd08-528b-49f6-8920-fa4911a49dc1</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2765,7 +2765,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>e7c5ff6c-cb0f-4d7e-8539-16b46412cf78</Id>
+          <Id>d87ddee3-faee-4b97-868b-b19fb6c8dd73</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2775,7 +2775,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>89486499-8639-4676-9834-e4d7912af54e</Id>
+          <Id>4fe053ca-b93d-4072-8804-35aefde7f62e</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2785,7 +2785,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>79a40d74-4683-4649-be5d-2129c88a6aac</Id>
+          <Id>01116902-4aa5-4d51-b6cb-d26b9ee454e7</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2795,7 +2795,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>9289531c-8e04-447d-86a1-8d106737cf43</Id>
+          <Id>327fb601-5cff-4ba4-9eac-a1196278a201</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2813,14 +2813,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>06c5db3b-88d7-4f6d-bca3-31e787994e00</Id>
-      <BaseId>5ed9036d-5e43-43cd-88d1-11d6a1f69c15</BaseId>
+      <Id>461e5f00-a948-48f2-aab6-85fe092a242b</Id>
+      <BaseId>a66a89b0-631f-44c8-8d40-626b6f53878f</BaseId>
       <CommandString>[build;place;] jammer tower</CommandString>
       <Description>Jammer Tower: 7 then F8</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>d564926b-15ea-4fef-99f1-b41c013f8f45</Id>
+          <Id>f20666a0-8d76-4319-a29c-2af2d3ba726e</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2833,7 +2833,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>312d2ced-b5b0-4c16-8803-79d92008dc68</Id>
+          <Id>4aa7eed0-c15f-4f9c-87f0-acdffcc80439</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2843,7 +2843,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>6a3aa9e8-6903-46b7-b565-4fc0301ba6a7</Id>
+          <Id>7c2f572c-07c3-4bcd-af81-0d2b9e8a1c1a</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2853,7 +2853,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>e3b47667-9ce3-4715-8b62-04baa1f37143</Id>
+          <Id>698f3700-212b-4f32-a257-0315afefd8ba</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2863,7 +2863,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>b4d940af-db02-4e7b-b876-b4cf0345150e</Id>
+          <Id>164a7498-e011-4aa2-9df1-29441d8168ba</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2873,7 +2873,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>f03ce7e1-04b5-4aa9-b190-25f60c7e588d</Id>
+          <Id>cb451400-d9e1-457a-a04d-e7879d395c3c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2891,14 +2891,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>c0f33487-2348-4da6-88f5-78debfd7e543</Id>
-      <BaseId>fcd6923d-908b-4749-b330-69d453bea611</BaseId>
+      <Id>b4a3a3af-b12a-42ba-b079-6c23b3b73e5d</Id>
+      <BaseId>54b51f31-1fc6-4046-b609-7440742e26c1</BaseId>
       <CommandString>[build;place;] signal tower</CommandString>
       <Description>Signal Tower: 7 then F9</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>bc4eb1f2-f494-4cd7-a176-23853b279527</Id>
+          <Id>883f682d-0a9a-4a5f-b672-4f52e18aaa0d</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2911,7 +2911,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>0a69c4a9-0af7-4985-b6c2-983750f2679b</Id>
+          <Id>0cd5fbf4-7bee-44af-9f5d-4019faf10f5e</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2921,7 +2921,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>33ae4364-447f-4d97-8751-bf5cb3d691f3</Id>
+          <Id>a4eb34be-3566-4504-b6a7-a5eecd5133c0</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2931,7 +2931,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>67ad16ed-5fa2-4d0f-923d-3361cc3ab07a</Id>
+          <Id>5b140f70-3e45-45d4-be19-1e0022bf7310</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2941,7 +2941,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>125b64ba-41de-4991-bd67-ffc4ffcd860d</Id>
+          <Id>12afe106-8c97-44a0-972f-9a6b4709c583</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2951,7 +2951,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>359a5d26-d48e-4bee-be33-70e8827b980b</Id>
+          <Id>70c564a6-aece-48fa-b3af-953d6affed84</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2969,14 +2969,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>4e59b016-9f5f-4318-aa5f-e2ef5488ac7f</Id>
-      <BaseId>7392e655-3c39-423d-8570-9d3cd0e9530a</BaseId>
+      <Id>d4023634-3aa6-45d6-8809-c3135fbc4642</Id>
+      <BaseId>d2415812-0560-4c0b-826e-88d1c35daa63</BaseId>
       <CommandString>[build;place;] [matrix;research] lab</CommandString>
       <Description>Matrix Lab: 8 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>a301236f-ce11-4b58-9cc2-21f6b1206f19</Id>
+          <Id>14da0935-276d-4ea3-b4b1-95cad8c0ac90</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2989,7 +2989,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>840b7359-5aba-42da-b0e0-a8ea49f7e56b</Id>
+          <Id>e79c2e70-2163-4c17-b36e-6f5ed4ca64db</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -2999,7 +2999,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>4755fdb8-d4a0-4f42-8a28-46d39e6d0011</Id>
+          <Id>1cb3a1ff-c91a-4d09-a185-1841323b5fc2</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -3009,7 +3009,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>42837029-908d-4e77-8403-f18a09c0892a</Id>
+          <Id>9150ecbe-9df4-44f5-833a-fe994bc39661</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3019,7 +3019,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>3c2cea7f-dd12-4152-98a9-b3690cda396a</Id>
+          <Id>71172285-749d-4516-888a-7a99463ddabc</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -3029,7 +3029,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>2a24960a-1ca3-464d-9291-95418f5cf7f6</Id>
+          <Id>4298563a-7fb9-4311-b58c-c5c00541ea55</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3047,14 +3047,170 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>25faf16f-3fbe-4edf-8a37-b2741df4d4d5</Id>
-      <BaseId>4e68d132-3dbb-46b1-9c5c-9465165e71b1</BaseId>
+      <Id>7fa9fed3-453b-411b-85a3-b2ac7d859705</Id>
+      <BaseId>9f065fe0-677d-4433-a7a0-2b24ad1ba5d4</BaseId>
+      <CommandString>[build;place;] [rail ejector;ejector]</CommandString>
+      <Description>EM Rail Ejector: 8 then F2</Description>
+      <ActionSequence>
+        <CommandAction>
+          <Ordinal>0</Ordinal>
+          <Id>910fc1e1-8e09-47f3-a04c-78618a184d8d</Id>
+          <ActionType>Say</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>Deploying rail ejector;Constructing rail ejector</Context>
+          <Context2>[Azure] Grant MAI-Voice-2.1-Flash (en-US)</Context2>
+          <X>100</X>
+          <Y>0</Y>
+          <Disabled>false</Disabled>
+        </CommandAction>
+        <CommandAction>
+          <Ordinal>1</Ordinal>
+          <Id>5b357500-32a2-4a56-8a66-744a75627202</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.05</Duration>
+          <Delay>0</Delay>
+          <KeyCodes><unsignedShort>57</unsignedShort></KeyCodes>
+          <Context />
+          <Disabled>false</Disabled>
+        </CommandAction>
+        <CommandAction>
+          <Ordinal>2</Ordinal>
+          <Id>a7750e2a-5abb-485e-b065-7b57ca8e5cac</Id>
+          <ActionType>Pause</ActionType>
+          <Duration>0.1</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context />
+          <Disabled>false</Disabled>
+        </CommandAction>
+        <CommandAction>
+          <Ordinal>3</Ordinal>
+          <Id>e5ab8b9e-d906-4b05-ae78-3457df73564a</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.05</Duration>
+          <Delay>0</Delay>
+          <KeyCodes><unsignedShort>56</unsignedShort></KeyCodes>
+          <Context />
+          <Disabled>false</Disabled>
+        </CommandAction>
+        <CommandAction>
+          <Ordinal>4</Ordinal>
+          <Id>b0c2b8d8-1e82-4d28-bcd6-1731e6362b34</Id>
+          <ActionType>Pause</ActionType>
+          <Duration>0.1</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context />
+          <Disabled>false</Disabled>
+        </CommandAction>
+        <CommandAction>
+          <Ordinal>5</Ordinal>
+          <Id>2ba7dc47-7de8-426c-8196-52c31c22e202</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.05</Duration>
+          <Delay>0</Delay>
+          <KeyCodes><unsignedShort>113</unsignedShort></KeyCodes>
+          <Context />
+          <Disabled>false</Disabled>
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <Category>Dyson Sphere Program</Category>
+      <UseShortcut>false</UseShortcut>
+      <UseSpokenPhrase>true</UseSpokenPhrase>
+      <UseJoystick>false</UseJoystick>
+      <UseMouse>false</UseMouse>
+    </Command>
+    <Command>
+      <Id>c7e499e9-fb6b-41c1-bb54-072c82189cba</Id>
+      <BaseId>217e953d-4d59-4873-b0f9-192eed65449e</BaseId>
+      <CommandString>[build;place;] ray receiver</CommandString>
+      <Description>Ray Receiver: 8 then F3</Description>
+      <ActionSequence>
+        <CommandAction>
+          <Ordinal>0</Ordinal>
+          <Id>4ec328de-afbd-4b87-95a3-2edf00a16b44</Id>
+          <ActionType>Say</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>Deploying ray receiver;Constructing ray receiver</Context>
+          <Context2>[Azure] Grant MAI-Voice-2.1-Flash (en-US)</Context2>
+          <X>100</X>
+          <Y>0</Y>
+          <Disabled>false</Disabled>
+        </CommandAction>
+        <CommandAction>
+          <Ordinal>1</Ordinal>
+          <Id>bcdf95a6-d2c2-43a5-9439-c0a5dc596882</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.05</Duration>
+          <Delay>0</Delay>
+          <KeyCodes><unsignedShort>57</unsignedShort></KeyCodes>
+          <Context />
+          <Disabled>false</Disabled>
+        </CommandAction>
+        <CommandAction>
+          <Ordinal>2</Ordinal>
+          <Id>e98fa3c8-0878-407f-b692-46464bf817bd</Id>
+          <ActionType>Pause</ActionType>
+          <Duration>0.1</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context />
+          <Disabled>false</Disabled>
+        </CommandAction>
+        <CommandAction>
+          <Ordinal>3</Ordinal>
+          <Id>6343c009-e449-47c2-a01f-8647db6617b5</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.05</Duration>
+          <Delay>0</Delay>
+          <KeyCodes><unsignedShort>56</unsignedShort></KeyCodes>
+          <Context />
+          <Disabled>false</Disabled>
+        </CommandAction>
+        <CommandAction>
+          <Ordinal>4</Ordinal>
+          <Id>a0142282-b0b5-4741-b497-28b724b4dbb1</Id>
+          <ActionType>Pause</ActionType>
+          <Duration>0.1</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context />
+          <Disabled>false</Disabled>
+        </CommandAction>
+        <CommandAction>
+          <Ordinal>5</Ordinal>
+          <Id>fdd8a465-6f81-4921-adf5-3bc16f1d42d0</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.05</Duration>
+          <Delay>0</Delay>
+          <KeyCodes><unsignedShort>114</unsignedShort></KeyCodes>
+          <Context />
+          <Disabled>false</Disabled>
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <Category>Dyson Sphere Program</Category>
+      <UseShortcut>false</UseShortcut>
+      <UseSpokenPhrase>true</UseSpokenPhrase>
+      <UseJoystick>false</UseJoystick>
+      <UseMouse>false</UseMouse>
+    </Command>
+    <Command>
+      <Id>ae1cefcc-c0e1-4aeb-976e-e16d811e054f</Id>
+      <BaseId>40658f72-2a40-4070-b931-9c1a2b4a4381</BaseId>
       <CommandString>[build;place;] foundation</CommandString>
       <Description>Foundation: 9 then F1</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>3e9a6f63-53d4-423e-8505-77e637e6fb0c</Id>
+          <Id>edc8051f-3e07-424e-a5d6-6ca0e3a0f944</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3067,7 +3223,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>f241295b-587c-4109-9200-14651594e1bf</Id>
+          <Id>fb236302-ade2-471c-af5d-13b702244aaa</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3077,7 +3233,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>57147367-1fb3-4587-86f3-8183dd8a1403</Id>
+          <Id>22e4d679-06ea-4241-9764-800bbf236706</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -3087,7 +3243,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>44e45bfa-3886-46dd-8889-39407396ec82</Id>
+          <Id>75e96625-7c48-4913-8977-9fad1c5a79dc</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3097,7 +3253,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>7113b7d8-4a8d-4abe-aad0-a454d9ec04aa</Id>
+          <Id>4e6d05cb-89a3-4624-895e-da5ba7f53518</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -3107,7 +3263,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>bba892b3-8131-47c0-a737-7cbc46357b64</Id>
+          <Id>098b7b07-6e10-4e59-8b8f-ab4ae68f6bfc</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3125,14 +3281,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>3c3290db-6aa3-438c-a961-5fcb40436270</Id>
-      <BaseId>599365df-c622-466c-a438-2a194e9328e8</BaseId>
+      <Id>97682194-e7bb-47e3-b627-2632ec56da56</Id>
+      <BaseId>ce3c396a-e936-41ad-9a4f-07c7b7ee806d</BaseId>
       <CommandString>[cancel;stop building;exit build mode]</CommandString>
       <Description>Cancel build mode: Escape</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>f380d2e8-efbf-4c60-a696-534908a46a2f</Id>
+          <Id>9d86aaa5-5a7d-4ab1-a574-66e264174b0c</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3145,7 +3301,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>7379bb72-063a-4fc9-97ed-405f3618cce4</Id>
+          <Id>23ed2c4b-04c9-433d-897a-790534d3e224</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3163,14 +3319,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>f0c34da5-dc8d-4089-924c-399f9d5efde8</Id>
-      <BaseId>887c35d6-4531-48cf-84fc-f257ab0cbfd3</BaseId>
+      <Id>aef30a3b-a58b-46d1-b755-8c7465f1a02d</Id>
+      <BaseId>9c16201a-1eec-4f41-b7f3-aa14c1c065bb</BaseId>
       <CommandString>[fly;take off;lift off]</CommandString>
       <Description>Fly: double-tap Space</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>6d5ccac2-ceae-477f-bbc8-6e0d4f2c3762</Id>
+          <Id>5930957c-7259-4ea7-b6e6-a58b5e7decd0</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3183,7 +3339,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>7152448f-a950-4f61-9745-99716bd24277</Id>
+          <Id>59bfe633-85b5-45f1-b34d-46a006f51a2b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3193,7 +3349,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>9288e153-dd58-4711-a48a-f3e2304ccfb7</Id>
+          <Id>74a78be1-f1e2-4d71-9a63-d1c9e7426917</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -3203,7 +3359,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>3bee103b-24e4-49a7-bbaa-9c2bc0ef87b3</Id>
+          <Id>162fd3ee-e0a9-4e94-978d-50b6afb991e9</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3221,14 +3377,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>4056a676-fdd0-4aa5-aa71-3f1264584eee</Id>
-      <BaseId>5df399c9-12be-4e1d-8c10-89927716e5e8</BaseId>
+      <Id>ed784f88-fa6a-4ad7-86d6-a9054809ae83</Id>
+      <BaseId>4a0f5568-da61-44c6-a4f6-b12507ebcc72</BaseId>
       <CommandString>land</CommandString>
       <Description>Land: Left Alt</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>15528962-3565-4b9f-ac7b-b847e524550a</Id>
+          <Id>509d8066-514c-4004-b062-4509748fbe19</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3241,7 +3397,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>d69fbec0-1b2d-467e-a9fd-9a6b42c375e7</Id>
+          <Id>0b66b3e4-fc1b-4eb6-b174-cb973e1927fb</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3259,14 +3415,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>0dae48f8-1671-4d05-80d8-0fe1e94c58c8</Id>
-      <BaseId>42bba855-5e59-4dcf-b599-7d520deb7cbc</BaseId>
+      <Id>1a84997b-69e3-437c-8eca-ecdfcf9a6244</Id>
+      <BaseId>0eeb337a-6f01-4858-83fe-e9503e62ff4b</BaseId>
       <CommandString>[open;show;close;hide;] mecha [panel;]</CommandString>
       <Description>Mecha Panel: C</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>85cda932-f245-40d2-be42-dae98bf469f9</Id>
+          <Id>13875d3c-c5d1-4911-9dd3-21ead451a23e</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3279,7 +3435,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>426068c3-c6dd-4087-a444-fe76fdace1c6</Id>
+          <Id>31ffcebe-589b-49ca-b02d-e1754db93cb9</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3297,14 +3453,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>d270cea1-9114-44fa-8e1b-efec2ffe11c8</Id>
-      <BaseId>b2f80b50-64e8-4d00-896e-12d189b1c77d</BaseId>
+      <Id>39ebe54f-8ec4-4deb-ae4d-950899ad05d3</Id>
+      <BaseId>e25ba174-f4c4-48db-9848-a3b14a0c5d72</BaseId>
       <CommandString>[open;show;close;hide;] [statistics;stats] [panel;]</CommandString>
       <Description>Statistics Panel: P</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>56b24eec-139a-4829-ab73-f3ab989c0a0b</Id>
+          <Id>b96172f8-7850-42a5-af81-15e0ab016ce6</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3317,7 +3473,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>e1d8e9c6-ff34-4df8-a1b4-d0f93d466fd6</Id>
+          <Id>bf1dded8-298d-4712-90b5-8c8b526a5a79</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3335,14 +3491,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>df7ba1f9-5c42-490e-b73d-9bebb6702586</Id>
-      <BaseId>b3b7205a-c435-4d31-a9f4-37d6fd8baf0f</BaseId>
+      <Id>61a57354-2822-45cb-9a57-e3c909a2b440</Id>
+      <BaseId>49ba3a45-7345-48af-9394-44698df6f628</BaseId>
       <CommandString>[open;show;close;hide;] inventory [panel;]</CommandString>
       <Description>Inventory Panel: E</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>dffa6409-94c2-4627-aa0b-ac8bcd5b92b9</Id>
+          <Id>6e85469e-fc25-4eb7-b40b-2fb8b32ad631</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3355,7 +3511,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>6e8cdec8-a9bd-4a47-9483-2caeab713ead</Id>
+          <Id>ec03783b-c18d-4501-9fc7-9de0a6eaa29c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3373,14 +3529,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>e83f4070-d646-4c9e-b07d-c79f31463cdf</Id>
-      <BaseId>d27cc8d1-b3c0-4c67-8ddb-fb6bb80da934</BaseId>
+      <Id>219c4b59-4885-4881-b166-3864be2c90a0</Id>
+      <BaseId>fc5a2c5a-69ad-408c-8ec7-d9e987c32609</BaseId>
       <CommandString>[open;show;close;hide;] replicator</CommandString>
       <Description>Replicator: F</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>aafe520c-d4da-495a-9c47-31b5f43254dd</Id>
+          <Id>69a2e686-2460-44f0-9288-23104d5907d7</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3393,7 +3549,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>98605bcb-87a1-47c8-b52f-4c8ffbb8102b</Id>
+          <Id>deaa71d4-2e72-45cc-af53-1311269e445a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3411,14 +3567,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>4981b3f7-fd22-4491-baa3-141f478c30e1</Id>
-      <BaseId>80830420-776e-40b7-a10d-2e26478c7509</BaseId>
+      <Id>2123a6db-6abc-4f83-bc61-d060b2276646</Id>
+      <BaseId>11998f65-48a3-42ff-986e-34b85ba91f4b</BaseId>
       <CommandString>[open;show;close;hide;toggle;] [detail;details] display</CommandString>
       <Description>Details Display: H</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>96d45c88-4c6d-4129-be41-67e160f01850</Id>
+          <Id>97c581f3-44c9-4169-80d3-d0f07b957574</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3431,7 +3587,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>70a1ca45-73c5-4aed-87b7-d64c664fbc11</Id>
+          <Id>f4b45576-bd64-4b3b-92d3-761782bcab23</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3449,14 +3605,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>c0345bf7-bfa4-4abe-83d4-f0e95294a27e</Id>
-      <BaseId>5a8d729b-469c-4f15-a912-3fe7fcfd7029</BaseId>
+      <Id>0d443257-2aff-4f4f-aae6-9cda653baaf5</Id>
+      <BaseId>5db3d59c-fac1-46e8-8e96-fe9d6cdcfc2f</BaseId>
       <CommandString>[open;show;close;hide;] [technology tree;tech tree]</CommandString>
       <Description>Technology Tree: T</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>d2d4eeb3-8ab5-40ad-94a5-0f3f44c4381c</Id>
+          <Id>b6c391eb-fb36-4393-b399-b2dc947dde2b</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3469,7 +3625,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>3cef1b8e-43ba-4895-b36a-441f7960571d</Id>
+          <Id>410b3b0a-b0ee-4b2c-9526-96537fef825f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3487,14 +3643,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>dae2997a-372e-49b3-9441-09f17f4c06e8</Id>
-      <BaseId>3e2084d8-e004-45b9-96b2-fc71d0f4e39d</BaseId>
+      <Id>cd8a4f18-cefe-40ee-bc28-e29b2885b52a</Id>
+      <BaseId>522314c0-14e2-452e-9ccc-04d7a92d1e37</BaseId>
       <CommandString>[open;show;close;hide;] [interplanetary logistics;logistics]</CommandString>
       <Description>Interplanetary Logistics: I</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>0990af25-4936-4d9b-8458-752b4e7a8a0a</Id>
+          <Id>4700df05-3b50-4d97-b65b-13d49e93f064</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3507,7 +3663,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>f95e5f82-7d08-495f-a8b4-ca61471f1b4c</Id>
+          <Id>832d18d5-17e5-4e1f-953c-ea45184af9fb</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3525,14 +3681,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>85a6d9d7-7246-43c2-ace3-07f462cf0bbc</Id>
-      <BaseId>8d9c6f76-1190-4ff5-85a4-f42208597d5e</BaseId>
+      <Id>0b05b369-d25b-452c-844a-ef7298079f2f</Id>
+      <BaseId>8e9926c1-d38b-41b2-b18a-294827bc1668</BaseId>
       <CommandString>[open;show;close;hide;] [starmap;star map;system map]</CommandString>
       <Description>Starmap: V</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>0deb75c5-90d4-4e17-a77c-5147927b1392</Id>
+          <Id>68d6b012-7885-4c35-b98a-71639e48a29b</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3545,7 +3701,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>e71ae90a-524c-442a-9d4e-eedf65c63b0f</Id>
+          <Id>b5b69723-7f13-43e3-8631-5c13e6b07c85</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3563,14 +3719,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>51eddbc8-6e22-41c3-9d22-4930fd115233</Id>
-      <BaseId>3cf51ff5-dfc8-447f-91b1-d4794bcd8a09</BaseId>
+      <Id>60dca4fa-46a4-4712-a050-b5bd251a841b</Id>
+      <BaseId>8b963392-ccd4-41e5-a53c-399e6f16714d</BaseId>
       <CommandString>[open;show;close;hide;] planet [view;]</CommandString>
       <Description>Planet View: M</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>1ac30fa9-3d15-474a-9a9e-2108b25f097e</Id>
+          <Id>7c1fbb65-9f23-44d8-bea6-a53cb5b2019b</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3583,7 +3739,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>e86ae830-1841-456d-901f-3bd782bb13b4</Id>
+          <Id>eb22255a-656f-4259-8943-224f8fb9dad2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3601,14 +3757,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>2faaaeef-5a78-4363-b814-99c8ad70a7ac</Id>
-      <BaseId>bcbe8fd3-ee16-4d87-9a76-d79950c44df1</BaseId>
+      <Id>fd749566-8aef-41d1-9cc4-15db68dd9ddc</Id>
+      <BaseId>8c6a24b3-5b9f-4930-81d0-c17d38f795fe</BaseId>
       <CommandString>[face;rotate;point] north</CommandString>
       <Description>Face North: N</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>3174e61e-60e0-427a-9c7b-5594252444ad</Id>
+          <Id>edf0076b-ab37-4816-8aad-d84050c8a3ba</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3621,7 +3777,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>4aaafdd2-3763-47f8-9896-3a9b65aa35a5</Id>
+          <Id>4c3d4b0d-1660-4300-8da1-49ef7f1e023f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3639,14 +3795,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>f7d99147-b29d-4d9c-a367-47191a34eaa2</Id>
-      <BaseId>9f2bb8c4-151c-403d-83b1-3ee77b394643</BaseId>
+      <Id>6025db9f-421f-4280-a9e5-fd493886262a</Id>
+      <BaseId>61d7fb08-9501-43ef-bdf7-85c16075a6fc</BaseId>
       <CommandString>[copy;duplicate]</CommandString>
       <Description>Copy selected build: Shift + left click</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>729d0594-0bda-4a9b-87f8-efa46642c92e</Id>
+          <Id>0082c597-1fcd-479b-8678-99c4d00ce339</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3659,7 +3815,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>b89a71f1-b7ca-4e4f-a064-65a1766e7a7b</Id>
+          <Id>d619000d-cf1d-405b-9953-beff873643e1</Id>
           <ActionType>KeyDown</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3669,7 +3825,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>907eb3bd-de2d-4a03-b6bc-69a01bb33af9</Id>
+          <Id>0d929f3a-18c6-485e-b5e7-cc3c95864792</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3679,7 +3835,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>2527717c-7a97-4f46-be11-51ba96194bc3</Id>
+          <Id>a8e532b5-a23f-45b2-b063-12a679bda111</Id>
           <ActionType>MouseAction</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3689,7 +3845,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>fc4a37c5-d3fe-4faa-b28e-ab106452b07e</Id>
+          <Id>eafb49d3-2da5-47c8-a764-ec9c7a7603be</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3699,7 +3855,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>2b6aafde-04be-4815-be8d-16103e16c73e</Id>
+          <Id>0c47acaa-5a3c-43c6-a6e8-cf8acdcd7e33</Id>
           <ActionType>KeyUp</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3717,14 +3873,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>409fa610-e919-4ebd-9a5d-9488980e2cf7</Id>
-      <BaseId>dd21b649-8328-4569-99ba-9736a7b21fac</BaseId>
+      <Id>fe07c9ef-1a78-4ffe-9acd-5535513a497d</Id>
+      <BaseId>b2150901-9c25-4f35-96fc-071cc2ef4564</BaseId>
       <CommandString>[screenshot;take screenshot;capture screen]</CommandString>
       <Description>Screenshot: Shift + F11</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>f1558a87-5860-4e47-b9b8-6fdb52cefc0a</Id>
+          <Id>be1dfa6a-d50c-472a-82a4-61ab7eaa48fa</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3737,7 +3893,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>85dd356c-8109-4485-a9c5-3c37aabd05d3</Id>
+          <Id>60a8a1fc-d779-440d-af26-954ffe114826</Id>
           <ActionType>KeyDown</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3747,7 +3903,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>2</Ordinal>
-          <Id>c78ca9a3-b8d1-4896-ba6c-bcb99522cb94</Id>
+          <Id>4335bcf5-b426-488a-b048-88aa0527fad2</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3757,7 +3913,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>3</Ordinal>
-          <Id>a087c7cd-f916-43be-a007-1e238a12f37c</Id>
+          <Id>67c6f36c-47bb-4ffa-ba51-b608be499807</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3767,7 +3923,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>4</Ordinal>
-          <Id>5f0ea824-9dc5-4d1f-8aa4-5b3f41d5e747</Id>
+          <Id>e72958a0-e419-4f2d-91c9-c76e1c8f2cae</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3777,7 +3933,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>5</Ordinal>
-          <Id>c02599b5-57e8-46b8-8ab4-bdb1b2cd11a6</Id>
+          <Id>3bf34fd6-f120-4571-bec9-85c1042b5367</Id>
           <ActionType>KeyUp</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3795,14 +3951,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>55639863-b3a9-46b4-8c53-54b7ad42121a</Id>
-      <BaseId>cecf5c99-80ff-4813-8bc8-efb6a585b2e8</BaseId>
+      <Id>05212210-4715-4ab6-bbb1-470919f4c121</Id>
+      <BaseId>30778fc7-416d-4140-83e6-2f09c2ac4296</BaseId>
       <CommandString>upgrade [mode;]</CommandString>
       <Description>Upgrade mode: U</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>70033163-4124-400c-be13-e16bf539b3b4</Id>
+          <Id>125d89b2-5955-41cd-bd3d-617c4071c377</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3815,7 +3971,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>234d6861-10d4-46c0-b6f7-a790714ea155</Id>
+          <Id>1b4b0aba-fd6a-4f98-b58c-f3f49290de88</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>
@@ -3833,14 +3989,14 @@
       <UseMouse>false</UseMouse>
     </Command>
     <Command>
-      <Id>a7008dda-aa7f-4ae4-97b4-075800af0e94</Id>
-      <BaseId>7ff44894-3a0f-4a45-bc14-054fa364cec9</BaseId>
+      <Id>c6b50db3-6b2b-469f-bdbc-db5c93af1fd7</Id>
+      <BaseId>3bccb2e8-9ac9-44c0-8997-029deb6b38cb</BaseId>
       <CommandString>[dismantle;demolish] [mode;]</CommandString>
       <Description>Dismantle mode: X</Description>
       <ActionSequence>
         <CommandAction>
           <Ordinal>0</Ordinal>
-          <Id>2e6e6480-647e-40d6-8bab-ba72ac871dfd</Id>
+          <Id>a15b7ef1-a53c-45a1-99e6-49f906493478</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3853,7 +4009,7 @@
         </CommandAction>
         <CommandAction>
           <Ordinal>1</Ordinal>
-          <Id>6b2c369c-8882-4ef9-a785-dd68b9145462</Id>
+          <Id>83277079-09e2-4933-b02c-995018e06449</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.05</Duration>
           <Delay>0</Delay>

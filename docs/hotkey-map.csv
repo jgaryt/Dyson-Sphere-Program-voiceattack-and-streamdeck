@@ -43,8 +43,8 @@ Implosion Cannon,7 → F3,7 Defence,[build;place;] implosion cannon,Deploying im
 Jammer Tower,7 → F8,7 Defence,[build;place;] jammer tower,Deploying jammer tower / Constructing jammer tower,Jammer,Likely,Not tested yet
 Signal Tower,7 → F9,7 Defence,[build;place;] signal tower,Deploying signal tower / Constructing signal tower,Signal,Likely,Not tested yet
 Matrix Lab,8 → F1,8 COSMO,[build;place;] [matrix;research] lab,Deploying matrix lab / Constructing matrix lab,Lab,Confirmed,Research buildings live in COSMO
-EM Rail Ejector?,8 → F2,8 COSMO,,,Ejector,Guess,Hover to confirm
-Ray Receiver?,8 → F3,8 COSMO,,,Receiver,Guess,Could be Vertical Launching Silo
+EM Rail Ejector,8 → F2,8 COSMO,[build;place;] [rail ejector;ejector],Deploying rail ejector / Constructing rail ejector,Ejector,Confirmed,
+Ray Receiver,8 → F3,8 COSMO,[build;place;] ray receiver,Deploying ray receiver / Constructing ray receiver,Receiver,Confirmed,
 Foundation,9 → F1,9 Foundation,[build;place;] foundation,Deploying foundation / Constructing foundation,Found,Confirmed,
 Foundation variant?,9 → F2,9 Foundation,,,,Guess,Hover to confirm
 Restore terrain?,9 → F3,9 Foundation,,,,Guess,Hover to confirm
