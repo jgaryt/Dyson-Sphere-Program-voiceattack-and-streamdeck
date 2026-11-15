@@ -1,30 +1,51 @@
 # Changing Icarus's voice
 
-Every command starts with a VoiceAttack **Say Something with Text-To-Speech** action. The repo
-builds two profiles that differ only in which voice those actions use:
+Every command starts with a **Say Something with Text-To-Speech** action, the reply Icarus
+speaks. This guide covers changing the voice and its sound effects, setting up Azure voices, and
+the related VoiceAttack settings. Written against VoiceAttack v2.2.0.3.
 
-| Profile | Voice |
-|---|---|
-| `DSP Build Hotkeys-Profile.vap` | An Azure voice, currently `[Azure] Grant MAI-Voice-2.1-Flash (en-US)` |
-| `DSP Build Hotkeys-LocalVoice-Profile.vap` | No voice set, so it uses the Windows default voice |
+**Which section do I need?**
 
-## Changing the Azure voice (recommended way)
+- *I want a different voice or effect, now:* [Change it in VoiceAttack](#change-it-in-voiceattack)
+- *I want new profile versions to use that voice too:* [Make it the default](#make-it-the-default-for-new-versions)
+- *There are no `[Azure]` voices in the list:* [One-time Azure setup](#one-time-azure-setup)
+- *I'm using the local-voice profile:* [Windows voices](#windows-voices-local-voice-profile)
 
-Change the voice in the generator. Voice changes made inside VoiceAttack are saved with the
-profile, but they're replaced the next time you import a newly generated profile.
+## Change it in VoiceAttack
 
-1. **Find the exact voice name VoiceAttack uses.**
-   1. In VoiceAttack, edit any command and double-click its **Say** action. You can also add a
-      temporary one under **Other → Sounds → Say Something with Text-To-Speech**.
-   2. Open the **Voice** dropdown. Azure voices are listed with an `[Azure]` prefix, for example
-      `[Azure] Grant MAI-Voice-2.1-Flash (en-US)`.
-   3. Note the name exactly as shown, including the brackets, spaces and the region in parentheses.
-      Then cancel without saving.
+This works for Azure and Windows voices alike.
 
-   Azure voices only show up once Azure text-to-speech is set up in VoiceAttack. If the dropdown
-   has no `[Azure]` entries, see [One-time Azure setup](#one-time-azure-setup) below.
+**One command:**
 
-2. **Edit the generator.** In `scripts/build_profile.py`, find the `VARIANTS` list near the bottom:
+1. With the profile loaded, click the **edit** (pencil) icon next to the profile name.
+2. Select a command and click **Edit** (top right).
+3. Highlight the action line that begins with **Say** and click **Edit**.
+4. Choose a **Voice**, and an **Effect Set** if you want one, e.g. pitch shift or reverb. The
+   **…** button next to Effect Set edits effect sets or creates new ones. Click **Preview** to
+   hear it.
+5. Click **OK** on each screen to save.
+
+**Every command at once (Mass update):**
+
+1. Do steps 1–4 on any one command.
+2. Before clicking OK in the Say dialog, tick **Mass update** (bottom left).
+3. A **Mass Update Selected** warning lists the changes. Every reply using the *old* voice gets
+   the new voice, and those with no effect set get the new one. Click **Yes**.
+4. Click **OK** on the command screen and the profile screen to save. Clicking **Cancel** on the
+   command screen undoes it.
+
+Your changes are saved with the profile. Importing a new version of the profile replaces them,
+so redo the Mass update after each import. That takes about a minute.
+
+## Make it the default for new versions
+
+To make new profile versions start with your voice, set it in the build script. **The effect set
+can't be set this way yet.** Re-apply it with Mass update after importing.
+
+1. **Get the exact voice name.** In any Say action, open the **Voice** dropdown and copy the name
+   exactly, including brackets, spaces and the region, e.g.
+   `[Azure] Grant MAI-Voice-2.1-Flash (en-US)`. Then cancel.
+2. **Edit `scripts/build_profile.py`.** Near the bottom, put the name in the `VARIANTS` list:
 
    ```python
    VARIANTS = [
@@ -33,123 +54,70 @@ profile, but they're replaced the next time you import a newly generated profile
    ]
    ```
 
-   Replace `[Azure] Grant MAI-Voice-2.1-Flash (en-US)` with the new name from step 1.
+   The first line is the Azure profile. The local-voice profile is left blank on purpose, so it
+   uses the Windows default voice.
+3. **Rebuild:** run `python scripts/build_profile.py`.
+4. **Re-import:** delete the old profile in VoiceAttack, then import the new `.vap`.
+5. **Commit** the changes to the repo.
 
-3. **Regenerate the profiles.** Run `python scripts/build_profile.py`.
-
-4. **Re-import.** In VoiceAttack, delete the old **Dyson Sphere Program - Build Hotkeys** profile,
-   then import `profiles/DSP Build Hotkeys-Profile.vap`.
-
-5. **Commit** the changed script and profiles.
-
-### If the name doesn't match
-
-If the name in the generator doesn't exactly match a voice VoiceAttack knows, the replies may play
-in the default voice or not at all. Check for typos and the `[Azure]` prefix.
-
-To be sure of the exact format, set the voice on one Say action by hand, export the profile, and
-compare it with the generated file.
-
-## The Text-to-Speech options tab
-
-Most voice settings live in VoiceAttack's **Options** (the wrench icon), on the **Text-to-Speech**
-tab. Screens below are from VoiceAttack v2.2.0.3.
-
-| Setting | What it does |
-|---|---|
-| **Override Default Text-to-Speech Device** | Send Icarus to a specific output, e.g. your headset. The default is the Windows playback device. |
-| **TTS Volume Offset** | Volume for all speech. |
-| **Single TTS Instance** | Only one reply plays at a time. Useful if replies pile up when you give commands quickly. |
-| **Click here for the TTS Sound Effects Manager** | Add effects to the voice, such as pitch shift or reverb/delay, for a more robotic Icarus. |
-| **Click here for Azure TTS Settings** | Azure key, region and the Enable Azure TTS switch (see below). |
-
-Sending Icarus to a headset also stops the microphone from hearing him. Together with the
-generator's reply check, that's a second guard against feedback loops.
+If replies come out in the wrong voice or stay silent, the name probably doesn't exactly match.
+Check spelling and the `[Azure]` prefix.
 
 ## One-time Azure setup
 
-Azure voices need an Azure Speech key in VoiceAttack. Based on the VoiceAttack forum post
-"Setting up Azure Services": https://forum.voiceattack.com/smf/index.php?topic=5207.0
+Azure voices only appear in the Voice dropdown once VoiceAttack has an Azure Speech key. Steps
+from the VoiceAttack forum post "Setting up Azure Services":
+https://forum.voiceattack.com/smf/index.php?topic=5207.0
 
-1. In the Azure portal, create a Speech resource. Open its **Keys and endpoint** page and copy a
+1. In the Azure portal, create a **Speech** resource. On its **Keys and endpoint** page, copy a
    **key** and the **region**.
 2. In VoiceAttack, open **Options** (wrench icon) → **Text-to-Speech** tab, then click
    **Click here for Azure TTS Settings**.
-3. Click **Click here to open Azure speech key settings**, enter the Speech Key and Region, and
-   click OK.
-4. Back on the Azure TTS Settings screen, tick **Enable Azure TTS**, set any other options, and
-   click OK.
-5. Azure voices now appear in the Voice dropdown of the **Say Something with Text-To-Speech**
-   action.
+3. Click **Click here to open Azure speech key settings**, enter the key and region, and click OK.
+4. Tick **Enable Azure TTS** and click OK.
 
-Azure text-to-speech is a paid service with a free monthly allowance. Short replies use very
-little of it. Keep the key private, and don't commit it to this repo.
+Things to know about Azure:
+- **It costs money past a free monthly allowance.** Icarus's short replies use very little.
+- **Keep the key private.** Never commit it to this repo.
+- **Each reply makes a quick trip to the internet,** so expect a small delay. The local-voice
+  profile has none.
 
-## Changing the voice inside VoiceAttack
+## Text-to-Speech settings
 
-This works for Azure and Windows voices alike:
+**Options** (wrench icon) → **Text-to-Speech** tab:
 
-1. With the profile loaded, click the **edit** (pencil) icon next to the profile name.
-2. Select a command and click **Edit** (top right of the Edit a Profile screen).
-3. In the action list, highlight the line that begins with **Say**.
-4. Click **Edit**.
-5. In **Say Something with Text-To-Speech**:
-   - **Voice** chooses the voice, e.g. `[Azure] Grant MAI-Voice-2.1-Flash (en-US)`.
-   - **Effect Set** applies a sound effect set (pitch, reverb/delay and so on). The **…** button
-     next to it edits effect sets and creates new ones.
-   - **Preview** plays it.
-6. Click OK on each screen.
+| Setting | What it does |
+|---|---|
+| **Override Default Text-to-Speech Device** | Plays Icarus on a chosen output, e.g. your headset. |
+| **TTS Volume Offset** | Volume of all speech. |
+| **Single TTS Instance** | Plays one reply at a time. Recommended. |
+| **Click here for the TTS Sound Effects Manager** | Create and edit effect sets (pitch shift, reverb/delay and so on). |
+| **Click here for Azure TTS Settings** | Azure key, region and on/off switch (see above). |
 
-On its own this changes one command. To change **every** command at once, use **Mass update**:
+Playing Icarus through a headset also stops the microphone from hearing him.
 
-1. Do steps 1–5 on any one command, choosing the new voice and effect set.
-2. Tick **Mass update** (bottom left of the Say dialog) and click OK.
-3. VoiceAttack shows a **Mass Update Selected** warning listing what will change across the whole
-   profile. Every Say action using the old voice gets the new voice. Any that have no effect set
-   get the new effect set, and a blank locale becomes `Default`. Click **Yes**.
-4. Click OK on the command screen and on the profile screen to save. Clicking **Cancel** on the
-   command screen undoes the mass update.
+## Windows voices (local-voice profile)
 
-Mass update matches on the **old voice**. Replies that use a different voice are left alone.
+The local-voice profile uses the Windows default text-to-speech voice. To change it:
 
-Changes made here are saved with the profile in VoiceAttack and stay put. They are only replaced
-when you delete the profile and import a newly generated one, which happens whenever commands are
-added or changed in this repo. To keep a voice choice across those updates, also set it in the
-generator (above).
-
-## Changing the local (Windows) voice
-
-The local-voice profile uses whatever Windows' default text-to-speech voice is, so no repo change
-is needed:
-
-1. Press **Win + R** and run `C:\Windows\SysWOW64\Speech\SpeechUX\sapi.cpl`. Use the 32-bit panel,
-   because that's the one VoiceAttack reads.
-2. On the **Text to Speech** tab, pick a voice, such as **Microsoft David**.
+1. Press **Win + R** and run `C:\Windows\SysWOW64\Speech\SpeechUX\sapi.cpl`. Use this 32-bit
+   panel, because it's the one VoiceAttack reads.
+2. On the **Text to Speech** tab, pick a voice, e.g. **Microsoft David**.
 3. Restart VoiceAttack.
 
-### More local voices: Microsoft Speech Platform 11
+You can also use Mass update to pick a voice and effect set instead (see above).
 
-VoiceAttack can also use voices from Microsoft Speech Platform 11, which are free and local. See
-https://voiceattack.com/alternate.aspx.
+**Want more Windows voices?** Microsoft Speech Platform 11 adds free voices that play instantly
+and sound older and more robotic, which can suit Icarus. See https://voiceattack.com/alternate.aspx.
 
-1. Install the Microsoft Speech Platform runtime, from Microsoft or VoiceAttack.com.
-2. Install the TTS voices you want from the same place. You only need the voices for text-to-speech,
-   not a speech recognition engine.
-3. Start VoiceAttack. It finds them automatically.
-4. Set one as the Windows default voice (see above) for the local-voice profile to pick it up.
-   No repo change is needed.
+1. Install the Speech Platform runtime and the voices you want.
+2. Restart VoiceAttack.
 
-They play instantly but sound older and more robotic than Azure voices, which can suit Icarus.
+You don't need its speech recognition engines. Leave recognition on Windows (**Options →
+System/Advanced**), since that setting affects every profile, including Elite Dangerous.
 
-**Leave speech recognition on Windows.** The same page offers Speech Platform recognition engines,
-but those don't learn your voice, need a confidence setting above 75, and don't log unrecognized
-commands. Recognition is set under **Options → System/Advanced** and affects every profile,
-including Elite Dangerous.
+## Whatever voice you choose
 
-## Things to keep in mind
-
-- **Azure is cloud-based.** Each reply needs a quick trip to Azure, so expect a small delay. If it
-  matters, use the local-voice profile.
-- **Replies must never match a command.** VoiceAttack can hear Icarus through the speakers, and a
-  reply that matches a command will set it off again in a loop. Changing the voice doesn't affect
-  this. The generator refuses to build a profile if any reply matches a command.
+Icarus's replies must never match a voice command, or VoiceAttack hears him and repeats the
+command in a loop. Changing the voice doesn't affect this. If you edit replies in the build
+script, it checks for you.
