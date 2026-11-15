@@ -11,6 +11,7 @@ import zipfile
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layout import COLS, PAGES, ROWS, VA_PHRASES  # noqa: E402
+from icons import ICON_DIR, filename as icon_file  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 # Two profiles from the same layout:
@@ -123,7 +124,7 @@ def build_variant(variant):
     out, profile_name = VARIANTS[variant]
     profile_id = gid().upper()
     default_page = gid()
-    page_ids, files, skipped = [], {}, []
+    page_ids, files, skipped, images, page_of = [], {}, [], {}, {}
     for num, (_name, buttons) in PAGES.items():
         assert len(buttons) == COLS * ROWS
         actions = {}
@@ -134,9 +135,15 @@ def build_variant(variant):
             if action is None:
                 skipped.append(label)
                 continue
+            icon = ICON_DIR / icon_file(label)
+            if icon.exists():
+                # Icon already shows the label, so hide Stream Deck's own title text.
+                action["States"][0].update({"Image": f"Images/{icon.name}", "ShowTitle": False})
+                images.setdefault(num, []).append(icon)
             actions[f"{i % COLS},{i // COLS}"] = action
         pid = gid()
         page_ids.append(pid)
+        page_of[pid] = num
         files[pid] = page_manifest(actions)
     files[default_page] = page_manifest({})
 
@@ -167,6 +174,8 @@ def build_variant(variant):
             page = f"{base}/Profiles/{pid.upper()}"
             z.writestr(f"{page}/", "")
             z.writestr(f"{page}/Images/", "")
+            for icon in images.get(page_of.get(pid), []):
+                z.write(icon, f"{page}/Images/{icon.name}")
             z.writestr(f"{page}/manifest.json", json.dumps(man, indent=1))
     print("wrote", out)
     if skipped:
