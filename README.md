@@ -29,9 +29,12 @@ Two pages on a Stream Deck XL (8 × 4 keys):
 
 The bottom-right key of page 1 and the bottom-left key of page 2 switch pages.
 
-**Copy (Shift + left click) is not on the deck yet.** Stream Deck's built-in actions can't click
-the mouse, so it needs a plugin such as BarRaider's SuperMacro. Its key on page 2 is left empty.
-Use the VoiceAttack "copy" command for now.
+**Copy (Shift + left click) is not on the deck.** Its key on page 2 is left empty; use the
+VoiceAttack "copy" command instead. Stream Deck's built-in actions can't click the mouse, and
+these were tried without success:
+- BarRaider SuperMacro: `{{SHIFT}{LBUTTON}}`, with a higher output delay, and with pauses
+  (`{{SHIFT}{PAUSE:50}{LBUTTON}{PAUSE:50}}`)
+- A VoiceAttack plugin button running the copy command
 
 ## How the buttons work
 
