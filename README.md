@@ -6,7 +6,8 @@ actions and panels. It's the button counterpart to the
 [VoiceAttack profile](https://github.com/jgaryt/DysonSphereProgram-VoiceAttack-Profile) and uses
 the same key map.
 
-**Status: first build, being tested.** Built for Stream Deck 7.6.1 on Windows. See
+**Status: working.** Every button tested on a Stream Deck XL with Stream Deck 7.6.1 on Windows,
+except Copy (see below). See
 [`docs/layout.md`](docs/layout.md) for every button.
 
 ## Install

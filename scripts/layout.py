@@ -49,7 +49,7 @@ PAGES = {
         # Row 1: modes and movement
         ("Cancel", key("Esc")), ("Upgrade", key("U")), ("Dismantle", key("X")),
         ("Copy", key("Shift+LeftClick")), ("Fly", key("Space", WAIT, "Space")),
-        ("Land", key("LeftAlt")), ("North", key("N")), ("Screenshot", key("Shift+F11")),
+        ("Land", key("Alt")), ("North", key("N")), ("Screenshot", key("Shift+F11")),
         # Row 2: panels
         ("Mecha", key("C")), ("Stats", key("P")), ("Inventory", key("E")),
         ("Replicator", key("F")), ("Details", key("H")), ("Tech", key("T")),

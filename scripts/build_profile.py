@@ -22,8 +22,10 @@ DEVICE_UUID = "3886e867-0ea5-45cc-99be-48c57f7d6c07"  # from the sample export; 
 KEYS = {str(d): (48 + d, 48 + d) for d in range(10)}
 KEYS.update({chr(c): (c, c) for c in range(ord("A"), ord("Z") + 1)})
 KEYS.update({f"F{n}": (16777263 + n, 111 + n) for n in range(1, 13)})
-KEYS.update({"Esc": (16777216, 27), "Space": (32, 32), "LeftAlt": (16777251, 18)})
-MODIFIERS = {"Shift": 1}
+KEYS.update({"Esc": (16777216, 27), "Space": (32, 32)})
+# KeyModifiers bits. Shift and Alt confirmed from exports; Alt on its own = modifier with no key.
+MODIFIERS = {"Shift": 1, "Alt": 4}
+NO_KEY = (33554431, -1)
 EMPTY_HOTKEY = {"KeyModifiers": 0, "QTKeyCode": 33554431, "VKeyCode": -1}
 # Built-in Stream Deck actions can't click the mouse, so these steps are skipped (see README).
 UNSUPPORTED = {"Shift+LeftClick"}
@@ -41,10 +43,13 @@ def gid():
 
 def hotkey(spec, title=None):
     mods = 0
-    *mod_names, name = spec.split("+")
+    parts = spec.split("+")
+    if parts[-1] in MODIFIERS:          # a modifier pressed on its own, e.g. "Alt"
+        mod_names, (qt, vk) = parts, NO_KEY
+    else:
+        mod_names, (qt, vk) = parts[:-1], KEYS[parts[-1]]
     for m in mod_names:
         mods |= MODIFIERS[m]
-    qt, vk = KEYS[name]
     return {
         "ActionID": gid(), "LinkedTitle": True, "Name": "Hotkey", "Plugin": PLUGINS["hotkey"],
         "Resources": None,
