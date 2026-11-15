@@ -5,7 +5,7 @@ A Voice Attack 2 Profile for Dyson Sphere Program
 
 | Path | What it is |
 |---|---|
-| `profiles/DSP Build Hotkeys-Profile.vap` | Importable VoiceAttack profile, Azure Blue voice (generated) |
+| `profiles/DSP Build Hotkeys-Profile.vap` | Importable VoiceAttack profile, Azure Grant voice (generated) |
 | `profiles/DSP Build Hotkeys-LocalVoice-Profile.vap` | Same commands, Windows default voice: no cloud delay (generated) |
 | `scripts/build_profile.py` | Generator for the profile: commands, keys, replies, voice |
 | `docs/changing-the-voice.md` | How to switch the Azure voice (or the Windows voice) |
@@ -23,7 +23,7 @@ say reply → 9 → (0.1 s) → 1 → (0.1 s) → F4      # "wind turbine"
 Bar 9 items use `8` as the switch key instead. Single-key actions (Upgrade `U`, Dismantle `X`,
 Cancel `Esc`, Land `Left Alt`) and Fly (`Space` twice) don't need this.
 
-Replies use VoiceAttack text-to-speech with the `[Azure] Blue (en-US)` voice. Each reply lists
+Replies use VoiceAttack text-to-speech with the `[Azure] Grant MAI-Voice-2.1-Flash (en-US)` voice. Each reply lists
 2–3 phrases separated by `;`; VoiceAttack picks one at random. The speech action runs first so
 the reply isn't delayed by the key presses.
 

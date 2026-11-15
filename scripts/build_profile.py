@@ -165,7 +165,7 @@ xml = f"""<?xml version="1.0" encoding="utf-8"?>
 """
 # One profile per voice. Same commands; only the TTS voice and profile name differ.
 VARIANTS = [
-    ("profiles/DSP Build Hotkeys-Profile.vap", "[Azure] Blue (en-US)", ""),
+    ("profiles/DSP Build Hotkeys-Profile.vap", "[Azure] Grant MAI-Voice-2.1-Flash (en-US)", ""),
     ("profiles/DSP Build Hotkeys-LocalVoice-Profile.vap", "", " (local voice)"),
 ]
 for path, voice, suffix in VARIANTS:

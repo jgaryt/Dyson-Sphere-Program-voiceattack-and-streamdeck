@@ -5,7 +5,7 @@ builds two profiles that differ only in which voice those actions use:
 
 | Profile | Voice |
 |---|---|
-| `DSP Build Hotkeys-Profile.vap` | An Azure voice, currently `[Azure] Blue (en-US)` |
+| `DSP Build Hotkeys-Profile.vap` | An Azure voice, currently `[Azure] Grant MAI-Voice-2.1-Flash (en-US)` |
 | `DSP Build Hotkeys-LocalVoice-Profile.vap` | No voice set, so it uses the Windows default voice |
 
 ## Changing the Azure voice (recommended way)
@@ -17,7 +17,7 @@ profile, but they're replaced the next time you import a newly generated profile
    1. In VoiceAttack, edit any command and double-click its **Say** action. You can also add a
       temporary one under **Other → Sounds → Say Something with Text-To-Speech**.
    2. Open the **Voice** dropdown. Azure voices are listed with an `[Azure]` prefix, for example
-      `[Azure] Blue (en-US)`.
+      `[Azure] Grant MAI-Voice-2.1-Flash (en-US)`.
    3. Note the name exactly as shown, including the brackets, spaces and the region in parentheses.
       Then cancel without saving.
 
@@ -28,12 +28,12 @@ profile, but they're replaced the next time you import a newly generated profile
 
    ```python
    VARIANTS = [
-       ("profiles/DSP Build Hotkeys-Profile.vap", "[Azure] Blue (en-US)", ""),
+       ("profiles/DSP Build Hotkeys-Profile.vap", "[Azure] Grant MAI-Voice-2.1-Flash (en-US)", ""),
        ("profiles/DSP Build Hotkeys-LocalVoice-Profile.vap", "", " (local voice)"),
    ]
    ```
 
-   Replace `[Azure] Blue (en-US)` with the new name from step 1.
+   Replace `[Azure] Grant MAI-Voice-2.1-Flash (en-US)` with the new name from step 1.
 
 3. **Regenerate the profiles.** Run `python scripts/build_profile.py`.
 
