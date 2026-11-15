@@ -83,6 +83,25 @@ is needed:
 2. On the **Text to Speech** tab, pick a voice, such as **Microsoft David**.
 3. Restart VoiceAttack.
 
+### More local voices: Microsoft Speech Platform 11
+
+VoiceAttack can also use voices from Microsoft Speech Platform 11, which are free and local. See
+https://voiceattack.com/alternate.aspx.
+
+1. Install the Microsoft Speech Platform runtime, from Microsoft or VoiceAttack.com.
+2. Install the TTS voices you want from the same place. You only need the voices for text-to-speech,
+   not a speech recognition engine.
+3. Start VoiceAttack. It finds them automatically.
+4. Set one as the Windows default voice (see above) for the local-voice profile to pick it up.
+   No repo change is needed.
+
+They play instantly but sound older and more robotic than Azure voices, which can suit Icarus.
+
+**Leave speech recognition on Windows.** The same page offers Speech Platform recognition engines,
+but those don't learn your voice, need a confidence setting above 75, and don't log unrecognized
+commands. Recognition is set under **Options → System/Advanced** and affects every profile,
+including Elite Dangerous.
+
 ## Things to keep in mind
 
 - **Azure is cloud-based.** Each reply needs a quick trip to Azure, so expect a small delay. If it
