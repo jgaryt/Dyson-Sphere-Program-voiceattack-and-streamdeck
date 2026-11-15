@@ -100,9 +100,17 @@ This works for Azure and Windows voices alike:
    - **Preview** plays it.
 6. Click OK on each screen.
 
-**This changes one command at a time.** Every command has its own Say action, so you'd have to
-repeat this for all of them. The dialog also has a **Mass update** checkbox, which may apply the
-change to more Say actions at once; check VoiceAttack's help before relying on it.
+On its own this changes one command. To change **every** command at once, use **Mass update**:
+
+1. Do steps 1–5 on any one command, choosing the new voice and effect set.
+2. Tick **Mass update** (bottom left of the Say dialog) and click OK.
+3. VoiceAttack shows a **Mass Update Selected** warning listing what will change across the whole
+   profile. Every Say action using the old voice gets the new voice. Any that have no effect set
+   get the new effect set, and a blank locale becomes `Default`. Click **Yes**.
+4. Click OK on the command screen and on the profile screen to save. Clicking **Cancel** on the
+   command screen undoes the mass update.
+
+Mass update matches on the **old voice**. Replies that use a different voice are left alone.
 
 Changes made here are saved with the profile in VoiceAttack and stay put. They are only replaced
 when you delete the profile and import a newly generated one, which happens whenever commands are
