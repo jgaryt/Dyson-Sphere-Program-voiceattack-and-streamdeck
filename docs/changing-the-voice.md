@@ -10,8 +10,8 @@ builds two profiles that differ only in which voice those actions use:
 
 ## Changing the Azure voice (recommended way)
 
-Change the voice in the generator, not in VoiceAttack. Edits made inside VoiceAttack are lost the
-next time the profile is regenerated and re-imported.
+Change the voice in the generator. Voice changes made inside VoiceAttack are saved with the
+profile, but they're replaced the next time you import a newly generated profile.
 
 1. **Find the exact voice name VoiceAttack uses.**
    1. In VoiceAttack, edit any command and double-click its **Say** action. You can also add a
@@ -104,9 +104,10 @@ This works for Azure and Windows voices alike:
 repeat this for all of them. The dialog also has a **Mass update** checkbox, which may apply the
 change to more Say actions at once; check VoiceAttack's help before relying on it.
 
-Changes made here are also lost the next time the generated profile is imported. To change the
-voice everywhere for good, change it in the generator (above). Use this method to try voices out
-and note the exact name.
+Changes made here are saved with the profile in VoiceAttack and stay put. They are only replaced
+when you delete the profile and import a newly generated one, which happens whenever commands are
+added or changed in this repo. To keep a voice choice across those updates, also set it in the
+generator (above).
 
 ## Changing the local (Windows) voice
 
