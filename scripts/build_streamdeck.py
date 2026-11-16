@@ -8,7 +8,6 @@ Two profiles from the same layout:
 Format matched to profiles exported by Stream Deck 7.6.1 for a Stream Deck XL.
 """
 import json
-import uuid
 import zipfile
 
 import dsp
@@ -45,8 +44,28 @@ VA_CONTEXT = "5e96c48814cd150165d6072828e0901e"     # copied from a working expo
 VA_ICON = "actions/CustomAction/HCSAction.jpg"
 
 
+# IDs are derived from what they belong to, so the same data builds identical profiles.
+_seed, _count = "", 0
+
+
+def seed_ids(*parts):
+    global _seed, _count
+    _seed, _count = "|".join(str(p) for p in parts), 0
+
+
 def gid():
-    return str(uuid.uuid4())
+    global _count
+    _count += 1
+    return dsp.stable_id("sd", _seed, _count)
+
+
+ZIP_TIME = (2024, 1, 1, 0, 0, 0)   # fixed timestamp inside the zip, for repeatable builds
+
+
+def zwrite(z, name, data=b""):
+    info = zipfile.ZipInfo(name, date_time=ZIP_TIME)
+    info.compress_type = zipfile.ZIP_DEFLATED
+    z.writestr(info, data)
 
 
 def hotkey(spec, title):
@@ -133,8 +152,9 @@ def build_variant(entries, variant):
     filename, profile_name = VARIANTS[variant]
     page_ids, files, images, skipped = [], {}, {}, set()
     for page, cells in layout(entries).items():
-        actions, pid = {}, gid()
+        actions, pid = {}, dsp.stable_id("sd-page", variant, page)
         for (col, row), (label, e) in sorted(cells.items()):
+            seed_ids(variant, page, col, row, label)
             if e is None:
                 action = page_action("previous" if label == "Prev" else "next", label)
             elif variant == "va":
@@ -152,10 +172,10 @@ def build_variant(entries, variant):
             actions[f"{col - 1},{row - 1}"] = action
         page_ids.append(pid)
         files[pid] = {"Controllers": [{"Actions": actions or None, "Type": "Keypad"}], "Icon": "", "Name": ""}
-    default_page = gid()
+    default_page = dsp.stable_id("sd-default-page", variant)
     files[default_page] = {"Controllers": [{"Actions": None, "Type": "Keypad"}], "Icon": "", "Name": ""}
 
-    base = f"Profiles/{gid().upper()}.sdProfile"
+    base = f"Profiles/{dsp.stable_id('sd-profile', variant).upper()}.sdProfile"
     package = {
         "AppVersion": "7.6.1.23033", "DeviceModel": DEVICE_MODEL, "DeviceSettings": None,
         "FormatVersion": 1, "OSType": "Windows", "OSVersion": "10.0.22631",
@@ -171,18 +191,18 @@ def build_variant(entries, variant):
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(OUT_DIR / filename, "w", zipfile.ZIP_DEFLATED) as z:
         # Same entries as Stream Deck's own export, including the empty folder entries.
-        z.writestr("package.json", json.dumps(package, indent=1))
+        zwrite(z, "package.json", json.dumps(package, indent=1))
         for folder in ("Profiles/", f"{base}/"):
-            z.writestr(folder, "")
-        z.writestr(f"{base}/manifest.json", json.dumps(root, indent=1))
-        z.writestr(f"{base}/Profiles/", "")
+            zwrite(z, folder)
+        zwrite(z, f"{base}/manifest.json", json.dumps(root, indent=1))
+        zwrite(z, f"{base}/Profiles/")
         for pid, man in files.items():
             page = f"{base}/Profiles/{pid.upper()}"
-            z.writestr(f"{page}/", "")
-            z.writestr(f"{page}/Images/", "")
+            zwrite(z, f"{page}/")
+            zwrite(z, f"{page}/Images/")
             for icon in images.get(pid, []):
-                z.write(icon, f"{page}/Images/{icon.name}")
-            z.writestr(f"{page}/manifest.json", json.dumps(man, indent=1))
+                zwrite(z, f"{page}/Images/{icon.name}", icon.read_bytes())
+            zwrite(z, f"{page}/manifest.json", json.dumps(man, indent=1))
     note = f", left out (needs a mouse plugin): {', '.join(sorted(skipped))}" if skipped else ""
     print(f"wrote streamdeck/profiles/{filename}{note}")
 

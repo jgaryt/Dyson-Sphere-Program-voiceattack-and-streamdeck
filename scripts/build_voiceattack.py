@@ -2,7 +2,6 @@
 
 Writes one profile per voice in VARIANTS. VoiceAttack imports this uncompressed XML format.
 """
-import uuid
 from xml.sax.saxutils import escape
 
 import dsp
@@ -23,17 +22,13 @@ CODES.update({f"F{n}": 111 + n for n in range(1, 13)})
 CODES.update({"Esc": 27, "Space": 32, "Alt": 164, "Shift": 160})   # Alt/Shift = left keys
 
 
-def gid():
-    return str(uuid.uuid4())
-
-
-def action(kind, ordinal, duration=0, keycode=None, context=None, voice_slot=False):
+def action(seed, kind, ordinal, duration=0, keycode=None, context=None, voice_slot=False):
     keys = f"<KeyCodes><unsignedShort>{keycode}</unsignedShort></KeyCodes>" if keycode is not None else "<KeyCodes />"
     ctx = f"<Context>{escape(context)}</Context>" if context is not None else "<Context />"
     extra = "\n          <Context2>{VOICE}</Context2>\n          <X>100</X>\n          <Y>0</Y>" if voice_slot else ""
     return f"""        <CommandAction>
           <Ordinal>{ordinal}</Ordinal>
-          <Id>{gid()}</Id>
+          <Id>{dsp.stable_id("va-action", seed, ordinal)}</Id>
           <ActionType>{kind}</ActionType>
           <Duration>{duration}</Duration>
           <Delay>0</Delay>
@@ -62,13 +57,13 @@ def actions_for(e):
             acts.append(("KeyUp", dict(duration=0.05, keycode=CODES[mod])))
         else:
             acts.append(("PressKey", dict(duration=0.05, keycode=CODES[step])))
-    return "".join(action(kind, i, **kw) for i, (kind, kw) in enumerate(acts))
+    return "".join(action(e["name"], kind, i, **kw) for i, (kind, kw) in enumerate(acts))
 
 
 def command(e):
     return f"""    <Command>
-      <Id>{gid()}</Id>
-      <BaseId>{gid()}</BaseId>
+      <Id>{dsp.stable_id("va-command", e["name"])}</Id>
+      <BaseId>{dsp.stable_id("va-base", e["name"])}</BaseId>
       <CommandString>{escape(dsp.spoken_phrase(e))}</CommandString>
       <Description>{escape(e['name'] + ': ' + dsp.keys_text(e))}</Description>
       <ActionSequence>
@@ -92,7 +87,7 @@ def build(entries):
         xml = f"""<?xml version="1.0" encoding="utf-8"?>
 <Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <HasMB>false</HasMB>
-  <Id>{gid()}</Id>
+  <Id>{dsp.stable_id("va-profile", filename)}</Id>
   <Name>{escape(PROFILE_NAME + suffix)}</Name>
   <Commands>
 {body}  </Commands>

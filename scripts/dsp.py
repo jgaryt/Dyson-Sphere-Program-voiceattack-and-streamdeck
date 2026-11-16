@@ -6,6 +6,7 @@ import itertools
 import pathlib
 import re
 import tomllib
+import uuid
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "commands.toml"
@@ -15,6 +16,14 @@ BOTTOM = ROWS               # row 4 is the shared bottom row
 BAR_WAIT_MS = 100           # pause between bar keys in build commands
 BUILD_PREFIX = "[build;place;] "
 KINDS = ("building", "action", "panel", "slot")
+
+
+# Generated IDs are derived from content, so the same data always builds byte-identical profiles.
+_ID_NAMESPACE = uuid.UUID("6f1c2a52-4d0e-4b8e-9a51-0d5b2e7c3f10")
+
+
+def stable_id(*parts):
+    return str(uuid.uuid5(_ID_NAMESPACE, "|".join(str(p) for p in parts)))
 
 
 def load():

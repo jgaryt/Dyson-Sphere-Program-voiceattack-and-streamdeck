@@ -15,7 +15,9 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 ICON_DIR = ROOT / "streamdeck" / "icons"
 SIZE = 288                      # Stream Deck scales this down to the key
-FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf"
+FONT_DIR = pathlib.Path(__file__).resolve().parent / "fonts"   # bundled so builds work on any OS
+FONT = str(FONT_DIR / "DejaVuSansCondensed-Bold.ttf")
+BADGE_FONT = str(FONT_DIR / "DejaVuSans-Bold.ttf")
 INK = (240, 244, 248)
 W = 12                          # standard stroke width
 
@@ -317,7 +319,7 @@ def render(label, spec):
     d.rectangle([0, 0, SIZE, 14], fill=acc)
     glyph(d, name, acc)
     if tier:
-        f = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 52)
+        f = ImageFont.truetype(BADGE_FONT, 52)
         d.ellipse([SIZE - 86, 26, SIZE - 22, 90], fill=acc)
         d.text((SIZE - 54, 58), tier, font=f, fill=bg, anchor="mm")
     text = label.replace(" >", "").replace("< ", "")
