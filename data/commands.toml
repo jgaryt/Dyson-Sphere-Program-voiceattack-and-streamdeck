@@ -1,0 +1,602 @@
+# Dyson Sphere Program voice and Stream Deck commands: the single source of truth.
+#
+# Every VoiceAttack profile, Stream Deck profile, icon and doc is generated from this file.
+# Run `python scripts/build_all.py` after editing.
+#
+# Fields
+#   name     Building or action name (as the game shows it)
+#   bar, key Build bar number and F-key (buildings).  steps = key steps (everything else):
+#            "C", "Shift+F11", "Shift+LeftClick", "Alt", "wait:100" (pause in ms)
+#   phrase   VoiceAttack phrase. [a;b] = either, [a;] = optional. Buildings also accept
+#            "build"/"place" in front automatically.
+#   reply    What Icarus says (one picked at random). Must never match a phrase.
+#   deck     Stream Deck button: label, page/row/col (row = "bottom" = same on every page),
+#            group (colour) and glyph (icon), optional tier badge, optional say = phrase the
+#            VoiceAttack Stream Deck button sends (defaults to the first spoken form).
+#   status   confirmed | likely | guess | locked
+#   note     Free text
+
+
+[[building]]
+name = "Tesla Tower"
+bar = 1
+key = "F1"
+phrase = "tesla tower"
+reply = ["Deploying tesla tower", "Constructing tesla tower"]
+deck = { label = "Tesla", page = 1, row = 1, col = 1, group = "power", glyph = "tesla", say = "tesla tower" }
+status = "confirmed"
+
+[[building]]
+name = "Wireless Power Tower"
+bar = 1
+key = "F2"
+phrase = "wireless [power;] tower"
+reply = ["Deploying wireless tower", "Constructing wireless tower"]
+deck = { label = "Wireless", page = 1, row = 1, col = 2, group = "power", glyph = "wireless", say = "wireless tower" }
+status = "confirmed"
+
+[[building]]
+name = "Satellite Substation"
+bar = 1
+key = "F3"
+phrase = "[satellite;] substation"
+reply = ["Deploying satellite substation", "Constructing satellite substation"]
+deck = { label = "Substation", page = 1, row = 1, col = 3, group = "power", glyph = "substation", say = "substation" }
+status = "confirmed"
+
+[[building]]
+name = "Wind Turbine"
+bar = 1
+key = "F4"
+phrase = "wind turbine"
+reply = ["Deploying wind turbine", "Constructing wind turbine"]
+deck = { label = "Wind", page = 1, row = 1, col = 4, group = "power", glyph = "wind", say = "wind turbine" }
+status = "confirmed"
+
+[[building]]
+name = "Thermal Power Plant"
+bar = 1
+key = "F5"
+phrase = "thermal [power;] plant"
+reply = ["Deploying thermal plant", "Constructing thermal plant"]
+deck = { label = "Thermal", page = 1, row = 1, col = 5, group = "power", glyph = "flame", say = "thermal plant" }
+status = "confirmed"
+
+[[building]]
+name = "Solar Panel"
+bar = 1
+key = "F6"
+phrase = "solar panel"
+reply = ["Deploying solar panel", "Constructing solar panel"]
+deck = { label = "Solar", page = 1, row = 1, col = 6, group = "power", glyph = "solar", say = "solar panel" }
+status = "confirmed"
+
+[[building]]
+name = "Geothermal Power Station"
+bar = 1
+key = "F7"
+phrase = "geothermal [power station;station;]"
+reply = ["Deploying geothermal station", "Constructing geothermal station"]
+deck = { label = "Geo", page = 1, row = 1, col = 7, group = "power", glyph = "geo", say = "geothermal" }
+status = "confirmed"
+
+[[building]]
+name = "Mini Fusion Power Plant"
+bar = 1
+key = "F8"
+phrase = "[mini fusion;fusion] [power plant;plant;reactor;]"
+reply = ["Deploying fusion plant", "Constructing fusion plant"]
+deck = { label = "Fusion", page = 1, row = 1, col = 8, group = "power", glyph = "fusion", say = "fusion plant" }
+status = "confirmed"
+
+[[building]]
+name = "Accumulator"
+bar = 1
+key = "F9"
+phrase = "accumulator"
+reply = ["Deploying accumulator", "Constructing accumulator"]
+deck = { label = "Accum", page = 1, row = 2, col = 1, group = "power", glyph = "battery", say = "accumulator" }
+status = "confirmed"
+
+[[building]]
+name = "Mining Machine"
+bar = 2
+key = "F1"
+phrase = "[mining machine;miner]"
+reply = ["Deploying mining machine", "Constructing mining machine"]
+deck = { label = "Miner", page = 1, row = 2, col = 2, group = "collect", glyph = "pick", say = "miner" }
+status = "confirmed"
+
+[[slot]]
+name = "(locked slot)"
+bar = 2
+key = "F2"
+status = "locked"
+note = "Probably Advanced Mining Machine"
+
+[[building]]
+name = "Water Pump"
+bar = 2
+key = "F3"
+phrase = "water pump"
+reply = ["Deploying water pump", "Constructing water pump"]
+deck = { label = "Pump", page = 1, row = 2, col = 3, group = "collect", glyph = "drop", say = "water pump" }
+status = "confirmed"
+
+[[building]]
+name = "Oil Extractor"
+bar = 2
+key = "F4"
+phrase = "oil extractor"
+reply = ["Deploying oil extractor", "Constructing oil extractor"]
+deck = { label = "Oil", page = 1, row = 2, col = 4, group = "collect", glyph = "oil", say = "oil extractor" }
+status = "confirmed"
+
+[[building]]
+name = "Conveyor Belt Mk I"
+bar = 3
+key = "F1"
+phrase = "[conveyor belt;conveyor;belt] [one;mark one]"
+reply = ["Deploying belt mark one", "Constructing belt mark one"]
+deck = { label = "Belt 1", page = 1, row = 3, col = 1, group = "logistics", glyph = "belt", tier = "1", say = "belt one" }
+status = "confirmed"
+
+[[building]]
+name = "Conveyor Belt Mk II"
+bar = 3
+key = "F2"
+phrase = "[conveyor belt;conveyor;belt] [two;mark two]"
+reply = ["Deploying belt mark two", "Constructing belt mark two"]
+deck = { label = "Belt 2", page = 1, row = 3, col = 2, group = "logistics", glyph = "belt", tier = "2", say = "belt two" }
+status = "confirmed"
+
+[[building]]
+name = "Conveyor Belt Mk III"
+bar = 3
+key = "F3"
+phrase = "[conveyor belt;conveyor;belt] [three;mark three]"
+reply = ["Deploying belt mark three", "Constructing belt mark three"]
+deck = { label = "Belt 3", page = 1, row = 3, col = 3, group = "logistics", glyph = "belt", tier = "3", say = "belt three" }
+status = "confirmed"
+
+[[building]]
+name = "Sorter Mk I"
+bar = 3
+key = "F4"
+phrase = "sorter [one;mark one]"
+reply = ["Deploying sorter mark one", "Constructing sorter mark one"]
+deck = { label = "Sort 1", page = 1, row = 3, col = 4, group = "logistics", glyph = "sorter", tier = "1", say = "sorter one" }
+status = "confirmed"
+
+[[building]]
+name = "Sorter Mk II"
+bar = 3
+key = "F5"
+phrase = "sorter [two;mark two]"
+reply = ["Deploying sorter mark two", "Constructing sorter mark two"]
+deck = { label = "Sort 2", page = 1, row = 3, col = 5, group = "logistics", glyph = "sorter", tier = "2", say = "sorter two" }
+status = "confirmed"
+
+[[building]]
+name = "Sorter Mk III"
+bar = 3
+key = "F6"
+phrase = "sorter [three;mark three]"
+reply = ["Deploying sorter mark three", "Constructing sorter mark three"]
+deck = { label = "Sort 3", page = 1, row = 3, col = 6, group = "logistics", glyph = "sorter", tier = "3", say = "sorter three" }
+status = "confirmed"
+
+[[slot]]
+name = "(locked slot)"
+bar = 3
+key = "F7"
+status = "locked"
+note = "Probably Pile Sorter"
+
+[[building]]
+name = "Splitter"
+bar = 3
+key = "F8"
+phrase = "splitter"
+reply = ["Deploying splitter", "Constructing splitter"]
+deck = { label = "Split", page = 1, row = 3, col = 7, group = "logistics", glyph = "split", say = "splitter" }
+status = "confirmed"
+
+[[building]]
+name = "Traffic Monitor"
+bar = 3
+key = "F9"
+phrase = "traffic monitor"
+reply = ["Deploying traffic monitor", "Constructing traffic monitor"]
+deck = { label = "Monitor", page = 1, row = 3, col = 8, group = "logistics", glyph = "gauge", say = "traffic monitor" }
+status = "confirmed"
+
+[[building]]
+name = "Spray Coater"
+bar = 3
+key = "F10"
+phrase = "spray coater"
+reply = ["Deploying spray coater", "Constructing spray coater"]
+deck = { label = "Spray", page = 2, row = 2, col = 1, group = "logistics", glyph = "spray", say = "spray coater" }
+status = "confirmed"
+
+[[building]]
+name = "Depot Mk I"
+bar = 4
+key = "F1"
+phrase = "[depot;storage;container] [one;mark one]"
+reply = ["Deploying depot mark one", "Constructing depot mark one"]
+deck = { label = "Depot 1", page = 1, row = 2, col = 5, group = "storage", glyph = "box", tier = "1", say = "depot one" }
+status = "confirmed"
+
+[[building]]
+name = "Depot Mk II"
+bar = 4
+key = "F2"
+phrase = "[depot;storage;container] [two;mark two]"
+reply = ["Deploying depot mark two", "Constructing depot mark two"]
+deck = { label = "Depot 2", page = 1, row = 2, col = 6, group = "storage", glyph = "box", tier = "2", say = "depot two" }
+status = "confirmed"
+
+[[building]]
+name = "Storage Tank"
+bar = 4
+key = "F3"
+phrase = "[storage;] tank"
+reply = ["Deploying storage tank", "Constructing storage tank"]
+deck = { label = "Tank", page = 1, row = 2, col = 7, group = "storage", glyph = "tank", say = "storage tank" }
+status = "confirmed"
+
+[[building]]
+name = "Arc Smelter"
+bar = 5
+key = "F1"
+phrase = "[arc;] smelter"
+reply = ["Deploying arc smelter", "Constructing arc smelter"]
+deck = { label = "Smelter", page = 2, row = 1, col = 1, group = "production", glyph = "furnace", say = "smelter" }
+status = "confirmed"
+
+[[slot]]
+name = "(locked slot)"
+bar = 5
+key = "F2"
+status = "locked"
+note = "Probably Plane Smelter"
+
+[[building]]
+name = "Assembling Machine Mk I"
+bar = 5
+key = "F3"
+phrase = "assembler [one;mark one]"
+reply = ["Deploying assembler mark one", "Constructing assembler mark one"]
+deck = { label = "Asm 1", page = 2, row = 1, col = 2, group = "production", glyph = "gear", tier = "1", say = "assembler one" }
+status = "confirmed"
+
+[[building]]
+name = "Assembling Machine Mk II"
+bar = 5
+key = "F4"
+phrase = "assembler [two;mark two]"
+reply = ["Deploying assembler mark two", "Constructing assembler mark two"]
+deck = { label = "Asm 2", page = 2, row = 1, col = 3, group = "production", glyph = "gear", tier = "2", say = "assembler two" }
+status = "confirmed"
+
+[[slot]]
+name = "(locked slot)"
+bar = 5
+key = "F5"
+status = "locked"
+note = "Probably Assembler Mk III"
+
+[[building]]
+name = "Oil Refinery"
+bar = 5
+key = "F6"
+phrase = "[oil;] refinery"
+reply = ["Deploying oil refinery", "Constructing oil refinery"]
+deck = { label = "Refinery", page = 2, row = 1, col = 4, group = "production", glyph = "refinery", say = "refinery" }
+status = "confirmed"
+
+[[building]]
+name = "Chemical Plant"
+bar = 5
+key = "F7"
+phrase = "[chemical;chem] plant"
+reply = ["Deploying chemical plant", "Constructing chemical plant"]
+deck = { label = "Chem", page = 2, row = 1, col = 5, group = "production", glyph = "flask", say = "chemical plant" }
+status = "confirmed"
+
+[[slot]]
+name = "Unknown production building"
+bar = 5
+key = "F8"
+status = "guess"
+note = "Not the Matrix Lab (labs are in COSMO). Maybe Fractionator or Particle Collider"
+
+[[building]]
+name = "Logistics Distributor"
+bar = 6
+key = "F1"
+phrase = "[logistics;] distributor"
+reply = ["Deploying distributor", "Constructing distributor"]
+deck = { label = "Distrib", page = 2, row = 2, col = 2, group = "logistics", glyph = "distrib", say = "distributor" }
+status = "confirmed"
+
+[[building]]
+name = "Automatic Piler"
+bar = 6
+key = "F2"
+phrase = "[automatic;] piler"
+reply = ["Deploying piler", "Constructing piler"]
+deck = { label = "Piler", page = 2, row = 2, col = 3, group = "logistics", glyph = "piler", say = "piler" }
+status = "confirmed"
+note = "Stacks items on belts"
+
+[[building]]
+name = "Planetary Logistics Station"
+bar = 6
+key = "F3"
+phrase = "planetary [logistics;] station"
+reply = ["Deploying planetary station", "Constructing planetary station"]
+deck = { label = "PLS", page = 2, row = 2, col = 4, group = "logistics", glyph = "station", say = "planetary station" }
+status = "confirmed"
+
+[[building]]
+name = "Interstellar Logistics Station"
+bar = 6
+key = "F4"
+phrase = "interstellar [logistics;] station"
+reply = ["Deploying interstellar station", "Constructing interstellar station"]
+deck = { label = "ILS", page = 2, row = 2, col = 5, group = "logistics", glyph = "station", tier = "★", say = "interstellar station" }
+status = "confirmed"
+
+[[building]]
+name = "Gauss Turret"
+bar = 7
+key = "F1"
+phrase = "gauss turret"
+reply = ["Deploying gauss turret", "Constructing gauss turret"]
+deck = { label = "Gauss", page = 2, row = 3, col = 1, group = "defence", glyph = "turret", say = "gauss turret" }
+status = "confirmed"
+
+[[building]]
+name = "Missile Turret"
+bar = 7
+key = "F2"
+phrase = "missile turret"
+reply = ["Deploying missile turret", "Constructing missile turret"]
+deck = { label = "Missile", page = 2, row = 3, col = 2, group = "defence", glyph = "missile", say = "missile turret" }
+status = "likely"
+note = "Not tested yet"
+
+[[building]]
+name = "Implosion Cannon"
+bar = 7
+key = "F3"
+phrase = "implosion cannon"
+reply = ["Deploying implosion cannon", "Constructing implosion cannon"]
+deck = { label = "Implosion", page = 2, row = 3, col = 3, group = "defence", glyph = "cannon", say = "implosion cannon" }
+status = "likely"
+note = "Not tested yet"
+
+[[building]]
+name = "Jammer Tower"
+bar = 7
+key = "F8"
+phrase = "jammer tower"
+reply = ["Deploying jammer tower", "Constructing jammer tower"]
+deck = { label = "Jammer", page = 2, row = 3, col = 4, group = "defence", glyph = "jammer", say = "jammer tower" }
+status = "likely"
+note = "Not tested yet"
+
+[[building]]
+name = "Signal Tower"
+bar = 7
+key = "F9"
+phrase = "signal tower"
+reply = ["Deploying signal tower", "Constructing signal tower"]
+deck = { label = "Signal", page = 2, row = 3, col = 5, group = "defence", glyph = "antenna", say = "signal tower" }
+status = "likely"
+note = "Not tested yet"
+
+[[building]]
+name = "Matrix Lab"
+bar = 8
+key = "F1"
+phrase = "[matrix;research] lab"
+reply = ["Deploying matrix lab", "Constructing matrix lab"]
+deck = { label = "Lab", page = 2, row = 1, col = 6, group = "research", glyph = "atom", say = "matrix lab" }
+status = "confirmed"
+note = "Research buildings live in COSMO"
+
+[[building]]
+name = "EM Rail Ejector"
+bar = 8
+key = "F2"
+phrase = "[rail ejector;ejector]"
+reply = ["Deploying rail ejector", "Constructing rail ejector"]
+deck = { label = "Ejector", page = 2, row = 1, col = 7, group = "research", glyph = "ejector", say = "rail ejector" }
+status = "confirmed"
+
+[[building]]
+name = "Ray Receiver"
+bar = 8
+key = "F3"
+phrase = "ray receiver"
+reply = ["Deploying ray receiver", "Constructing ray receiver"]
+deck = { label = "Receiver", page = 2, row = 1, col = 8, group = "research", glyph = "dish", say = "ray receiver" }
+status = "confirmed"
+
+[[building]]
+name = "Foundation"
+bar = 9
+key = "F1"
+phrase = "foundation"
+reply = ["Deploying foundation", "Constructing foundation"]
+deck = { label = "Found", page = 2, row = 2, col = 6, group = "foundation", glyph = "grid", say = "foundation" }
+status = "confirmed"
+
+[[slot]]
+name = "Foundation variant?"
+bar = 9
+key = "F2"
+status = "guess"
+note = "Hover to confirm"
+
+[[slot]]
+name = "Restore terrain?"
+bar = 9
+key = "F3"
+status = "guess"
+note = "Hover to confirm"
+
+[[action]]
+name = "Upgrade"
+steps = ["U"]
+phrase = "upgrade [mode;]"
+reply = ["Upgrade engaged", "Upgrading"]
+deck = { label = "Upgrade", row = "bottom", col = 2, group = "action", glyph = "up", say = "upgrade" }
+status = "confirmed"
+note = "Single key"
+
+[[action]]
+name = "Dismantle"
+steps = ["X"]
+phrase = "[dismantle;demolish] [mode;]"
+reply = ["Demolition engaged", "Dismantling"]
+deck = { label = "Dismantle", row = "bottom", col = 3, group = "action", glyph = "hammer", say = "dismantle" }
+status = "confirmed"
+note = "Single key"
+
+[[action]]
+name = "Cancel build mode"
+steps = ["Esc"]
+phrase = "[cancel;stop building;exit build mode]"
+reply = ["Build cancelled", "Standing down"]
+deck = { label = "Cancel", row = "bottom", col = 1, group = "action", glyph = "cross", say = "cancel" }
+status = "confirmed"
+note = "Opens game menu if not in build mode"
+
+[[action]]
+name = "Fly"
+steps = ["Space", "wait:100", "Space"]
+phrase = "[fly;take off;lift off]"
+reply = ["Thrusters engaged", "Airborne", "Lifting off"]
+deck = { label = "Fly", row = "bottom", col = 5, group = "action", glyph = "fly", say = "fly" }
+status = "confirmed"
+note = "Double-tap, 0.1 s apart"
+
+[[action]]
+name = "Land"
+steps = ["Alt"]
+phrase = "land"
+reply = ["Landing", "Descending"]
+deck = { label = "Land", row = "bottom", col = 6, group = "action", glyph = "land", say = "land" }
+status = "confirmed"
+note = "Single key"
+
+[[panel]]
+name = "Mecha Panel"
+steps = ["C"]
+phrase = "[open;show;close;hide;] mecha [panel;]"
+reply = ["Displaying mecha status", "Mecha status"]
+deck = { label = "Mecha", page = 3, row = 1, col = 1, group = "panel", glyph = "robot", say = "mecha" }
+status = "confirmed"
+note = "Toggles"
+
+[[panel]]
+name = "Statistics Panel"
+steps = ["P"]
+phrase = "[open;show;close;hide;] [statistics;stats] [panel;]"
+reply = ["Displaying statistics"]
+deck = { label = "Stats", page = 3, row = 1, col = 2, group = "panel", glyph = "bars", say = "statistics" }
+status = "confirmed"
+note = "Toggles"
+
+[[panel]]
+name = "Inventory Panel"
+steps = ["E"]
+phrase = "[open;show;close;hide;] inventory [panel;]"
+reply = ["Displaying inventory"]
+deck = { label = "Inventory", page = 3, row = 1, col = 3, group = "panel", glyph = "bag", say = "inventory" }
+status = "confirmed"
+note = "Toggles"
+
+[[panel]]
+name = "Replicator"
+steps = ["F"]
+phrase = "[open;show;close;hide;] replicator"
+reply = ["Replicator online", "Displaying replicator"]
+deck = { label = "Replicator", page = 3, row = 1, col = 4, group = "panel", glyph = "replicator", say = "replicator" }
+status = "confirmed"
+note = "Toggles"
+
+[[action]]
+name = "Copy selected build"
+steps = ["Shift+LeftClick"]
+phrase = "[copy;duplicate]"
+reply = ["Copying settings", "Duplicating"]
+deck = { label = "Copy", row = "bottom", col = 4, group = "action", glyph = "copy", say = "copy" }
+status = "confirmed"
+note = "Clicks at the mouse pointer"
+
+[[panel]]
+name = "Details Display"
+steps = ["H"]
+phrase = "[open;show;close;hide;toggle;] [detail;details] display"
+reply = ["Overlay toggled", "Displaying details"]
+deck = { label = "Details", page = 3, row = 1, col = 5, group = "panel", glyph = "eye", say = "details display" }
+status = "confirmed"
+note = "Toggles"
+
+[[panel]]
+name = "Technology Tree"
+steps = ["T"]
+phrase = "[open;show;close;hide;] [technology tree;tech tree]"
+reply = ["Displaying technology"]
+deck = { label = "Tech", page = 3, row = 1, col = 6, group = "panel", glyph = "tree", say = "tech tree" }
+status = "confirmed"
+note = "Toggles"
+
+[[action]]
+name = "Screenshot"
+steps = ["Shift+F11"]
+phrase = "[screenshot;take screenshot;capture screen]"
+reply = ["Image captured", "Capturing image"]
+deck = { label = "Screenshot", page = 3, row = 2, col = 3, group = "action", glyph = "camera", say = "screenshot" }
+status = "confirmed"
+
+[[panel]]
+name = "Interplanetary Logistics"
+steps = ["I"]
+phrase = "[open;show;close;hide;] [interplanetary logistics;logistics]"
+reply = ["Displaying logistics"]
+deck = { label = "Logistics", page = 3, row = 1, col = 7, group = "panel", glyph = "route", say = "logistics" }
+status = "confirmed"
+note = "Toggles"
+
+[[panel]]
+name = "Starmap"
+steps = ["V"]
+phrase = "[open;show;close;hide;] [starmap;star map;system map]"
+reply = ["Displaying starmap", "Charting stars"]
+deck = { label = "Starmap", page = 3, row = 1, col = 8, group = "panel", glyph = "star", say = "starmap" }
+status = "confirmed"
+note = "Toggles"
+
+[[panel]]
+name = "Planet View"
+steps = ["M"]
+phrase = "[open;show;close;hide;] planet [view;]"
+reply = ["Displaying planet"]
+deck = { label = "Planet", page = 3, row = 2, col = 1, group = "panel", glyph = "planet", say = "planet" }
+status = "confirmed"
+note = "Toggles"
+
+[[action]]
+name = "Face North"
+steps = ["N"]
+phrase = "[face;rotate;point] north"
+reply = ["Facing north", "Heading north"]
+deck = { label = "North", page = 3, row = 2, col = 2, group = "action", glyph = "compass", say = "face north" }
+status = "confirmed"

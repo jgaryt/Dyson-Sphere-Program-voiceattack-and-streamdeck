@@ -45,19 +45,20 @@ can't be set this way yet.** Re-apply it with Mass update after importing.
 1. **Get the exact voice name.** In any Say action, open the **Voice** dropdown and copy the name
    exactly, including brackets, spaces and the region, e.g.
    `[Azure] Grant MAI-Voice-2.1-Flash (en-US)`. Then cancel.
-2. **Edit `scripts/build_profile.py`.** Near the bottom, put the name in the `VARIANTS` list:
+2. **Edit `scripts/build_voiceattack.py`.** Near the top, put the name in the `VARIANTS` list:
 
    ```python
    VARIANTS = [
-       ("profiles/DSP Build Hotkeys-Profile.vap", "[Azure] Grant MAI-Voice-2.1-Flash (en-US)", ""),
-       ("profiles/DSP Build Hotkeys-LocalVoice-Profile.vap", "", " (local voice)"),
+       ("DSP Build Hotkeys-Profile.vap", "[Azure] Grant MAI-Voice-2.1-Flash (en-US)", ""),
+       ("DSP Build Hotkeys-LocalVoice-Profile.vap", "", " (local voice)"),
    ]
    ```
 
    The first line is the Azure profile. The local-voice profile is left blank on purpose, so it
    uses the Windows default voice.
-3. **Rebuild:** run `python scripts/build_profile.py`.
-4. **Re-import:** delete the old profile in VoiceAttack, then import the new `.vap`.
+3. **Rebuild:** run `python scripts/build_all.py`.
+4. **Re-import:** delete the old profile in VoiceAttack, then import the new `.vap` from
+   `voiceattack/profiles`.
 5. **Commit** the changes to the repo.
 
 If replies come out in the wrong voice or stay silent, the name probably doesn't exactly match.

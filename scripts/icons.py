@@ -4,7 +4,8 @@ Every glyph here is drawn from basic shapes (lines, circles, polygons). Nothing 
 traced from Dyson Sphere Program's artwork. Background colour = which build bar or group the
 button belongs to.
 
-Run `python scripts/icons.py` to write icons/*.png and docs/icons-preview.png.
+Which icon each button gets (group colour, glyph, tier badge) is set in data/commands.toml.
+Run via `python scripts/build_all.py`.
 """
 import math
 import pathlib
@@ -12,7 +13,7 @@ import pathlib
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-ICON_DIR = ROOT / "icons"
+ICON_DIR = ROOT / "streamdeck" / "icons"
 SIZE = 288                      # Stream Deck scales this down to the key
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf"
 INK = (240, 244, 248)
@@ -33,43 +34,19 @@ GROUPS = {
     "nav": ((24, 28, 32), (200, 200, 200)),
 }
 
-# label -> (group, glyph, tier badge or None)
-ICONS = {
-    "Tesla": ("power", "tesla", None), "Wireless": ("power", "wireless", None),
-    "Wind": ("power", "wind", None), "Substation": ("power", "substation", None),
-    "Fusion": ("power", "fusion", None), "Accum": ("power", "battery", None), "Thermal": ("power", "flame", None),
-    "Solar": ("power", "solar", None), "Geo": ("power", "geo", None),
-    "Miner": ("collect", "pick", None), "Pump": ("collect", "drop", None),
-    "Oil": ("collect", "oil", None),
-    "Belt 1": ("logistics", "belt", "1"), "Belt 2": ("logistics", "belt", "2"),
-    "Belt 3": ("logistics", "belt", "3"),
-    "Sort 1": ("logistics", "sorter", "1"), "Sort 2": ("logistics", "sorter", "2"),
-    "Sort 3": ("logistics", "sorter", "3"),
-    "Split": ("logistics", "split", None), "Monitor": ("logistics", "gauge", None),
-    "Spray": ("logistics", "spray", None),
-    "Distrib": ("logistics", "distrib", None), "Piler": ("logistics", "piler", None),
-    "PLS": ("logistics", "station", None), "ILS": ("logistics", "station", "★"),
-    "Depot 1": ("storage", "box", "1"), "Depot 2": ("storage", "box", "2"),
-    "Tank": ("storage", "tank", None),
-    "Smelter": ("production", "furnace", None),
-    "Asm 1": ("production", "gear", "1"), "Asm 2": ("production", "gear", "2"),
-    "Refinery": ("production", "refinery", None), "Chem": ("production", "flask", None),
-    "Lab": ("research", "atom", None), "Ejector": ("research", "ejector", None),
-    "Receiver": ("research", "dish", None), "Found": ("foundation", "grid", None),
-    "Gauss": ("defence", "turret", None), "Missile": ("defence", "missile", None),
-    "Implosion": ("defence", "cannon", None), "Jammer": ("defence", "jammer", None),
-    "Signal": ("defence", "antenna", None),
-    "Cancel": ("action", "cross", None), "Upgrade": ("action", "up", None),
-    "Dismantle": ("action", "hammer", None), "Copy": ("action", "copy", None),
-    "Fly": ("action", "fly", None), "Land": ("action", "land", None),
-    "North": ("action", "compass", None), "Screenshot": ("action", "camera", None),
-    "Mecha": ("panel", "robot", None), "Stats": ("panel", "bars", None),
-    "Inventory": ("panel", "bag", None), "Replicator": ("panel", "replicator", None),
-    "Details": ("panel", "eye", None), "Tech": ("panel", "tree", None),
-    "Logistics": ("panel", "route", None), "Starmap": ("panel", "star", None),
-    "Planet": ("panel", "planet", None),
-    "Next": ("nav", "next", None), "Prev": ("nav", "prev", None),
-}
+# Page-switch buttons aren't commands, so their icons are defined here.
+NAV_ICONS = {"Prev": ("nav", "prev", None), "Next": ("nav", "next", None)}
+
+
+def icon_specs(entries):
+    """label -> (group, glyph, tier) for every Stream Deck button."""
+    specs = dict(NAV_ICONS)
+    for e in entries:
+        d = e.get("deck")
+        if d:
+            specs[d["label"]] = (d["group"], d["glyph"], d.get("tier"))
+    return specs
+
 
 C = SIZE // 2           # glyph centre x
 GY = 112                # glyph centre y
@@ -330,8 +307,8 @@ def glyph(d, name, acc):
         raise KeyError(name)
 
 
-def render(label):
-    group, name, tier = ICONS[label]
+def render(label, spec):
+    group, name, tier = spec
     bg, acc = GROUPS[group]
     img = Image.new("RGB", (SIZE, SIZE), bg)
     d = ImageDraw.Draw(img)
@@ -357,11 +334,15 @@ def filename(label):
     return "".join(ch.lower() if ch.isalnum() else "-" for ch in label).strip("-") + ".png"
 
 
-def main():
-    ICON_DIR.mkdir(exist_ok=True)
+def build(entries):
+    ICON_DIR.mkdir(parents=True, exist_ok=True)
+    specs = icon_specs(entries)
+    for old in ICON_DIR.glob("*.png"):           # drop icons for buttons that no longer exist
+        if old.name not in {filename(label) for label in specs}:
+            old.unlink()
     tiles = []
-    for label in ICONS:
-        img = render(label)
+    for label, spec in specs.items():
+        img = render(label, spec)
         img.save(ICON_DIR / filename(label))
         tiles.append(img)
     cols, t = 8, 144
@@ -371,8 +352,11 @@ def main():
         sheet.paste(img.resize((t, t), Image.LANCZOS), (8 + (i % cols) * (t + 8), 8 + (i // cols) * (t + 8)))
     (ROOT / "docs").mkdir(exist_ok=True)
     sheet.save(ROOT / "docs" / "icons-preview.png")
-    print(f"wrote {len(tiles)} icons and docs/icons-preview.png")
+    print(f"wrote {len(tiles)} icons to streamdeck/icons and docs/icons-preview.png")
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+    import dsp
+    build(dsp.load())
