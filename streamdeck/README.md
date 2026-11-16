@@ -1,0 +1,130 @@
+# DysonSphereProgram-Stream-Deck-Profile
+Dyson Sphere Program Stream Deck Profile
+
+A Stream Deck XL profile for Dyson Sphere Program: one button per building plus a page of
+actions and panels. It's the button counterpart to the
+[VoiceAttack profile](https://github.com/jgaryt/DysonSphereProgram-VoiceAttack-Profile) and uses
+the same key map.
+
+**Status:** both versions working on a Stream Deck XL (Stream Deck 7.6.1, Windows). The keys
+version has no Copy button (see below); the VoiceAttack version does.
+See
+[`docs/layout.md`](docs/layout.md) for every button.
+
+## Before you start
+
+You'll need:
+
+- **A Stream Deck XL** (8 × 4 keys) and the **Stream Deck app 7.6 or later on Windows.** The
+  profiles are laid out for the XL and won't fit smaller decks.
+- **Dyson Sphere Program with its default key bindings.** The buttons press DSP's default keys.
+
+For the **VoiceAttack version**, also:
+
+- **VoiceAttack 2, full version**, with the
+  [DSP VoiceAttack profile](https://github.com/jgaryt/DysonSphereProgram-VoiceAttack-Profile)
+  imported and active. The free VoiceAttack trial allows only 20 commands; the DSP profile has 59.
+- **The HCS Stream Deck Connector plugin** from HCS VoicePacks
+  (https://www.hcsvoicepacks.com/products/streamdeck-connector). It appears in Stream Deck as
+  **VA Streamdeck**. It's a paid plugin.
+
+To change the profiles yourself: Python 3 and Pillow (`pip install pillow`).
+
+## Two versions
+
+Both have the same two-page layout. Pick one:
+
+| File | How buttons work | Needs |
+|---|---|---|
+| `profiles/DSP Stream Deck XL.streamDeckProfile` | Stream Deck sends the keys itself | Nothing else. Copy isn't included (see below) |
+| `profiles/DSP Stream Deck XL (VoiceAttack).streamDeckProfile` | Each button runs the matching VoiceAttack command, so Icarus replies too | VoiceAttack running with the DSP VoiceAttack profile, and the HCS Stream Deck Connector plugin (see above) |
+
+## Install
+
+1. Download the profile you want from the `profiles` folder.
+2. Double-click it, or import it in the Stream Deck app (Preferences → Profiles → Import).
+3. Select the profile on your XL.
+4. Keep Dyson Sphere Program as the active window when pressing buttons.
+
+**Updating:** delete or rename the old profile before importing a new version.
+
+## Layout
+
+Three pages on a Stream Deck XL (8 × 4 keys). The **bottom row is the same on every page**: Cancel,
+Upgrade, Dismantle, Copy, Fly, Land, then ◀ Prev and Next ▶. Prev is blank on page 1 and Next on
+page 3.
+
+| Page | Row 1 | Row 2 | Row 3 |
+|---|---|---|---|
+| 1 | Power | Accumulator, collecting, storage | Logistics (belts, sorters, splitter, monitor) |
+| 2 | Production and COSMO | Transport, spray coater, foundation | Defence |
+| 3 | Panels | Planet, North, Screenshot | Free |
+
+Free keys are left for buildings that unlock later. See [`docs/layout.md`](docs/layout.md) for
+every button.
+
+**Copy (Shift + left click) works in the VoiceAttack version only.** In the keys version its key
+in the bottom row is left blank, because Stream Deck's built-in actions can't click the mouse. BarRaider
+SuperMacro was tried without success: `{{SHIFT}{LBUTTON}}`, with a higher output delay, and with
+pauses (`{{SHIFT}{PAUSE:50}{LBUTTON}{PAUSE:50}}`).
+
+## Icons
+
+![Icon set](docs/icons-preview.png)
+
+The icons are original, drawn by `scripts/icons.py` from basic shapes. Nothing is copied or traced
+from Dyson Sphere Program's artwork. Each button's background colour shows its group:
+
+- **Gold:** power
+- **Rust:** collecting
+- **Blue:** logistics
+- **Teal:** storage
+- **Purple:** production
+- **Indigo:** research
+- **Green:** foundation
+- **Red:** defence
+- **Slate:** actions
+- **Cyan:** panels
+
+A number badge marks the tier (Belt 1–3, Sorter 1–3 and so on).
+
+## How the buttons work
+
+**VoiceAttack version:** each button sends VoiceAttack a phrase, e.g. "wind turbine", exactly as
+if you'd said it. VoiceAttack does the rest, including the key presses and Icarus's reply. The
+phrases are in `VA_PHRASES` in `scripts/layout.py`. The page-switch buttons are normal Stream
+Deck actions.
+
+**Keys version:** uses Stream Deck's own **Hotkey** and **Multi Action** buttons. Build buttons use
+the same trick as the VoiceAttack profile. DSP's bar keys toggle, so each
+button presses a *different* bar first, then the wanted bar, then the F-key:
+
+```
+Wind:  9 → wait 100 ms → 1 → wait 100 ms → F4
+```
+
+## Files
+
+| Path | What it is |
+|---|---|
+| `profiles/*.streamDeckProfile` | The two importable profiles. Generated, so don't edit by hand |
+| `scripts/layout.py` | The button layout: labels, key steps and VoiceAttack phrases |
+| `scripts/build_profile.py` | Builds both profiles from `layout.py` |
+| `scripts/icons.py` | Draws the button icons into `icons/` and `docs/icons-preview.png` |
+| `scripts/check_va_phrases.py` | Checks every VoiceAttack phrase matches a command in the VoiceAttack profile |
+| `docs/layout.md` | The layout as tables. Generated by `layout.py` |
+
+## Making changes
+
+1. Edit `PAGES` in `scripts/layout.py`. Each page must have exactly 32 buttons; use `(None, [])`
+   for an empty key. Add the button's VoiceAttack phrase to `VA_PHRASES`.
+2. Run `python scripts/check_va_phrases.py "<path to DSP Build Hotkeys-Profile.vap>"`, using the
+   file from the VoiceAttack repo.
+3. For a new button, add its group and glyph to `ICONS` in `scripts/icons.py`, then run
+   `python scripts/icons.py`. Needs Pillow (`pip install pillow`).
+4. Run `python scripts/layout.py` to regenerate `docs/layout.md`.
+5. Run `python scripts/build_profile.py` to rebuild both profiles.
+
+## License
+
+GPL-3.0, see `LICENSE`.
