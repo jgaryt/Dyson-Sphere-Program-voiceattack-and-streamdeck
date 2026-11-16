@@ -12,6 +12,15 @@ opens on the wind turbine while Icarus answers "Deploying wind turbine".
 
 Tested with VoiceAttack v2.2.0.3 and Stream Deck 7.6.1 on Windows.
 
+## See it in action: voice control
+
+[![Voice control for Dyson Sphere Program: Icarus building by voice](docs/video-thumbnail.jpg)](https://youtu.be/1gPESxnpP84)
+
+**Hands-free factory building.** Watch Icarus build by voice: say a building's name and the right
+build bar and building are selected for you, while Icarus confirms each order. It also covers
+flying, landing and opening panels without touching the keyboard.
+[Watch on YouTube](https://youtu.be/1gPESxnpP84)
+
 *This repo replaces the archived DysonSphereProgram-VoiceAttack-Profile and
 DysonSphereProgram-Stream-Deck-Profile repos. Their full history is included here.*
 
