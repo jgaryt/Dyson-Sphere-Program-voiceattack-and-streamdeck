@@ -27,9 +27,9 @@ DysonSphereProgram-Stream-Deck-Profile repos. Their full history is included her
 ## Before you start
 
 **For everything:**
-- **Windows, and Dyson Sphere Program with its default key bindings.** Every command presses
-  DSP's default keys, so a key you've rebound won't work until you rebind it back or change it in
-  `data/commands.toml`.
+- **Windows, and Dyson Sphere Program.** The profiles use DSP's default keys. If you've rebound
+  any controls in the game, set the same keys in [`data/keybinds.toml`](data/keybinds.toml) and
+  rebuild (see [Custom key bindings](#custom-key-bindings)).
 
 **For voice:**
 - **VoiceAttack 2, full version.** The free trial allows one profile with up to 20 commands, and
@@ -133,6 +133,20 @@ Action buttons instead.
 and BarRaider SuperMacro didn't work: `{{SHIFT}{LBUTTON}}` was tried with a higher output delay,
 and with pauses.
 
+## Custom key bindings
+
+If you've rebound a control in DSP, open [`data/keybinds.toml`](data/keybinds.toml), uncomment its
+line and set your key:
+
+```toml
+[keys]
+land = "L"        # was Alt
+slot4 = "F12"     # every building on F4 moves to F12
+```
+
+Then run `python scripts/build_all.py` and re-import. Voice commands, both Stream Deck profiles
+and the docs all follow it. The build stops if two controls share a key or a key can't be sent.
+
 ## Adding or changing a command
 
 1. Edit [`data/commands.toml`](data/commands.toml). The top of the file explains every field. A
@@ -171,6 +185,7 @@ A new kind of icon needs a glyph added in `scripts/icons.py`. Run
 | Path | What it is |
 |---|---|
 | `data/commands.toml` | Every command, defined once. **Edit this.** |
+| `data/keybinds.toml` | Your DSP key bindings, if you've changed any from the defaults |
 | `scripts/build_all.py` | Checks the data and builds everything |
 | `scripts/dsp.py` | Loads and checks `commands.toml` |
 | `scripts/build_voiceattack.py` | Builds the VoiceAttack profiles (voice names are set here) |

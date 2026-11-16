@@ -5,7 +5,8 @@
 #
 # Fields
 #   name     Building or action name (as the game shows it)
-#   bar, key Build bar number and F-key (buildings).  steps = key steps (everything else):
+#   bar, key Build bar number and F-key (buildings). Keys here are always DSP's defaults;
+#            your own bindings go in data/keybinds.toml.  steps = key steps (everything else):
 #            "C", "Shift+F11", "Shift+LeftClick", "Alt", "wait:100" (pause in ms)
 #   phrase   VoiceAttack phrase. [a;b] = either, [a;] = optional. Buildings also accept
 #            "build"/"place" in front automatically.

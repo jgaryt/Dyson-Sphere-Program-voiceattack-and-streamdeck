@@ -10,12 +10,55 @@ import uuid
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "commands.toml"
+KEYBINDS = ROOT / "data" / "keybinds.toml"
 
 COLS, ROWS = 8, 4           # Stream Deck XL
 BOTTOM = ROWS               # row 4 is the shared bottom row
 BAR_WAIT_MS = 100           # pause between bar keys in build commands
 BUILD_PREFIX = "[build;place;] "
 KINDS = ("building", "action", "panel", "slot")
+
+
+# DSP's default key for each control. commands.toml is written with these keys;
+# data/keybinds.toml can override any of them.
+DEFAULT_KEYS = {
+    **{f"bar{n}": str(n) for n in range(1, 10)},
+    **{f"slot{n}": f"F{n}" for n in range(1, 11)},
+    "cancel": "Esc", "upgrade": "U", "dismantle": "X", "copy": "Shift+LeftClick",
+    "fly": "Space", "land": "Alt", "face_north": "N", "screenshot": "Shift+F11",
+    "mecha": "C", "statistics": "P", "inventory": "E", "replicator": "F", "details": "H",
+    "tech_tree": "T", "logistics": "I", "starmap": "V", "planet": "M",
+}
+SINGLE_KEYS = ({str(d) for d in range(10)} | {chr(c) for c in range(ord("A"), ord("Z") + 1)}
+               | {f"F{n}" for n in range(1, 13)} | {"Esc", "Space", "Alt"})
+MODIFIER_KEYS = {"Shift", "Alt"}
+
+
+def key_supported(k):
+    """Keys both VoiceAttack and Stream Deck profiles can send: single keys, or Shift/Alt + key/click."""
+    if k in SINGLE_KEYS:
+        return True
+    mod, _, target = k.partition("+")
+    return mod in MODIFIER_KEYS and (target in SINGLE_KEYS - {"Alt"} or target == "LeftClick")
+
+
+def keybinds():
+    """{control: key} after applying data/keybinds.toml overrides."""
+    bound = dict(DEFAULT_KEYS)
+    if KEYBINDS.exists():
+        with open(KEYBINDS, "rb") as f:
+            custom = tomllib.load(f).get("keys", {})
+        unknown = set(custom) - set(DEFAULT_KEYS)
+        if unknown:
+            raise SystemExit(f"keybinds.toml: unknown control(s) {sorted(unknown)}; "
+                             f"valid: {', '.join(DEFAULT_KEYS)}")
+        bound.update(custom)
+    return bound
+
+
+def remap_table():
+    """{default key: your key} for every control you've rebound."""
+    return {DEFAULT_KEYS[c]: k for c, k in keybinds().items() if k != DEFAULT_KEYS[c]}
 
 
 # Generated IDs are derived from content, so the same data always builds byte-identical profiles.
@@ -33,12 +76,17 @@ def load():
     unknown = set(raw) - set(KINDS)
     if unknown:
         raise SystemExit(f"commands.toml: unknown section(s) {sorted(unknown)}")
+    remap = remap_table()
     entries = []
     for kind in KINDS:
         for e in raw.get(kind, []):
             e = dict(e, kind=kind)
             if kind == "building":
                 e["steps"] = build_steps(e["bar"], e["key"])
+            if "steps" in e:
+                e["steps"] = [remap.get(s, s) for s in e["steps"]]
+            if kind in ("building", "slot"):
+                e["keys_shown"] = f"{remap.get(str(e['bar']), str(e['bar']))} → {remap.get(e['key'], e['key'])}"
             entries.append(e)
     return entries
 
@@ -69,7 +117,7 @@ def expand(phrase):
 def keys_text(e):
     """Human-readable keys, e.g. '1 → F4' or 'Shift + F11'."""
     if e["kind"] in ("building", "slot"):
-        return f"{e['bar']} → {e['key']}"
+        return e["keys_shown"]
     out = []
     for s in e["steps"]:
         if s.startswith("wait:"):
@@ -81,6 +129,18 @@ def keys_text(e):
 def check(entries):
     """Fail loudly on anything that would break a profile. Returns a list of problems."""
     problems = []
+    bound = keybinds()
+    used = {}
+    for control, key in bound.items():
+        if not key_supported(key):
+            problems.append(f"keybinds: {control} = '{key}' isn't a key the profiles can send")
+        if key in used:
+            problems.append(f"keybinds: {control} and {used[key]} are both on '{key}'")
+        used[key] = control
+    for e in entries:
+        for step in e.get("steps", []):
+            if not step.startswith("wait:") and not key_supported(step):
+                problems.append(f"{e['name']}: step '{step}' isn't a supported key")
     cmds = commands(entries)
     spoken = {}
     for e in cmds:
