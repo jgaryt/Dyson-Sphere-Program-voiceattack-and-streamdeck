@@ -6,7 +6,8 @@ the related VoiceAttack settings. Written against VoiceAttack v2.2.0.3.
 
 **Which section do I need?**
 
-- *I want a different voice or effect, now:* [Change it in VoiceAttack](#change-it-in-voiceattack)
+- *I want a different voice, now:* [Change it in VoiceAttack](#change-it-in-voiceattack)
+- *I want sound effects on the voice:* [Effect sets](#effect-sets)
 - *I want new profile versions to use that voice too:* [Make it the default](#make-it-the-default-for-new-versions)
 - *There are no `[Azure]` voices in the list:* [One-time Azure setup](#one-time-azure-setup)
 - *I'm using the local-voice profile:* [Windows voices](#windows-voices-local-voice-profile)
@@ -37,10 +38,26 @@ This works for Azure and Windows voices alike.
 Your changes are saved with the profile. Importing a new version of the profile replaces them,
 so redo the Mass update after each import. That takes about a minute.
 
+### Effect sets
+
+An effect set adds processing to Icarus's voice, such as pitch shift, reverb or delay, for a more
+robotic sound.
+
+1. **Create one.** Open **Options** (wrench icon) → **Text-to-Speech** tab → **Click here for the
+   TTS Sound Effects Manager**, and build and name your set. You can also use the **…** button
+   next to Effect Set in any Say action.
+2. **Apply it to every reply.** Pick it as the **Effect Set** in one command's Say action and use
+   **Mass update** as above. You can change the voice in the same step.
+3. **Re-apply after each import** of a new profile version.
+
+Effect sets aren't included in the profiles in this repo. VoiceAttack stores each one under an
+ID that only exists on the computer where it was made, so a shared profile can't carry it.
+
 ## Make it the default for new versions
 
-To make new profile versions start with your voice, set it in the build script. **The effect set
-can't be set this way yet.** Re-apply it with Mass update after importing.
+To make new profile versions start with your voice, set it in the build script. Effect sets
+can't be set this way (see [Effect sets](#effect-sets)); re-apply yours with Mass update after
+importing.
 
 1. **Get the exact voice name.** In any Say action, open the **Voice** dropdown and copy the name
    exactly, including brackets, spaces and the region, e.g.

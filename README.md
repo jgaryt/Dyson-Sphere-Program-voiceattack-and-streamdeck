@@ -202,7 +202,6 @@ A new kind of icon needs a glyph added in `scripts/icons.py`. Run
 
 - Identify the slots still marked **guess** in `data/commands.toml` (bars 5 and 9).
 - Add buildings as locked slots unlock.
-- Build the VoiceAttack effect set into the Azure profile, so it survives re-imports.
 
 ## License
 
