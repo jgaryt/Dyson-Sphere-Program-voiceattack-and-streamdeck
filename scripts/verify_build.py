@@ -52,7 +52,7 @@ def main():
     build_all.main()
     problems = []
 
-    changed = git("diff", "--name-only", "--", *EXACT).split()
+    changed = git("diff", "--name-only", "--", *EXACT).splitlines()
     problems += [f"{f} is out of date" for f in changed]
 
     for f in sorted((dsp.ROOT / DECKS).glob("*.streamDeckProfile")):
@@ -65,7 +65,7 @@ def main():
         if deck_summary(committed) != deck_summary(f.read_bytes()):
             problems.append(f"{rel} has different buttons than the data says")
 
-    committed_icons = set(git("ls-tree", "--name-only", "HEAD", "streamdeck/icons/").split())
+    committed_icons = set(git("ls-tree", "--name-only", "HEAD", "streamdeck/icons/").splitlines())
     built_icons = {p.relative_to(dsp.ROOT).as_posix() for p in (dsp.ROOT / "streamdeck/icons").glob("*.png")}
     problems += [f"icon missing from commit: {p}" for p in sorted(built_icons - committed_icons)]
     problems += [f"icon no longer used: {p}" for p in sorted(committed_icons - built_icons)]
