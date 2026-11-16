@@ -45,7 +45,7 @@ DysonSphereProgram-Stream-Deck-Profile repos. Their full history is included her
   (https://www.hcsvoicepacks.com/products/streamdeck-connector). It's a paid plugin and appears
   in Stream Deck as **VA Streamdeck**.
 
-**To change anything:** Python 3.11+ and Pillow (`pip install pillow`).
+**To change anything:** Python 3.11+ and Pillow (`pip install -r requirements.txt`).
 
 ## Quick start
 
@@ -158,6 +158,11 @@ and with pauses.
    Then it rebuilds both VoiceAttack profiles, both Stream Deck profiles, the icons and the docs.
 3. Re-import the profiles you use, and commit.
 
+Every push runs the **Verify** check on GitHub (Actions tab). It runs the same checks, rebuilds
+everything, and fails if a generated file wasn't rebuilt after `commands.toml` changed. Run
+`python scripts/verify_build.py` to do the same locally; commit first, because it compares
+against the last commit.
+
 A new kind of icon needs a glyph added in `scripts/icons.py`. Run
 `python scripts/build_all.py --check` to check the data without building.
 
@@ -172,6 +177,9 @@ A new kind of icon needs a glyph added in `scripts/icons.py`. Run
 | `scripts/build_streamdeck.py` | Builds the Stream Deck profiles |
 | `scripts/icons.py` | Draws the button icons |
 | `scripts/build_docs.py` | Writes `docs/command-map.csv` and `docs/layout.md` |
+| `scripts/verify_build.py` | Checks the committed files match the data (used by the GitHub check) |
+| `scripts/fonts/` | Bundled DejaVu fonts for the icons, with their license |
+| `.github/workflows/verify.yml` | The GitHub Actions check |
 | `voiceattack/profiles/`, `streamdeck/profiles/`, `streamdeck/icons/` | Generated. Don't edit by hand |
 | `docs/changing-the-voice.md` | Changing Icarus's voice and effects, and setting up Azure |
 
